@@ -1,5 +1,6 @@
 # Global information
 [chain]
+title = "Osmosis"
 chain_id = "osmosis-1"
 hex = "#8d07c7"
 

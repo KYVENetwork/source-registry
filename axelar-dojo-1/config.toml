@@ -1,5 +1,6 @@
 # Global information
 [chain]
+title = "Axelar"
 chain_id = "axelar-dojo-1"
 hex = "#5cc1fa"
 

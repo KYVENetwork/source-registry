@@ -1,5 +1,6 @@
 # Global information
 [chain]
+title = "Cosmos Hub"
 chain_id = "cosmoshub-4"
 hex = "#6f3048"
 

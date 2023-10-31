@@ -1,5 +1,6 @@
 # Global information
 [chain]
+title = "Archway"
 chain_id = "archway-1"
 hex = "#e45121"
 
