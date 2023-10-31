@@ -1,0 +1,13 @@
+# Global information
+[chain]
+chain_id = "osmosis-1"
+hex = "#8d07c7"
+
+# Mainnet sources
+[kyve-1]
+block_source_id = 1
+
+# Testnet sources
+[kaon-1]
+block_source_id = 1
+state_source_id = 5

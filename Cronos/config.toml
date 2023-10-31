@@ -1,0 +1,12 @@
+# Global information
+[chain]
+chain_id = "cronosmainnet_25-1"
+hex = "#191b34"
+
+# Mainnet sources
+[kyve-1]
+
+# Testnet sources
+[kaon-1]
+block_source_id = 6
+state_source_id = 7

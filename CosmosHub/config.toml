@@ -1,0 +1,12 @@
+# Global information
+[chain]
+chain_id = "cosmoshub-4"
+hex = "#6f3048"
+
+# Mainnet sources
+[kyve-1]
+block_source_id = 0
+
+# Testnet sources
+[kaon-1]
+block_source_id = 0
