@@ -16,6 +16,19 @@ jobs:
       - name: Check out the code
         uses: actions/checkout@v2
 
+      - name: Check for Config Changes
+        id: config_changes
+        run: |
+          changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep 'config.yml' || true)
+          if [ -n "$changed_files" ]; then
+            echo "Config files have changed. Triggering release."
+            echo "::set-output name=release_trigger::true"
+          else
+            echo "No config file changes detected."
+            echo "::set-output name=release_trigger::false"
+          fi
+        continue-on-error: true
+
       - name: Merge Source Configs
         run: python merge_configs.py
         working-directory: ${{ github.workspace }}
