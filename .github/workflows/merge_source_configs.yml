@@ -44,7 +44,7 @@ jobs:
         env:
           TAG: ${{ steps.get_latest_release.outputs.tag }}
 
-      - name: Create Release
+      - name: Create a new Release
         if: (github.event.pull_request.merged == true) || (github.event.ref == 'refs/heads/main')
         run: |
           release_version=$VERSION
