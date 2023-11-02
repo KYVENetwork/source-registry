@@ -7,6 +7,7 @@ chain:
 # Mainnet sources
 kyve-1:
     block_source_id: 2
+    state_source_id: 4
 
 # Testnet sources
 kaon-1:
