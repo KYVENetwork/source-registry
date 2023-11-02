@@ -2,7 +2,7 @@
 chain:
     title: "Archway"
     chain_id: "archway-1"
-    hex: "#e35323"
+    hex: "#e45121"
 
 # Mainnet sources
 kyve-1:
