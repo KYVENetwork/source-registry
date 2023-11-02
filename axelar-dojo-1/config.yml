@@ -1,0 +1,13 @@
+# Global information
+chain:
+  title: "Axelar"
+  chain_id: "axelar-dojo-1"
+  hex: "#5cc1fa"
+
+# Mainnet sources
+kyve-1:
+  block_source_id: 3
+
+# Testnet sources
+kaon-1:
+  block_source_id: 3
