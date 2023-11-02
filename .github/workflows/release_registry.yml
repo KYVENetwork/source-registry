@@ -1,0 +1,60 @@
+name: Release updated Source-Registry
+
+on:
+  push:
+    tags:
+      - 'v1.*'
+    paths-ignore:
+      - '.github/*'
+      - 'README.md'
+      - 'merge_configs.py'
+
+jobs:
+  merge_configs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Merge Source Configs
+        run: python merge_configs.py
+        working-directory: ${{ github.workspace }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Changelog
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+
+      - name: Create a new Release
+        if: (github.event.pull_request.merged == true) || (github.event.ref == 'refs/heads/main')
+        run: |
+          release_version=$VERSION
+          release_name="Release $release_version"
+          release_body="$BODY"
+          release_url="https://api.github.com/repos/${GITHUB_REPOSITORY}/releases"
+
+          # Create a release using the GitHub API
+          response=$(curl -X POST "$release_url" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -d '{
+              "tag_name": "'"{{$release_version}}"'",
+              "name": "'"$release_name"'",
+              "body": "'"$release_body"'"
+            }')
+
+          # Upload the merged YAML file as an asset
+          upload_url=$(echo "$response" | jq -r .upload_url)
+          upload_url=${upload_url/\{?name,label\}/}
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/octet-stream" \
+            --data-binary "@registry.yml" \
+            "$upload_url?name=registry.yml"
+        env:
+          VERSION: ${{ github.ref }}
+          BODY: ${{ steps.Changelog.outputs.changelog }}
+
+
