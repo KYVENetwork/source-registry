@@ -4,10 +4,6 @@ on:
   push:
     tags:
       - 'v1.*'
-    paths-ignore:
-      - '.github/*'
-      - 'README.md'
-      - 'merge_configs.py'
 
 jobs:
   merge_configs:
