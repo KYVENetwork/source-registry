@@ -1,0 +1,26 @@
+name: Merge Source Configs
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  merge_yaml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Merge Source Configs
+        run: python merge_configs.py
+        working-directory: ${{ github.workspace }}
+
+      - name: Commit Merged YAML
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add merged_config.yml
+          git commit -m "Merge YAML files"
+          git push
+        working-directory: ${{ github.workspace }}
