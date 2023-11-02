@@ -2,6 +2,8 @@ name: Release updated Source-Registry
 
 on:
   push:
+    branches:
+      - main
     tags:
       - 'v1.*'
 
@@ -16,8 +18,8 @@ jobs:
       - name: Create a new Release
         run: |
           release_version=${GITHUB_REF/refs\/tags\//}
-          release_name="Release $release_version"
-          release_body="An updated version of the KYVE Source-Registry."
+          release_name="$release_version"
+          release_body="An updated version of the KYVE Source-Registry: $release_version."
           release_url="https://api.github.com/repos/${GITHUB_REPOSITORY}/releases"
 
           # Create a release using the GitHub API
