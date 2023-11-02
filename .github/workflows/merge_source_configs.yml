@@ -24,7 +24,7 @@ jobs:
             echo "Config files have changed. Triggering release."
             echo "::set-output name=release_trigger::true"
           else
-            echo "No config file changes detected."
+            echo "No config file changes detected. Skipping release."
             echo "::set-output name=release_trigger::false"
           fi
         continue-on-error: true
