@@ -2,8 +2,11 @@ name: Merge Source Configs and Create Release
 
 on:
   push:
-    tags:
-      - 'v1.*'
+    branches:
+      - main
+  pull_request:
+    types:
+      - closed
 
 jobs:
   merge_yaml:
@@ -17,12 +20,19 @@ jobs:
         run: python merge_configs.py
         working-directory: ${{ github.workspace }}
 
+      - name: Get next version
+        uses: reecetech/version-increment@2023.9.3
+        id: version
+        with:
+          scheme: semver
+          increment: patch
+
       - name: Create a new Release
-        if: github.ref == 'refs/heads/main'
+        if: github.event.pull_request.merged == true || github.event.ref == 'refs/heads/main'
         run: |
-          release_version=${GITHUB_REF/refs\/tags\//}
-          release_name="$release_version"
-          release_body="An updated version of the KYVE Source-Registry: $release_version."
+          release_version=${{ steps.version.outputs.version }}
+          release_name="v$release_version"
+          release_body="An updated version of the KYVE Source-Registry."
           release_url="https://api.github.com/repos/${GITHUB_REPOSITORY}/releases"
 
           # Create a release using the GitHub API
@@ -41,5 +51,3 @@ jobs:
             -H "Content-Type: application/octet-stream" \
             --data-binary "@registry.yml" \
             "$upload_url?name=registry.yml"
-        env:
-          GITHUB_REF: ${{ github.ref }}
