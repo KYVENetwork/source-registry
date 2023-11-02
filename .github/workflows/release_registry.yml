@@ -18,6 +18,7 @@ jobs:
         working-directory: ${{ github.workspace }}
 
       - name: Create a new Release
+        if: github.ref == 'refs/heads/main'
         run: |
           release_version=${GITHUB_REF/refs\/tags\//}
           release_name="$release_version"
