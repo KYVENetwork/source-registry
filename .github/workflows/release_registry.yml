@@ -19,18 +19,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Changelog
-        uses: scottbrenner/generate-changelog-action@master
-        id: Changelog
-        env:
-          REPO: ${{ github.repository }}
-
       - name: Create a new Release
         if: (github.event.pull_request.merged == true) || (github.event.ref == 'refs/heads/main')
         run: |
           release_version=$VERSION
           release_name="Release $release_version"
-          release_body="$BODY"
+          release_body="An updated version of the KYVE Source-Registry."
           release_url="https://api.github.com/repos/${GITHUB_REPOSITORY}/releases"
 
           # Create a release using the GitHub API
@@ -51,6 +45,5 @@ jobs:
             "$upload_url?name=registry.yml"
         env:
           VERSION: ${{ github.ref }}
-          BODY: ${{ steps.Changelog.outputs.changelog }}
 
 
