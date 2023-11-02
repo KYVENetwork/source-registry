@@ -6,21 +6,17 @@ on:
       - 'v1.*'
 
 jobs:
-  merge_configs:
+  release:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out the code
         uses: actions/checkout@v2
 
-      - name: Merge Source Configs
-        run: python merge_configs.py
-        working-directory: ${{ github.workspace }}
-
       - name: Create a new Release
-        if: (github.event.pull_request.merged == true) || (github.event.ref == 'refs/heads/main')
+        if: github.event.ref_type == 'tag' && (github.event.pull_request.merged == true || github.ref == 'refs/heads/main')
         run: |
-          release_version=$VERSION
+          release_version=${GITHUB_REF/refs\/tags\//}
           release_name="Release $release_version"
           release_body="An updated version of the KYVE Source-Registry."
           release_url="https://api.github.com/repos/${GITHUB_REPOSITORY}/releases"
@@ -42,6 +38,4 @@ jobs:
             --data-binary "@registry.yml" \
             "$upload_url?name=registry.yml"
         env:
-          VERSION: ${{ github.ref }}
-
-
+          GITHUB_REF: ${{ github.ref }}
