@@ -13,5 +13,5 @@ for root, dirs, files in os.walk("."):
             merged_config[chain_id] = config
 
 # Write the merged config to a new file
-with open("merged_config.yml", "w") as output_file:
+with open("registry.yml", "w") as output_file:
     yaml.dump(merged_config, output_file)
