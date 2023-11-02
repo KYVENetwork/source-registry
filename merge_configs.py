@@ -36,7 +36,7 @@ for root, dirs, files in os.walk("."):
                 merged_config[chain_id] = config
 
 # Write the merged config to a new file
-with open("merged_config.yml", "w") as output_file:
+with open("registry.yml", "w") as output_file:
     output_stream = yaml.emitter.Emitter(output_file)
     output_stream.emit(merged_config)
     preserve_comments(merged_config, output_file)

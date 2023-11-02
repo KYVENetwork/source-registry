@@ -1,8 +1,12 @@
-name: Merge Source Configs
+name: Merge Source Configs and Create Release
+
 on:
   push:
     branches:
       - main
+  pull_request:
+    types:
+      - closed
 
 jobs:
   merge_yaml:
@@ -16,11 +20,12 @@ jobs:
         run: python merge_configs.py
         working-directory: ${{ github.workspace }}
 
-      - name: Commit Merged YAML
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add merged_config.yml
-          git commit -m "Merge YAML files"
-          git push
-        working-directory: ${{ github.workspace }}
+      - name: Create Release
+        if: (github.event.pull_request.merged == true) || (github.event.ref == 'refs/heads/main')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            registry.yml
+          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
