@@ -14,7 +14,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Create a new Release
-        if: github.event.ref_type == 'tag' && (github.event.pull_request.merged == true || github.ref == 'refs/heads/main')
         run: |
           release_version=${GITHUB_REF/refs\/tags\//}
           release_name="Release $release_version"
