@@ -18,16 +18,16 @@ jobs:
       - name: Check out the code
         uses: actions/checkout@v2
 
-      - name: Merge Source Configs
-        run: python merge_configs.py
-        working-directory: ${{ github.workspace }}
-
       - name: Get next version
         uses: reecetech/version-increment@2023.9.3
         id: version
         with:
           scheme: semver
           increment: patch
+
+      - name: Merge Source Configs
+        run: python merge_configs.py --version ${{ steps.version.outputs.version }}
+        working-directory: ${{ github.workspace }}
 
       - name: Create a new Release
         if: github.event.pull_request.merged == true || github.event.ref == 'refs/heads/main'

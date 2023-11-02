@@ -1,7 +1,17 @@
 import os
 import yaml
+import argparse
+
+# Init flag parser
+parser = argparse.ArgumentParser()
+parser.add_argument("-v", "--version", dest = "version", help="Source-Registry Version")
+
+# Parse passed version through '--version'
+args = parser.parse_args()
 
 merged_config = {}
+
+merged_config["version"] = args.version
 
 # Iterate through all config.yml files
 for root, dirs, files in os.walk("."):
