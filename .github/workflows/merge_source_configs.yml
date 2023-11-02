@@ -23,8 +23,13 @@ jobs:
       - name: Get Latest Release
         id: get_latest_release
         run: |
-          release=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -s "https://api.github.com/repos/${{ github.repository }}/releases/latest")
-          echo "::set-output name=tag::$(echo $release | jq -r '.tag_name')"
+          releases=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -s "https://api.github.com/repos/${{ github.repository }}/releases")
+          if [ -z "$releases" ]; then
+            latest_tag="v1.0.0"
+          else
+            latest_tag=$(echo "$releases" | jq -r '.[0].tag_name')
+          fi
+          echo "::set-output name=tag::$latest_tag"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,10 +37,9 @@ jobs:
         id: bump_version
         run: |
           latest_tag=$TAG
-          major=$(echo $latest_tag | cut -d. -f1)
-          minor=$(echo $latest_tag | cut -d. -f2)
-          patch=$(echo $latest_tag | cut -d. -f3)
-          new_version="$major.$minor.$((patch+1))"
+          major=$(echo $latest_tag | cut -d. -f2)
+          minor=$(echo $latest_tag | cut -d. -f3)
+          new_version="v1.$((major+1)).$minor"
           echo "::set-output name=version::$new_version"
         env:
           TAG: ${{ steps.get_latest_release.outputs.tag }}
