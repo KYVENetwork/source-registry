@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Merge Source Configs
-        run: python merge_yaml.py
+        run: python merge_configs.py
         working-directory: ${{ github.workspace }}
 
       - name: Get Latest Release
