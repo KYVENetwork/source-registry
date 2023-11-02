@@ -1,14 +1,15 @@
 # Global information
-chain:
+source:
     title: "Archway"
     chain_id: "archway-1"
     hex: "#e45121"
 
-# Mainnet sources
+# Mainnet pools
 kyve-1:
-    block_source_id: 2
+    block_pool_id: 2
+    state_pool_id: 4
 
-# Testnet sources
+# Testnet pools
 kaon-1:
-    block_source_id: 2
-    state_source_id: 4
+    block_pool_id: 2
+    state_pool_id: 4

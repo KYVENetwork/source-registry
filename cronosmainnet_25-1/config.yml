@@ -1,13 +1,13 @@
 # Global information
-chain:
+source:
   title: "Cronos"
   chain_id: "cronosmainnet_25-1"
   hex: "#191b34"
 
-# Mainnet sources
+# Mainnet pools
 kyve-1: {}
 
-# Testnet sources
+# Testnet pools
 kaon-1:
-  block_source_id: 6
-  state_source_id: 7
+  block_pool_id: 6
+  state_pool_id: 7

@@ -1,14 +1,14 @@
 # Global information
-chain:
+source:
   title: "Osmosis"
   chain_id: "osmosis-1"
   hex: "#8d07c7"
 
-# Mainnet sources
+# Mainnet pools
 kyve-1:
-  block_source_id: 1
+  block_pool_id: 1
 
-# Testnet sources
+# Testnet pools
 kaon-1:
-  block_source_id: 1
-  state_source_id: 5
+  block_pool_id: 1
+  state_pool_id: 5

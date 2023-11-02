@@ -1,13 +1,13 @@
 # Global information
-chain:
+source:
   title: "Cosmos Hub"
   chain_id: "cosmoshub-4"
   hex: "#6f3048"
 
-# Mainnet sources
+# Mainnet pools
 kyve-1:
-  block_source_id: 0
+  block_pool_id: 0
 
-# Testnet sources
+# Testnet pools
 kaon-1:
-  block_source_id: 0
+  block_pool_id: 0
