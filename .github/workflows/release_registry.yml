@@ -1,19 +1,21 @@
-name: Release updated Source-Registry
+name: Merge Source Configs and Create Release
 
 on:
   push:
-    branches:
-      - main
     tags:
       - 'v1.*'
 
 jobs:
-  release:
+  merge_yaml:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out the code
         uses: actions/checkout@v2
+
+      - name: Merge Source Configs
+        run: python merge_configs.py
+        working-directory: ${{ github.workspace }}
 
       - name: Create a new Release
         run: |
@@ -30,7 +32,7 @@ jobs:
               "name": "'"$release_name"'",
               "body": "'"$release_body"'"
             }')
-
+          
           # Upload the merged YAML file as an asset
           upload_url=$(echo "$response" | jq -r .upload_url)
           upload_url=${upload_url/\{?name,label\}/}
