@@ -1,0 +1,13 @@
+# Global information
+source:
+    title: "dYdY"
+    chain_id: "dydx-mainnet-1"
+    hex: "#12121d"
+
+# Mainnet pools
+kyve-1: {}
+
+# Testnet pools
+kaon-1:
+    block_pool_id: 8
+    state_pool_id: 9
