@@ -5,7 +5,9 @@ source:
   hex: "#191b34"
 
 # Mainnet pools
-kyve-1: {}
+kyve-1:
+  block_pool_id: 5
+  state_pool_id: 6
 
 # Testnet pools
 kaon-1:
