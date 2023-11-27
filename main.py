@@ -23,11 +23,6 @@ def read_and_merge_configs(base_dir="."):
                 with open(file_path, 'r') as stream:
                     config = yaml.safe_load(stream)
 
-                # get source id
-                source_id = config["source-id"]
-                # check if source id already exists
-                if source_id in merged_config:
-                    raise Exception(f"Duplicate source_id: {source_id}")
                 # Store and remove global properties
                 global_properties = config.pop("properties", {})
 
@@ -39,13 +34,18 @@ def read_and_merge_configs(base_dir="."):
                 # validate configuration
                 validate_against_schema(config)
 
+                # get source id
+                source_id = config["source-id"]
+                # check if source id already exists
+                if source_id in merged_config:
+                    raise Exception(f"Duplicate source_id: {source_id}")
+
                 logging.info(f"Successfully validated source: {source_id}")
 
                 merged_config[source_id] = config
 
             except Exception as e:
-                logging.error(f"Error reading file {file_path}: {e}")
-                continue
+                logging.error(f"Error validating file {file_path}: {e}")
 
     return merged_config
 
