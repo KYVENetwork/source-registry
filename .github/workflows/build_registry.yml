@@ -10,7 +10,7 @@ on:
       - '**.yml'
 
 jobs:
-  merge_yaml:
+  build_registry:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,7 @@ jobs:
         working-directory: ${{ github.workspace }}
 
       - name: Merge Source configs and write Source-Registry
-        run: python .github/build_registry.py
+        run: python .github/build_registry.py .github/registry.yml
         working-directory: ${{ github.workspace }}
 
       - name: Commit and push changes

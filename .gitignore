@@ -3,3 +3,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 /.idea
+# For local build the registry.yml will be built here
+registry.yml
+!.github/registry.yml

@@ -1,4 +1,4 @@
-name: Merge Source configs and write Source-Registry
+name: Merge Source configs and validate them
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - '**.yml'
 
 jobs:
-  merge_yaml:
+  validate_registry:
     runs-on: ubuntu-latest
 
     steps:
