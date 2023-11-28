@@ -1,19 +1,33 @@
 # Global information
-
 source-id: "osmosis-1"
 config-version: 1
 properties:
   title: "Osmosis"
   hex: "#8d07c7"
+  logo: "ar://u8kGlBx37seQCO1X5vQsc3Q8iO2CE-BHqsm0937poak"
 
 networks:
   # Mainnet pools
   kyve-1:
     pools:
       - id: 1
+        runtime: "kyvejs/tendermint"
+  integrations:
+    ksync:
+      binary_name: "osmosisd"
+      block_sync_pool: 1
+      docs_url: "https://docs.osmosis.zone/"
 
   # Testnet pools
   kaon-1:
     pools:
       - id: 1
+        runtime: "kyvejs/tendermint"
       - id: 5
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary_name: "osmosisd"
+        block_sync_pool: 1
+        docs_url: "https://docs.osmosis.zone/"
+        state_sync_pool: 5
