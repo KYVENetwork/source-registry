@@ -25,11 +25,11 @@ jobs:
         run: python .github/build_registry.py .github/registry.yml
         working-directory: ${{ github.workspace }}
 
-      - name: Commit and push changes
+      - name: Commit and push built registry
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "security@kyve.network"
+          git config --local user.name "kyve-network"
           git add .github/registry.yml
-          git commit -m "Update registry.yml"
+          git commit -m "🎉 Update registry.yml"
           git push
         working-directory: ${{ github.workspace }}
