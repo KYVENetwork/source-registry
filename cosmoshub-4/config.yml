@@ -1,5 +1,5 @@
 # Global information
-source_id: "cosmoshub-4"
+source-id: "cosmoshub-4"
 config-version: 1
 properties:
   title: "Cosmos Hub"
@@ -14,9 +14,9 @@ networks:
         runtime: "kyvejs/tendermint-bsync"
     integrations:
       ksync:
-        binary_name: "gaiad"
-        block_sync_pool: 0
-        docs_url: "https://docs.cosmos.network/"
+        binary-name: "gaiad"
+        block-sync-pool: 0
+        docs-url: "https://docs.cosmos.network/"
 
   # Testnet pools
   kaon-1:
@@ -25,6 +25,6 @@ networks:
         runtime: "kyvejs/tendermint-bsync"
     integrations:
       ksync:
-        binary_name: "gaiad"
-        block_sync_pool: 0
-        docs_url: "https://docs.cosmos.network/"
+        binary-name: "gaiad"
+        block-sync-pool: 0
+        docs-url: "https://docs.cosmos.network/"

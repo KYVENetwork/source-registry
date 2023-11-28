@@ -1,5 +1,5 @@
 # Global information
-source_id: "cronosmainnet_25-1"
+source-id: "cronosmainnet_25-1"
 config-version: 1
 properties:
   hex: "#191b34"
@@ -15,10 +15,11 @@ networks:
       - id: 6
         runtime: "kyvejs/tendermint-bsync"
     integrations:
-      binary: "cronosd"
-      block_sync_pool: 5
-      docs: "https://docs.cronos.org/"
-      state_sync_pool: 6
+      ksync:
+        binary: "cronosd"
+        block-sync-pool: 5
+        docs: "https://docs.cronos.org/"
+        state-sync-pool: 6
 
   # Testnet pools
   kaon-1:
@@ -28,8 +29,9 @@ networks:
       - id: 7
         runtime: "kyvejs/tendermint-bsync"
     integrations:
-      binary: "cronosd"
-      block_sync_pool: 6
-      docs: "https://docs.cronos.org/"
-      state_sync_pool: 7
+      ksync:
+        binary: "cronosd"
+        block-sync-pool: 6
+        docs: "https://docs.cronos.org/"
+        state-sync-pool: 7
 

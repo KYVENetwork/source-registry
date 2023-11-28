@@ -1,5 +1,5 @@
 # Global information
-source_id: "dydx-mainnet-1"
+source-id: "dydx-mainnet-1"
 config-version: 1
 properties:
     title: "dYdX"
@@ -16,7 +16,7 @@ networks:
               runtime: "kyvejs/tendermint-ssync"
         integrations:
             ksync:
-                binary_name: "dydxprotocold"
-                block_sync_pool: 8
-                docs_url: "https://docs.dydx.exchange/"
-                state_sync_pool: 9
+                binary-name: "dydxprotocold"
+                block-sync-pool: 8
+                docs-url: "https://docs.dydx.exchange/"
+                state-sync-pool: 9

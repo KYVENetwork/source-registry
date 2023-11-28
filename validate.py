@@ -49,8 +49,4 @@ def validate_against_schema(data):
     Validator = validator_for(schema)
     validator = Validator(schema, registry=registry)
 
-    try:
-        validator.validate(data)
-    except Exception as e:
-        logging.error(f"Validation error: {e}")
-        raise
+    validator.validate(data)

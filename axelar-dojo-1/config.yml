@@ -14,9 +14,9 @@ networks:
         runtime: "kyvejs/tendermint"
     integrations:
       ksync:
-        binary_name: "axelard"
-        block_sync_pool: 3
-        docs_url: "https://docs.axelar.dev/"
+        binary-name: "axelard"
+        block-sync-pool: 3
+        docs-url: "https://docs.axelar.dev/"
 
   # Testnet pools
   kaon-1:
@@ -25,6 +25,6 @@ networks:
         runtime: "kyvejs/tendermint"
     integrations:
       ksync:
-        binary_name: "axelard"
-        block_sync_pool: 3
-        docs_url: "https://docs.axelar.dev/"
+        binary-name: "axelard"
+        block-sync-pool: 3
+        docs-url: "https://docs.axelar.dev/"

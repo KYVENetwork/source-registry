@@ -44,7 +44,11 @@
         "logo": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false,
+      "required": [
+        "title"
+      ]
     },
     "network": {
       "type": "object",
@@ -83,23 +87,32 @@
     },
     "integration": {
       "type": "object",
-      "ksync": {
-        "type": "object",
-        "binary_name": {
-          "type": "string"
+      "properties": {
+        "ksync": {
+          "type": "object",
+          "properties": {
+            "binary-name": {
+              "type": "string"
+            },
+            "block-sync-pool": {
+              "type": "integer"
+            },
+            "docs-url": {
+              "type": "string"
+            },
+            "state-sync-pool": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "binary-name",
+            "block-sync-pool",
+            "docs-url"
+          ]
         },
-        "block_sync_pool": {
-          "type": "integer"
-        },
-        "docs_url": {
-          "type": "string"
-        },
-        "state_sync_pool": {
-          "type": "integer"
+        "elt": {
+          "type": "object"
         }
-      },
-      "elt": {
-        "type": "object"
       },
       "additionalProperties": true
     }

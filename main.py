@@ -45,7 +45,7 @@ def read_and_merge_configs(base_dir="."):
                 merged_config[source_id] = config
 
             except Exception as e:
-                logging.error(f"Error validating file {file_path}: {e}")
+                raise
 
     return merged_config
 
