@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "source-id": {
+      "type": "string"
+    },
+    "config-version": {
+      "type": "integer"
+    },
+    "networks": {
+      "type": "object",
+      "properties": {
+        "kyve-1": {
+          "$ref": "#/definitions/network"
+        },
+        "kaon-1": {
+          "$ref": "#/definitions/network"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "source-id",
+    "config-version",
+    "networks"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "properties": {
+      "type": "object",
+      "properties": {
+        "hex": {
+          "type": "string",
+          "pattern": "^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "title"
+      ]
+    },
+    "network": {
+      "type": "object",
+      "properties": {
+        "pools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/pool"
+          }
+        },
+        "integrations": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/integration"
+          }
+        },
+        "properties": {
+          "$ref": "#/definitions/properties"
+        }
+      },
+      "additionalProperties": false
+    },
+    "pool": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "runtime": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "integration": {
+      "type": "object",
+      "properties": {
+        "ksync": {
+          "type": "object",
+          "properties": {
+            "binary-name": {
+              "type": "string"
+            },
+            "block-sync-pool": {
+              "type": "integer"
+            },
+            "docs-url": {
+              "type": "string"
+            },
+            "state-sync-pool": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "binary-name",
+            "block-sync-pool",
+            "docs-url"
+          ]
+        },
+        "elt": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,15 +1,37 @@
 # Global information
-source:
-  title: "Cronos"
-  chain_id: "cronosmainnet_25-1"
+source-id: "cronosmainnet_25-1"
+config-version: 1
+properties:
   hex: "#191b34"
+  logo: "ar://BbNmwRFv11y68Jiele3wxZNYQTqRVn_ZK6BwJ5S2MCE"
+  title: "Cronos"
 
-# Mainnet pools
-kyve-1:
-  block_pool_id: 5
-  state_pool_id: 6
+networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 5
+        runtime: "kyvejs/tendermint"
+      - id: 6
+        runtime: "kyvejs/tendermint-bsync"
+    integrations:
+      ksync:
+        binary: "cronosd"
+        block-sync-pool: 5
+        docs: "https://docs.cronos.org/"
+        state-sync-pool: 6
 
-# Testnet pools
-kaon-1:
-  block_pool_id: 6
-  state_pool_id: 7
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 6
+        runtime: "kyvejs/tendermint"
+      - id: 7
+        runtime: "kyvejs/tendermint-bsync"
+    integrations:
+      ksync:
+        binary: "cronosd"
+        block-sync-pool: 6
+        docs: "https://docs.cronos.org/"
+        state-sync-pool: 7
+

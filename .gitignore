@@ -3,3 +3,5 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 /.idea
+# ignoring built registry to avoid a push
+registry.yml

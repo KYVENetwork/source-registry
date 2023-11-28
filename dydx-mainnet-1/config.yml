@@ -1,13 +1,22 @@
 # Global information
-source:
+source-id: "dydx-mainnet-1"
+config-version: 1
+properties:
     title: "dYdX"
-    chain_id: "dydx-mainnet-1"
     hex: "#12121d"
+    logo: "ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc"
 
-# Mainnet pools
-kyve-1: {}
-
-# Testnet pools
-kaon-1:
-    block_pool_id: 8
-    state_pool_id: 9
+networks:
+    # Testnet pools
+    kaon-1:
+        pools:
+            - id: 8
+              runtime: "kyvejs/tendermint"
+            - id: 9
+              runtime: "kyvejs/tendermint-ssync"
+        integrations:
+            ksync:
+                binary-name: "dydxprotocold"
+                block-sync-pool: 8
+                docs-url: "https://docs.dydx.exchange/"
+                state-sync-pool: 9
