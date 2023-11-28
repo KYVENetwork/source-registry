@@ -1,4 +1,4 @@
-name: Merge Source configs and validate them
+name: Validate source configs
 
 on:
   push:
