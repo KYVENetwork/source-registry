@@ -1,13 +1,30 @@
 # Global information
-source:
+source_id: "cosmoshub-4"
+config-version: 1
+properties:
   title: "Cosmos Hub"
-  chain_id: "cosmoshub-4"
   hex: "#6f3048"
+  logo: "ar://TCHDYB2xfk4VcWqyxApoWiFgr354gNSMdIliv2KnkRo"
 
-# Mainnet pools
-kyve-1:
-  block_pool_id: 0
+networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 0
+        runtime: "kyvejs/tendermint-bsync"
+    integrations:
+      ksync:
+        binary_name: "gaiad"
+        block_sync_pool: 0
+        docs_url: "https://docs.cosmos.network/"
 
-# Testnet pools
-kaon-1:
-  block_pool_id: 0
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 0
+        runtime: "kyvejs/tendermint-bsync"
+    integrations:
+      ksync:
+        binary_name: "gaiad"
+        block_sync_pool: 0
+        docs_url: "https://docs.cosmos.network/"

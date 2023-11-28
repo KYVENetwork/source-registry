@@ -1,13 +1,30 @@
 # Global information
-source:
+source-id: "axelar-dojo-1"
+config-version: 1
+properties:
   title: "Axelar"
-  chain_id: "axelar-dojo-1"
   hex: "#5cc1fa"
+  logo: "ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU"
 
-# Mainnet pools
-kyve-1:
-  block_pool_id: 3
+networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 3
+        runtime: "kyvejs/tendermint"
+    integrations:
+      ksync:
+        binary_name: "axelard"
+        block_sync_pool: 3
+        docs_url: "https://docs.axelar.dev/"
 
-# Testnet pools
-kaon-1:
-  block_pool_id: 3
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 1
+        runtime: "kyvejs/tendermint"
+    integrations:
+      ksync:
+        binary_name: "axelard"
+        block_sync_pool: 3
+        docs_url: "https://docs.axelar.dev/"

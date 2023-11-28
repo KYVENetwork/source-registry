@@ -1,15 +1,36 @@
 # Global information
-source:
+source-id: "archway-1"
+config-version: 1
+properties:
     title: "Archway"
-    chain_id: "archway-1"
     hex: "#e45121"
+    logo: "ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE"
 
-# Mainnet pools
-kyve-1:
-    block_pool_id: 2
-    state_pool_id: 4
+networks:
+    # Mainnet pools
+    kyve-1:
+        pools:
+            - id: 2
+              runtime: "kyvejs/tendermint"
+            - id: 4
+              runtime: "kyvejs/tendermint-ssync"
+        integrations:
+            ksync:
+                binary_name: "archwayd"
+                block_sync_pool: 2
+                docs_url: "https://docs.archway.io/"
+                state_sync_pool: 4
 
-# Testnet pools
-kaon-1:
-    block_pool_id: 2
-    state_pool_id: 4
+    # Testnet pools
+    kaon-1:
+        pools:
+            - id: 2
+              runtime: "kyvejs/tendermint"
+            - id: 4
+              runtime: "kyvejs/tendermint-ssync"
+        integrations:
+            ksync:
+                binary_name: "archwayd"
+                block_sync_pool: 2
+                docs_url: "https://docs.archway.io/"
+                state_sync_pool: 4
