@@ -21,7 +21,7 @@ networks:
   # Testnet pools
   kaon-1:
     pools:
-      - id: 1
+      - id: 3
         runtime: "kyvejs/tendermint"
     integrations:
       ksync:

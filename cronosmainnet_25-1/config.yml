@@ -13,7 +13,7 @@ networks:
       - id: 5
         runtime: "kyvejs/tendermint"
       - id: 6
-        runtime: "kyvejs/tendermint-bsync"
+        runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
         binary: "cronosd"
@@ -27,7 +27,7 @@ networks:
       - id: 6
         runtime: "kyvejs/tendermint"
       - id: 7
-        runtime: "kyvejs/tendermint-bsync"
+        runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
         binary: "cronosd"
