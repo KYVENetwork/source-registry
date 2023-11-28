@@ -45,12 +45,12 @@ def read_and_merge_configs(base_dir="."):
                 merged_config[source_id] = config
 
             except Exception as e:
-                raise
+                logging.error(f"Error validating file {file_path}: {e}")
 
     return merged_config
 
 
-def write_yaml_file(data, file_path="registry.yml"):
+def write_yaml_file(data, file_path=".github/registry.yml"):
     """
     Writes data to a YAML file.
     """

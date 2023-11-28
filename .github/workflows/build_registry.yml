@@ -1,0 +1,35 @@
+name: Merge Source configs and write Source-Registry
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+    paths:
+      - '**.yml'
+
+jobs:
+  merge_yaml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+
+      - name: Install required Python packages
+        run: pip install -r .github/requirements.txt
+        working-directory: ${{ github.workspace }}
+
+      - name: Merge Source configs and write Source-Registry
+        run: python .github/build_registry.py
+        working-directory: ${{ github.workspace }}
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .github/registry.yml
+          git commit -m "Update registry.yml"
+          git push
+        working-directory: ${{ github.workspace }}
