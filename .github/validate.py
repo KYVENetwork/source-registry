@@ -1,7 +1,9 @@
 import json
 import logging
+import os
 from pathlib import Path
 
+import yaml
 from jsonschema.validators import validator_for
 from referencing import Registry, Resource
 from referencing.exceptions import NoSuchResource
@@ -49,8 +51,45 @@ def validate_against_schema(data):
     Validator = validator_for(schema)
     validator = Validator(schema, registry=registry)
 
-    try:
-        validator.validate(data)
-    except Exception as e:
-        logging.error(f"Validation error: {e}")
-        raise
+    validator.validate(data)
+
+
+def read_and_merge_configs(base_dir="."):
+    """
+    Reads all config.yml files in the directory structure and merges them.
+    """
+    merged_config = {}
+
+    for root, _, files in os.walk(base_dir):
+        if "config.yml" in files:
+            file_path = os.path.join(root, "config.yml")
+
+            try:
+                with open(file_path, 'r') as stream:
+                    config = yaml.safe_load(stream)
+
+                # Store and remove global properties
+                global_properties = config.pop("properties", {})
+
+                # Merge global properties into network-specific properties
+                for _, network_config in config.get("networks", {}).items():
+                    local_properties = network_config.get("properties", {})
+                    network_config["properties"] = {**global_properties, **local_properties}
+
+                # validate configuration
+                validate_against_schema(config)
+
+                # get source id
+                source_id = config["source-id"]
+                # check if source id already exists
+                if source_id in merged_config:
+                    raise Exception(f"Duplicate source_id: {source_id}")
+
+                logging.info(f"Successfully validated source: {source_id}")
+
+                merged_config[source_id] = config
+
+            except Exception:
+                raise
+
+    return merged_config
