@@ -15,7 +15,12 @@ jobs:
 
     steps:
       - name: Check out the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
+
 
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
@@ -25,16 +30,11 @@ jobs:
         run: python .github/build_registry.py .github/registry.yml
         working-directory: ${{ github.workspace }}
 
-      - name: Commit built registry
+      - name: Commit and push built registry
         run: |
           git config --local user.email "security@kyve.network"
           git config --local user.name "kyve-network"
           git add .github/registry.yml
           git commit -m "🎉 Update registry.yml"
+          git push
         working-directory: ${{ github.workspace }}
-
-      - name: Push built registry
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.PAT_TOKEN }}
-          force: true
