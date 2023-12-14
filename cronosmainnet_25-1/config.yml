@@ -16,7 +16,7 @@ networks:
         runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
-        binary: "cronosd"
+        binary-name: "cronosd"
         block-sync-pool: 5
         docs: "https://docs.cronos.org/"
         state-sync-pool: 6
@@ -30,7 +30,7 @@ networks:
         runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
-        binary: "cronosd"
+        binary-name: "cronosd"
         block-sync-pool: 6
         docs: "https://docs.cronos.org/"
         state-sync-pool: 7
