@@ -15,10 +15,7 @@ jobs:
 
     steps:
       - name: Check out the code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.PAT_TOKEN }}
+        uses: actions/checkout@v2
 
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
