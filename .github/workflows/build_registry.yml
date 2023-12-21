@@ -31,5 +31,5 @@ jobs:
           git config --local user.name "kyve-network"
           git add .github/registry.yml
           git commit -m "🎉 Update registry.yml"
-          git push
+          git push -f
         working-directory: ${{ github.workspace }}
