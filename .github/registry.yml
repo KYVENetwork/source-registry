@@ -77,8 +77,8 @@ cosmoshub-4:
       - id: 0
         runtime: kyvejs/tendermint-bsync
       properties:
-        hex: '#6f3048'
-        logo: ar://TCHDYB2xfk4VcWqyxApoWiFgr354gNSMdIliv2KnkRo
+        hex: '#1c2049'
+        logo: ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM
         title: Cosmos Hub
     kyve-1:
       integrations:
@@ -90,8 +90,8 @@ cosmoshub-4:
       - id: 0
         runtime: kyvejs/tendermint-bsync
       properties:
-        hex: '#6f3048'
-        logo: ar://TCHDYB2xfk4VcWqyxApoWiFgr354gNSMdIliv2KnkRo
+        hex: '#1c2049'
+        logo: ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM
         title: Cosmos Hub
   source-id: cosmoshub-4
 cronosmainnet_25-1:
@@ -100,7 +100,7 @@ cronosmainnet_25-1:
     kaon-1:
       integrations:
         ksync:
-          binary: cronosd
+          binary-name: cronosd
           block-sync-pool: 6
           docs: https://docs.cronos.org/
           state-sync-pool: 7
@@ -116,7 +116,7 @@ cronosmainnet_25-1:
     kyve-1:
       integrations:
         ksync:
-          binary: cronosd
+          binary-name: cronosd
           block-sync-pool: 5
           docs: https://docs.cronos.org/
           state-sync-pool: 6
