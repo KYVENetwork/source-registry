@@ -3,8 +3,8 @@ source-id: "cosmoshub-4"
 config-version: 1
 properties:
   title: "Cosmos Hub"
-  hex: "#6f3048"
-  logo: "ar://TCHDYB2xfk4VcWqyxApoWiFgr354gNSMdIliv2KnkRo"
+  hex: "#1c2049"
+  logo: "ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM"
 
 networks:
   # Mainnet pools
