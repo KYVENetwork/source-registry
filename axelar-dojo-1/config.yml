@@ -5,6 +5,7 @@ properties:
   title: "Axelar"
   hex: "#5cc1fa"
   logo: "ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU"
+  description: "Axelar, the permissionless network enabling users to build cross-chain apps. The protocol bridges blockchain ecosystems, allowing for frictionless communication between all applications while holding a strong safety and liveness standard."
 
 networks:
   # Mainnet pools
