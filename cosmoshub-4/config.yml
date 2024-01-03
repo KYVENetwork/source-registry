@@ -5,6 +5,7 @@ properties:
   title: "Cosmos Hub"
   hex: "#1c2049"
   logo: "ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM"
+  description: "Serving as the economic center of the Interchain, the Cosmos Hub is a blockchain that provides vital ecosystem services. The primary token of the Cosmos Hub is the ATOM, but the Hub will support many tokens in the future."
 
 networks:
   # Mainnet pools

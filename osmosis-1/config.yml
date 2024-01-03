@@ -5,6 +5,7 @@ properties:
   title: "Osmosis"
   hex: "#8d07c7"
   logo: "ar://u8kGlBx37seQCO1X5vQsc3Q8iO2CE-BHqsm0937poak"
+  description: "Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized exchange (DEX) for Cosmos, an ecosystem of sovereign, interoperable blockchains all connected trustlessly over IBC, the Inter-Blockchain Communication Protocol."
 
 networks:
   # Mainnet pools
