@@ -14,6 +14,13 @@ archway-1:
       - id: 4
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: Archway is a Cosmos-native incentivized smart contract chain
+          that enables developers to easily deploy high-performance dapps to be rewarded
+          for the traffic they bring to the network. As developers build and launch
+          impactful dapps, they receive a proportional share of network fees, inflation,
+          and premiums. At its core, Archway is designed to enable developers to capture
+          the value they create through sustainable economic models built into the
+          blockchain.
         hex: '#e45121'
         logo: ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE
         title: Archway
@@ -30,6 +37,13 @@ archway-1:
       - id: 4
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: Archway is a Cosmos-native incentivized smart contract chain
+          that enables developers to easily deploy high-performance dapps to be rewarded
+          for the traffic they bring to the network. As developers build and launch
+          impactful dapps, they receive a proportional share of network fees, inflation,
+          and premiums. At its core, Archway is designed to enable developers to capture
+          the value they create through sustainable economic models built into the
+          blockchain.
         hex: '#e45121'
         logo: ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE
         title: Archway
@@ -47,6 +61,10 @@ axelar-dojo-1:
       - id: 3
         runtime: kyvejs/tendermint
       properties:
+        description: Axelar, the permissionless network enabling users to build cross-chain
+          apps. The protocol bridges blockchain ecosystems, allowing for frictionless
+          communication between all applications while holding a strong safety and
+          liveness standard.
         hex: '#5cc1fa'
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
@@ -60,6 +78,10 @@ axelar-dojo-1:
       - id: 3
         runtime: kyvejs/tendermint
       properties:
+        description: Axelar, the permissionless network enabling users to build cross-chain
+          apps. The protocol bridges blockchain ecosystems, allowing for frictionless
+          communication between all applications while holding a strong safety and
+          liveness standard.
         hex: '#5cc1fa'
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
@@ -77,6 +99,10 @@ cosmoshub-4:
       - id: 0
         runtime: kyvejs/tendermint-bsync
       properties:
+        description: Serving as the economic center of the Interchain, the Cosmos
+          Hub is a blockchain that provides vital ecosystem services. The primary
+          token of the Cosmos Hub is the ATOM, but the Hub will support many tokens
+          in the future.
         hex: '#1c2049'
         logo: ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM
         title: Cosmos Hub
@@ -90,6 +116,10 @@ cosmoshub-4:
       - id: 0
         runtime: kyvejs/tendermint-bsync
       properties:
+        description: Serving as the economic center of the Interchain, the Cosmos
+          Hub is a blockchain that provides vital ecosystem services. The primary
+          token of the Cosmos Hub is the ATOM, but the Hub will support many tokens
+          in the future.
         hex: '#1c2049'
         logo: ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM
         title: Cosmos Hub
@@ -110,6 +140,13 @@ cronosmainnet_25-1:
       - id: 7
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: 'Cronos (cronos.org) is the leading Ethereum-compatible layer
+          1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org,
+          and more than 500 app developers and partners. Today, the #CROfam ecosystem
+          represents an addressable user base of more than 80 million people worldwide.
+          Our mission is to make it easy and safe for the next billion crypto users
+          to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs
+          and GameFi verticals.'
         hex: '#191b34'
         logo: ar://BbNmwRFv11y68Jiele3wxZNYQTqRVn_ZK6BwJ5S2MCE
         title: Cronos
@@ -126,6 +163,13 @@ cronosmainnet_25-1:
       - id: 6
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: 'Cronos (cronos.org) is the leading Ethereum-compatible layer
+          1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org,
+          and more than 500 app developers and partners. Today, the #CROfam ecosystem
+          represents an addressable user base of more than 80 million people worldwide.
+          Our mission is to make it easy and safe for the next billion crypto users
+          to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs
+          and GameFi verticals.'
         hex: '#191b34'
         logo: ar://BbNmwRFv11y68Jiele3wxZNYQTqRVn_ZK6BwJ5S2MCE
         title: Cronos
@@ -166,6 +210,9 @@ osmosis-1:
       - id: 5
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
+          exchange (DEX) for Cosmos, an ecosystem of sovereign, interoperable blockchains
+          all connected trustlessly over IBC, the Inter-Blockchain Communication Protocol.
         hex: '#8d07c7'
         logo: ar://u8kGlBx37seQCO1X5vQsc3Q8iO2CE-BHqsm0937poak
         title: Osmosis
@@ -179,6 +226,9 @@ osmosis-1:
       - id: 1
         runtime: kyvejs/tendermint
       properties:
+        description: Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
+          exchange (DEX) for Cosmos, an ecosystem of sovereign, interoperable blockchains
+          all connected trustlessly over IBC, the Inter-Blockchain Communication Protocol.
         hex: '#8d07c7'
         logo: ar://u8kGlBx37seQCO1X5vQsc3Q8iO2CE-BHqsm0937poak
         title: Osmosis
