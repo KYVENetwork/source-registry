@@ -5,7 +5,7 @@ properties:
   title: "Axelar"
   hex: "#5cc1fa"
   logo: "ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU"
-  description: "Axelar, the permissionless network enabling users to build cross-chain apps. The protocol bridges blockchain ecosystems, allowing for frictionless communication between all applications while holding a strong safety and liveness standard."
+  description: "Axelar is the programmable Web3 interoperability platform, connecting over 50 blockchains via a secure, scalable network – internet infrastructure for the world’s next super app. For partners ranging from Uniswap to Circle, Axelar enables scalable cross-chain solutions. Users interact with any asset in one click. Developers span multiple blockchains as though building on one, supported by a simple API and a permissionless ecosystem of tools and service providers. Backers include Binance, Coinbase, Dragonfly, Galaxy and Polychain. See what full-stack interoperability can do for your dApp. Learn more at https://axelar.network."
 
 networks:
   # Mainnet pools
