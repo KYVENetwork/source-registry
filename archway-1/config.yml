@@ -5,7 +5,7 @@ properties:
     title: "Archway"
     hex: "#e45121"
     logo: "ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE"
-    description: "Archway is a Cosmos-native incentivized smart contract chain that enables developers to easily deploy high-performance dapps to be rewarded for the traffic they bring to the network. As developers build and launch impactful dapps, they receive a proportional share of network fees, inflation, and premiums. At its core, Archway is designed to enable developers to capture the value they create through sustainable economic models built into the blockchain."
+    description: "Archway is a Cosmos-native incentivized smart contract chain that enables developers to deploy high-performance dapps that earn rewards based on the traffic they bring to the network. As developers build and launch impactful dapps, they receive a proportional share of network fees, inflation, and premiums. At its core, Archway is designed to enable developers to capture the value they create through sustainable economic models built into the blockchain."
 
 networks:
     # Mainnet pools
