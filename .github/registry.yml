@@ -15,12 +15,12 @@ archway-1:
         runtime: kyvejs/tendermint-ssync
       properties:
         description: Archway is a Cosmos-native incentivized smart contract chain
-          that enables developers to easily deploy high-performance dapps to be rewarded
-          for the traffic they bring to the network. As developers build and launch
-          impactful dapps, they receive a proportional share of network fees, inflation,
-          and premiums. At its core, Archway is designed to enable developers to capture
-          the value they create through sustainable economic models built into the
-          blockchain.
+          that enables developers to deploy high-performance dapps that earn rewards
+          based on the traffic they bring to the network. As developers build and
+          launch impactful dapps, they receive a proportional share of network fees,
+          inflation, and premiums. At its core, Archway is designed to enable developers
+          to capture the value they create through sustainable economic models built
+          into the blockchain.
         hex: '#e45121'
         logo: ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE
         title: Archway
@@ -38,12 +38,12 @@ archway-1:
         runtime: kyvejs/tendermint-ssync
       properties:
         description: Archway is a Cosmos-native incentivized smart contract chain
-          that enables developers to easily deploy high-performance dapps to be rewarded
-          for the traffic they bring to the network. As developers build and launch
-          impactful dapps, they receive a proportional share of network fees, inflation,
-          and premiums. At its core, Archway is designed to enable developers to capture
-          the value they create through sustainable economic models built into the
-          blockchain.
+          that enables developers to deploy high-performance dapps that earn rewards
+          based on the traffic they bring to the network. As developers build and
+          launch impactful dapps, they receive a proportional share of network fees,
+          inflation, and premiums. At its core, Archway is designed to enable developers
+          to capture the value they create through sustainable economic models built
+          into the blockchain.
         hex: '#e45121'
         logo: ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE
         title: Archway
@@ -61,10 +61,15 @@ axelar-dojo-1:
       - id: 3
         runtime: kyvejs/tendermint
       properties:
-        description: Axelar, the permissionless network enabling users to build cross-chain
-          apps. The protocol bridges blockchain ecosystems, allowing for frictionless
-          communication between all applications while holding a strong safety and
-          liveness standard.
+        description: "Axelar is the programmable Web3 interoperability platform, connecting\
+          \ over 50 blockchains via a secure, scalable network \u2013 internet infrastructure\
+          \ for the world\u2019s next super app. For partners ranging from Uniswap\
+          \ to Circle, Axelar enables scalable cross-chain solutions. Users interact\
+          \ with any asset in one click. Developers span multiple blockchains as though\
+          \ building on one, supported by a simple API and a permissionless ecosystem\
+          \ of tools and service providers. Backers include Binance, Coinbase, Dragonfly,\
+          \ Galaxy and Polychain. See what full-stack interoperability can do for\
+          \ your dApp. Learn more at https://axelar.network."
         hex: '#5cc1fa'
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
@@ -78,10 +83,15 @@ axelar-dojo-1:
       - id: 3
         runtime: kyvejs/tendermint
       properties:
-        description: Axelar, the permissionless network enabling users to build cross-chain
-          apps. The protocol bridges blockchain ecosystems, allowing for frictionless
-          communication between all applications while holding a strong safety and
-          liveness standard.
+        description: "Axelar is the programmable Web3 interoperability platform, connecting\
+          \ over 50 blockchains via a secure, scalable network \u2013 internet infrastructure\
+          \ for the world\u2019s next super app. For partners ranging from Uniswap\
+          \ to Circle, Axelar enables scalable cross-chain solutions. Users interact\
+          \ with any asset in one click. Developers span multiple blockchains as though\
+          \ building on one, supported by a simple API and a permissionless ecosystem\
+          \ of tools and service providers. Backers include Binance, Coinbase, Dragonfly,\
+          \ Galaxy and Polychain. See what full-stack interoperability can do for\
+          \ your dApp. Learn more at https://axelar.network."
         hex: '#5cc1fa'
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
