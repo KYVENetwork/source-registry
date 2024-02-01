@@ -1,0 +1,22 @@
+# Global information
+source-id: "zeta_7000-1"
+config-version: 1
+properties:
+  title: "ZetaChain"
+  hex: "#235643"
+  logo: "ar://FsZbG0a3aVwfRrxgFRYklEknIsGHnGTX6YiQJwhtnH8"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 10
+        runtime: "kyvejs/tendermint"
+      - id: 11
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "zetacored"
+        block-sync-pool: 10
+        docs-url: "https://www.zetachain.com/docs/"
+        state-sync-pool: 11
