@@ -1,0 +1,22 @@
+# Global information
+source-id: "noble-1"
+config-version: 1
+properties:
+  title: "Noble"
+  hex: "#0e1225"
+  logo: "ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 12
+        runtime: "kyvejs/tendermint"
+      - id: 13
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "nobled"
+        block-sync-pool: 12
+        docs-url: "https://docs.nobleassets.xyz/"
+        state-sync-pool: 13
