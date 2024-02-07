@@ -204,6 +204,26 @@ dydx-mainnet-1:
         logo: ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc
         title: dYdX
   source-id: dydx-mainnet-1
+noble-1:
+  config-version: 1
+  networks:
+    kaon-1:
+      integrations:
+        ksync:
+          binary-name: nobled
+          block-sync-pool: 12
+          docs-url: https://docs.nobleassets.xyz/
+          state-sync-pool: 13
+      pools:
+      - id: 12
+        runtime: kyvejs/tendermint
+      - id: 13
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        hex: '#0e1225'
+        logo: ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU
+        title: Noble
+  source-id: noble-1
 osmosis-1:
   config-version: 1
   networks:
