@@ -112,6 +112,17 @@
         },
         "elt": {
           "type": "object"
+        },
+        "celestia-kyve-rpc": {
+          "type": "object",
+          "properties": {
+            "namespace": {
+              "type": "string"
+            },
+            "pool-id": {
+              "type": "integer"
+            }
+          }
         }
       },
       "additionalProperties": true
