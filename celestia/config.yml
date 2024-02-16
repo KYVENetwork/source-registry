@@ -1,0 +1,23 @@
+# Global information
+source-id: "celestia"
+config-version: 1
+properties:
+  description: "Celestia is a modular data availability network that empowers developers to launch their own customizable blockchains with ease. It's designed to securely scale with the number of users, making blockchain deployment as simple as setting up a smart contract. With Celestia, developers can tap into the abundant throughput enabled by data availability sampling (DAS), the first architecture that securely scales with the number of users. Furthermore, anyone can directly verify and contribute to Celestia by running a light node. At its core, Celestia is designed to foster innovation and scalability in the blockchain space, providing a robust foundation for developers to build upon."
+  hex: "#ce9dca"
+  logo: "ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU"
+  title: "Celestia"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    integrations:
+      celestia-kyve-rpc:
+        - namespace: "AAAAAAAAAAAAAAAAAAAAAAAAAIZiad33fbxA7Z0="
+          pool-id: 20
+        - namespace: "AAAAAAAAAAAAAAAAAAAAAAAAAAAACAgICAgICAg="
+          pool-id: 21
+    pools:
+      - id: 20
+        runtime: "kyvejs/celestia"
+      - id: 21
+        runtime: "kyvejs/celestia"
