@@ -1,0 +1,22 @@
+# Global information
+source-id: "celestia"
+config-version: 1
+properties:
+  title: "Celestia"
+  hex: "#af6fd8"
+  logo: "ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 14
+        runtime: "kyvejs/tendermint"
+      - id: 15
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "celestia-appd"
+        block-sync-pool: 14
+        docs-url: "https://docs.celestia.org/"
+        state-sync-pool: 15
