@@ -96,6 +96,26 @@ axelar-dojo-1:
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
   source-id: axelar-dojo-1
+celestia:
+  config-version: 1
+  networks:
+    kaon-1:
+      integrations:
+        ksync:
+          binary-name: celestia-appd
+          block-sync-pool: 14
+          docs-url: https://docs.celestia.org/
+          state-sync-pool: 15
+      pools:
+      - id: 14
+        runtime: kyvejs/tendermint
+      - id: 15
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        hex: '#af6fd8'
+        logo: ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU
+        title: Celestia
+  source-id: celestia
 cosmoshub-4:
   config-version: 1
   networks:
