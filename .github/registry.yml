@@ -240,6 +240,38 @@ noble-1:
       - id: 13
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: "Noble is a Cosmos application-specific blockchain purpose-built\
+          \ for native asset issuance. Noble brings the efficiency and interoperability\
+          \ of native assets to the wider Cosmos ecosystem, starting with USDC. Noble\u2019\
+          s vision is to be the world\u2019s premier issuance hub for digital assets\
+          \ that connect to other blockchains seamlessly. Noble leverages the Cosmos-SDK\
+          \ \u2013 a flexible toolkit that allows developers to incorporate existing\
+          \ modules and to seamlessly integrate custom modules that add virtually\
+          \ unlimited functionality for asset issuers on the Noble blockchain."
+        hex: '#0e1225'
+        logo: ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU
+        title: Noble
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: nobled
+          block-sync-pool: 7
+          docs-url: https://docs.nobleassets.xyz
+          state-sync-pool: 8
+      pools:
+      - id: 7
+        runtime: kyvejs/tendermint
+      - id: 8
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: "Noble is a Cosmos application-specific blockchain purpose-built\
+          \ for native asset issuance. Noble brings the efficiency and interoperability\
+          \ of native assets to the wider Cosmos ecosystem, starting with USDC. Noble\u2019\
+          s vision is to be the world\u2019s premier issuance hub for digital assets\
+          \ that connect to other blockchains seamlessly. Noble leverages the Cosmos-SDK\
+          \ \u2013 a flexible toolkit that allows developers to incorporate existing\
+          \ modules and to seamlessly integrate custom modules that add virtually\
+          \ unlimited functionality for asset issuers on the Noble blockchain."
         hex: '#0e1225'
         logo: ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU
         title: Noble
