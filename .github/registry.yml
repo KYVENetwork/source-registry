@@ -224,6 +224,36 @@ dydx-mainnet-1:
         logo: ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc
         title: dYdX
   source-id: dydx-mainnet-1
+kyve-1:
+  config-version: 1
+  networks:
+    kaon-1:
+      integrations:
+        ksync:
+          binary-name: kyved
+          block-sync-pool: 16
+          docs-url: https://docs.kyve.network
+          state-sync-pool: 17
+      pools:
+      - id: 16
+        runtime: kyvejs/tendermint
+      - id: 17
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: KYVE is a revolutionary platform within the Web3 space, designed
+          to address the challenges of accessing decentralized and completely accurate
+          data. As the Web3 ecosystem expands, the difficulty in accessing such data
+          leads to scalability issues and the risk of data inconsistencies due to
+          the lack of proper validation before use. KYVE aims to provide a trustless
+          and secure future for Web3's data infrastructure by offering customized
+          access to on- and off-chain data. It achieves this through decentralized
+          data validation, ensuring data immutability, and facilitating easy data
+          retrieval. This enables developers, data engineers, and others to access
+          the trustless data they need to continue building the future of Web3.
+        hex: '#58c6b2'
+        logo: ar://WOiYR7qF7G_dp6eO0bFC7AorS7601qgek3X_IeAZook
+        title: KYVE
+  source-id: kyve-1
 noble-1:
   config-version: 1
   networks:
@@ -331,6 +361,14 @@ zeta_7000-1:
       - id: 11
         runtime: kyvejs/tendermint-ssync
       properties:
+        description: "ZetaChain is the foundational, public blockchain that enables\
+          \ omnichain, generic smart contracts and messaging between any blockchain.\
+          \ It solves the problems of \u201Ccross-chain\u201D and \u201Cmulti-chain\u201D\
+          \ and aims to open the crypto and global financial ecosystem to anyone.\
+          \ ZetaChain envisions and supports a truly fluid, multi-chain crypto ecosystem,\
+          \ where users and developers can move between and appreciate the benefits\
+          \ of any blockchain: payments, DeFi, liquidity, games, art, social graphs,\
+          \ performance, security, privacy, and so on."
         hex: '#235643'
         logo: ar://FsZbG0a3aVwfRrxgFRYklEknIsGHnGTX6YiQJwhtnH8
         title: ZetaChain
