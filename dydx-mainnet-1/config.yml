@@ -2,21 +2,42 @@
 source-id: "dydx-mainnet-1"
 config-version: 1
 properties:
-    title: "dYdX"
-    hex: "#12121d"
-    logo: "ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc"
+  title: "dYdX"
+  hex: "#12121d"
+  logo: "ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc"
+  description: "dYdX chain is an open-source application specific blockchain software that can power a decentralized perpetuals exchange. This standalone blockchain software is open-sourced by dYdX Trading Inc. (“dYdX”) and is based on the Cosmos SDK and CometBFT proof-of-stake consensus protocol. dYdX Chain is fully decentralized end-to-end, including its consensus mechanism, order-book, matching engine and front end."
+  website: https://dydx.exchange/
+  docs: https://docs.dydx.exchange/
+
+codebase:
+  git-repo: https://github.com/dydxprotocol/v4-chain
+  settings:
+    # Cosmos specific settings for block and snapshot pools
+    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
+    cosmos-genesis:
+      name: "v2"
+      genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
+    cosmos-upgrades:
+      - name: "v2"
+        height: 1
+        recommended-version: "protocol/v2.0.0"
+        ksync-engine: "cometbft"
+      - name: "v3"
+        height: 7147832
+        recommended-version: "protocol/v3.0.0"
+        ksync-engine: "cometbft"
 
 networks:
-    # Testnet pools
-    kaon-1:
-        pools:
-            - id: 8
-              runtime: "kyvejs/tendermint"
-            - id: 9
-              runtime: "kyvejs/tendermint-ssync"
-        integrations:
-            ksync:
-                binary-name: "dydxprotocold"
-                block-sync-pool: 8
-                docs-url: "https://docs.dydx.exchange/"
-                state-sync-pool: 9
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 8
+        runtime: "kyvejs/tendermint"
+      - id: 9
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "dydxprotocold"
+        block-sync-pool: 8
+        docs-url: "https://docs.dydx.exchange/"
+        state-sync-pool: 9
