@@ -6,6 +6,42 @@ properties:
   logo: "ar://BbNmwRFv11y68Jiele3wxZNYQTqRVn_ZK6BwJ5S2MCE"
   title: "Cronos"
   description: "Cronos (cronos.org) is the leading Ethereum-compatible layer 1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org, and more than 500 app developers and partners. Today, the #CROfam ecosystem represents an addressable user base of more than 80 million people worldwide. Our mission is to make it easy and safe for the next billion crypto users to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs and GameFi verticals."
+  website: https://cronos.org/
+  docs: https://docs.cronos.org/
+
+codebase:
+  git-repo: https://github.com/dydxprotocol/v4-chain
+  settings:
+    # Cosmos specific settings for block and snapshot pools
+    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
+    cosmos-genesis:
+      name: "v0.6.0"
+      genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
+    cosmos-upgrades:
+      - name: "v0.6.0"
+        height: 1
+        recommended-version: "v0.6.11"
+        ksync-engine: "tendermint"
+      - name: "v0.7.0"
+        height: 2693800
+        recommended-version: "v0.7.0"
+        ksync-engine: "tendermint"
+      - name: "v0.8.0"
+        height: 3982500
+        recommended-version: "v0.8.3"
+        ksync-engine: "tendermint"
+      - name: "v0.8.3"
+        height: 3982500
+        recommended-version: "v0.8.3"
+        ksync-engine: "tendermint"
+      - name: "v1.0.2"
+        height: 6542800
+        recommended-version: "v1.0.9"
+        ksync-engine: "tendermint"
+      - name: "v1.0.15"
+        height: 11608760
+        recommended-version: "v1.0.15"
+        ksync-engine: "tendermint"
 
 networks:
   # Mainnet pools
@@ -35,4 +71,3 @@ networks:
         block-sync-pool: 6
         docs: "https://docs.cronos.org/"
         state-sync-pool: 7
-
