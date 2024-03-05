@@ -6,6 +6,38 @@ properties:
   hex: "#58c6b2"
   logo: "ar://WOiYR7qF7G_dp6eO0bFC7AorS7601qgek3X_IeAZook"
   description: "KYVE is a revolutionary platform within the Web3 space, designed to address the challenges of accessing decentralized and completely accurate data. As the Web3 ecosystem expands, the difficulty in accessing such data leads to scalability issues and the risk of data inconsistencies due to the lack of proper validation before use. KYVE aims to provide a trustless and secure future for Web3's data infrastructure by offering customized access to on- and off-chain data. It achieves this through decentralized data validation, ensuring data immutability, and facilitating easy data retrieval. This enables developers, data engineers, and others to access the trustless data they need to continue building the future of Web3."
+  website: https://kyve.network
+  docs: https://docs.kyve.network
+
+codebase:
+  git-repo: https://github.com/KYVENetwork/chain
+  settings:
+    # Cosmos specific settings for block and snapshot pools
+    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/kyve/chain.json
+    cosmos-genesis:
+      name: "v1.0.0"
+      genesis-url: https://raw.githubusercontent.com/KYVENetwork/networks/main/kyve-1/genesis.json
+    cosmos-upgrades:
+      - name: "v1.0.0"
+        height: 1
+        recommended-version: "v1.0.0"
+        ksync-engine: "tendermint"
+      - name: "v1.1.0"
+        height: 826000
+        recommended-version: "v1.1.3"
+        ksync-engine: "tendermint"
+      - name: "v1.2.0"
+        height: 1135000
+        recommended-version: "v1.2.2"
+        ksync-engine: "tendermint"
+      - name: "v1.3.0"
+        height: 2061100
+        recommended-version: "v1.3.2"
+        ksync-engine: "tendermint"
+      - name: "v1.4.0"
+        height: 3908000
+        recommended-version: "v1.4.0"
+        ksync-engine: "cometbft"
 
 networks:
   # Testnet pools

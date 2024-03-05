@@ -2,36 +2,64 @@
 source-id: "archway-1"
 config-version: 1
 properties:
-    title: "Archway"
-    hex: "#e45121"
-    logo: "ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE"
-    description: "Archway is a Cosmos-native incentivized smart contract chain that enables developers to deploy high-performance dapps that earn rewards based on the traffic they bring to the network. As developers build and launch impactful dapps, they receive a proportional share of network fees, inflation, and premiums. At its core, Archway is designed to enable developers to capture the value they create through sustainable economic models built into the blockchain."
+  title: "Archway"
+  hex: "#e45121"
+  logo: "ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE"
+  description: "Archway is a Cosmos-native incentivized smart contract chain that enables developers to deploy high-performance dapps that earn rewards based on the traffic they bring to the network. As developers build and launch impactful dapps, they receive a proportional share of network fees, inflation, and premiums. At its core, Archway is designed to enable developers to capture the value they create through sustainable economic models built into the blockchain."
+  website: https://archway.io/
+  docs: https://docs.archway.io/
+
+codebase:
+  git-repo: https://github.com/archway-network/archway
+  settings:
+    # Cosmos specific settings for block and snapshot pools
+    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/archway/chain.json
+    cosmos-genesis:
+      name: "v1.0.0"
+      genesis-url: https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz
+    cosmos-upgrades:
+      - name: "v1.0.0"
+        height: 1
+        recommended-version: "v1.0.1"
+        ksync-engine: "tendermint"
+      - name: "v2.0.0"
+        height: 525000
+        recommended-version: "v2.0.0"
+        ksync-engine: "tendermint"
+      - name: "v4.0.2"
+        height: 1215711
+        recommended-version: "v4.0.3"
+        ksync-engine: "tendermint"
+      - name: "v6.0.0"
+        height: 3554500
+        recommended-version: "v6.0.2"
+        ksync-engine: "cometbft"
 
 networks:
-    # Mainnet pools
-    kyve-1:
-        pools:
-            - id: 2
-              runtime: "kyvejs/tendermint"
-            - id: 4
-              runtime: "kyvejs/tendermint-ssync"
-        integrations:
-            ksync:
-                binary-name: "archwayd"
-                block-sync-pool: 2
-                docs-url: "https://docs.archway.io/"
-                state-sync-pool: 4
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 2
+        runtime: "kyvejs/tendermint"
+      - id: 4
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "archwayd"
+        block-sync-pool: 2
+        docs-url: "https://docs.archway.io/"
+        state-sync-pool: 4
 
-    # Testnet pools
-    kaon-1:
-        pools:
-            - id: 2
-              runtime: "kyvejs/tendermint"
-            - id: 4
-              runtime: "kyvejs/tendermint-ssync"
-        integrations:
-            ksync:
-                binary-name: "archwayd"
-                block-sync-pool: 2
-                docs-url: "https://docs.archway.io/"
-                state-sync-pool: 4
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 2
+        runtime: "kyvejs/tendermint"
+      - id: 4
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "archwayd"
+        block-sync-pool: 2
+        docs-url: "https://docs.archway.io/"
+        state-sync-pool: 4

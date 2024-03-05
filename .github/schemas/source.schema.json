@@ -21,11 +21,7 @@
       "additionalProperties": false
     }
   },
-  "required": [
-    "source-id",
-    "config-version",
-    "networks"
-  ],
+  "required": ["source-id", "config-version", "networks"],
   "additionalProperties": false,
   "definitions": {
     "properties": {
@@ -46,9 +42,7 @@
         }
       },
       "additionalProperties": false,
-      "required": [
-        "title"
-      ]
+      "required": ["title"]
     },
     "network": {
       "type": "object",
@@ -79,11 +73,17 @@
         },
         "runtime": {
           "type": "string"
+        },
+        "codebase": {
+          "type": "object",
+          "properties": {
+            "git-url": {
+              "type": "string"
+            }
+          }
         }
       },
-      "required": [
-        "id"
-      ]
+      "required": ["id"]
     },
     "integration": {
       "type": "object",
@@ -104,11 +104,7 @@
               "type": "integer"
             }
           },
-          "required": [
-            "binary-name",
-            "block-sync-pool",
-            "docs-url"
-          ]
+          "required": ["binary-name", "block-sync-pool", "docs-url"]
         },
         "elt": {
           "type": "object"
