@@ -21,10 +21,14 @@ codebase:
       - name: "v2"
         height: 1
         recommended-version: "protocol/v2.0.0"
+        commit: "9681762fda9ed8c4c8fe82c338365c6ef0acef9a"
+        go-version: "go1.21"
         ksync-engine: "cometbft"
       - name: "v3"
         height: 7147832
         recommended-version: "protocol/v3.0.0"
+        commit: "85fb10adaab3da4f3c3e0de8b313db57514f8a48"
+        go-version: "go1.21"
         ksync-engine: "cometbft"
 
 networks:

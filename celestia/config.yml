@@ -21,6 +21,8 @@ codebase:
       - name: "v1.6.0"
         height: 1
         recommended-version: "v1.6.0"
+        commit: "6f19fd83c4d0061c717a40e23a368a2f60aff715"
+        go-version: "go1.21.1"
         ksync-engine: "tendermint-celestiacore"
 
 networks:

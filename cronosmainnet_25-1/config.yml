@@ -10,37 +10,37 @@ properties:
   docs: https://docs.cronos.org/
 
 codebase:
-  git-repo: https://github.com/dydxprotocol/v4-chain
+  git-repo: https://github.com/crypto-org-chain/cronos
   settings:
     # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
+    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/cronos/chain.json
     cosmos-genesis:
       name: "v0.6.0"
-      genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
+      genesis-url: https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json
     cosmos-upgrades:
       - name: "v0.6.0"
         height: 1
         recommended-version: "v0.6.11"
+        commit: "e6753a2ec30cef2f51f354cbd4be68483e396c46"
+        go-version: "go1.17"
         ksync-engine: "tendermint"
       - name: "v0.7.0"
         height: 2693800
-        recommended-version: "v0.7.0"
+        recommended-version: "v0.7.1"
+        commit: "8035ebdcc3ce1ed5ee3d4887eb4ea1032c4d283c"
+        go-version: "go1.17"
         ksync-engine: "tendermint"
       - name: "v0.8.0"
         height: 3982500
         recommended-version: "v0.8.3"
-        ksync-engine: "tendermint"
-      - name: "v0.8.3"
-        height: 3982500
-        recommended-version: "v0.8.3"
-        ksync-engine: "tendermint"
-      - name: "v1.0.2"
-        height: 6542800
-        recommended-version: "v1.0.9"
+        commit: "5943e960d61bbfcda324223aff7c34e46131f6cf"
+        go-version: "go1.18"
         ksync-engine: "tendermint"
       - name: "v1.0.15"
-        height: 11608760
+        height: 6542800
         recommended-version: "v1.0.15"
+        commit: "1f5e2618362303d91f621b47cbc1115cf4fa0195"
+        go-version: "go1.20"
         ksync-engine: "tendermint"
 
 networks:
