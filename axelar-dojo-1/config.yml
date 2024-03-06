@@ -15,7 +15,7 @@ codebase:
     # Cosmos specific settings for block and snapshot pools
     cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
     cosmos-genesis:
-      name: "v10"
+      name: "v0.10"
       genesis-url: https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json
     cosmos-upgrades:
       - name: "v0.10"

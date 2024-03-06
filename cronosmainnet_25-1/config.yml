@@ -30,13 +30,13 @@ codebase:
         commit: "8035ebdcc3ce1ed5ee3d4887eb4ea1032c4d283c"
         go-version: "go1.17"
         ksync-engine: "tendermint"
-      - name: "v0.8.0"
+      - name: "v0.7.0-hotfix"
         height: 3982500
         recommended-version: "v0.8.3"
         commit: "5943e960d61bbfcda324223aff7c34e46131f6cf"
         go-version: "go1.18"
         ksync-engine: "tendermint"
-      - name: "v1.0.15"
+      - name: "v1.0.0"
         height: 6542800
         recommended-version: "v1.0.15"
         commit: "1f5e2618362303d91f621b47cbc1115cf4fa0195"
