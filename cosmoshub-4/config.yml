@@ -7,6 +7,82 @@ properties:
   logo: "ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM"
   description: "Serving as the economic center of the Interchain, the Cosmos Hub is a blockchain that provides vital ecosystem services. The primary token of the Cosmos Hub is the ATOM, but the Hub will support many tokens in the future."
 
+codebase:
+  git-repo: https://github.com/cosmos/gaia
+  settings:
+    # Cosmos specific settings for block and snapshot pools
+    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json
+    cosmos-genesis:
+      name: "v4"
+      genesis-url: https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz
+    cosmos-upgrades:
+      - name: "v4"
+        height: 5200791
+        recommended-version: "v4.2.1"
+        commit: "dbd8a6fb522c571debf958837f9113c56d418f6b"
+        go-version: "go1.15"
+        ksync-engine: "tendermint"
+      - name: "Gravity-DEX"
+        height: 6910000
+        recommended-version: "v5.0.8"
+        commit: "b72cc994f7156c8a8991e6beed2dde84ad274588"
+        go-version: "go1.16"
+        ksync-engine: "tendermint"
+      - name: "Vega"
+        height: 8695000
+        recommended-version: "v6.0.4"
+        commit: "305668ab9d962431c79d718bb0ffdeec77a46439"
+        go-version: "go1.17"
+        ksync-engine: "tendermint"
+      - name: "v7-Theta"
+        height: 10085397
+        recommended-version: "v7.1.1"
+        commit: "b2504c1e28eae936477c7b06ae4c0f058613a4e8"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v8-Rho"
+        height: 14099412
+        recommended-version: "v8.0.1"
+        commit: "890ab3aa2e5788537b0d2ebc9bafdc968340e0e5"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v9-Lambda"
+        height: 14470501
+        recommended-version: "v9.1.1"
+        commit: "66494d1ec72cfa0f8800aa8f1545e19d2af47e47"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v10"
+        height: 15816200
+        recommended-version: "v10.0.2"
+        commit: "a2b14cdd568273e12b80579b4e22681df95b4cb9"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v11"
+        height: 16596000
+        recommended-version: "v11.0.0"
+        commit: "541a8d86af28231c767d6db52eb88ba9496ad0c4"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v12"
+        height: 16985500
+        recommended-version: "v12.0.0"
+        commit: "6f8067d76ce30996f83645862153ccfaf5f13dd1"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v13"
+        height: 17380000
+        recommended-version: "v13.0.2"
+        commit: "2406abb61856b61904ff06c7be2a355babcc3dfc"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v14"
+        height: 18262000
+        recommended-version: "v14.1.0"
+        commit: "0d9408e9169488707f1ad423e87d0df84a30431f"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+
 networks:
   # Mainnet pools
   kyve-1:
