@@ -1,4 +1,36 @@
 archway-1:
+  codebase:
+    git-url: https://github.com/archway-network/archway
+    settings:
+      cosmos-properties:
+        genesis-name: v1.0.0
+        genesis-url: https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/archway/chain.json
+      upgrades:
+      - commit: 86409142585b7157c628ca52b8357002fe60a165
+        go-version: go1.19
+        height: 1
+        ksync-engine: tendermint
+        name: v1.0.0
+        recommended-version: v1.0.1
+      - commit: d6c5cf4509e1c848f26d539c3519685f1d323dfd
+        go-version: go1.19
+        height: 525000
+        ksync-engine: tendermint
+        name: v2.0.0
+        recommended-version: v2.0.0
+      - commit: 3cc9228982f651d3a54b395d6ff026e61e91f4b6
+        go-version: go1.20
+        height: 1215711
+        ksync-engine: tendermint
+        name: v4.0.2
+        recommended-version: v4.0.3
+      - commit: a72ebfe851fc980586b253958196f7b449ac9fe8
+        go-version: go1.20
+        height: 3554500
+        ksync-engine: cometbft
+        name: v6.0.0
+        recommended-version: v6.0.2
   config-version: 1
   networks:
     kaon-1:
@@ -9,22 +41,23 @@ archway-1:
           docs-url: https://docs.archway.io/
           state-sync-pool: 4
       pools:
-        - id: 2
-          runtime: kyvejs/tendermint
-        - id: 4
-          runtime: kyvejs/tendermint-ssync
+      - id: 2
+        runtime: kyvejs/tendermint
+      - id: 4
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          Archway is a Cosmos-native incentivized smart contract chain
+        description: Archway is a Cosmos-native incentivized smart contract chain
           that enables developers to deploy high-performance dapps that earn rewards
           based on the traffic they bring to the network. As developers build and
           launch impactful dapps, they receive a proportional share of network fees,
           inflation, and premiums. At its core, Archway is designed to enable developers
           to capture the value they create through sustainable economic models built
           into the blockchain.
-        hex: "#e45121"
+        docs: https://docs.archway.io/
+        hex: '#e45121'
         logo: ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE
         title: Archway
+        website: https://archway.io/
     kyve-1:
       integrations:
         ksync:
@@ -33,24 +66,141 @@ archway-1:
           docs-url: https://docs.archway.io/
           state-sync-pool: 4
       pools:
-        - id: 2
-          runtime: kyvejs/tendermint
-        - id: 4
-          runtime: kyvejs/tendermint-ssync
+      - id: 2
+        runtime: kyvejs/tendermint
+      - id: 4
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          Archway is a Cosmos-native incentivized smart contract chain
+        description: Archway is a Cosmos-native incentivized smart contract chain
           that enables developers to deploy high-performance dapps that earn rewards
           based on the traffic they bring to the network. As developers build and
           launch impactful dapps, they receive a proportional share of network fees,
           inflation, and premiums. At its core, Archway is designed to enable developers
           to capture the value they create through sustainable economic models built
           into the blockchain.
-        hex: "#e45121"
+        docs: https://docs.archway.io/
+        hex: '#e45121'
         logo: ar://hKb8dVx4E1NCUJ_BlhNOcyfQEta5r38SBXqsfPnAsWE
         title: Archway
+        website: https://archway.io/
   source-id: archway-1
 axelar-dojo-1:
+  codebase:
+    git-url: https://github.com/axelarnetwork/axelar-core
+    settings:
+      cosmos-properties:
+        genesis-name: v0.10
+        genesis-url: https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
+      upgrades:
+      - commit: 44fc624a6b710b421dd9dff82d0251b94d28296f
+        go-version: go1.16
+        height: 1
+        ksync-engine: tendermint
+        name: v0.10
+        recommended-version: v0.10.7
+      - commit: 1b1207f96dc62fcbfb64dac6f3dde633de727db1
+        go-version: go1.17
+        height: 384000
+        ksync-engine: tendermint
+        name: v0.13
+        recommended-version: v0.13.6
+      - commit: 8bc296dede83faefcafa0990704422f6d69e2398
+        go-version: go1.17
+        height: 1060850
+        ksync-engine: tendermint
+        name: v0.14
+        recommended-version: v0.14.1
+      - commit: 172a2d817a2adbb3d5afff257d1a3a0d1e0096a1
+        go-version: go1.17
+        height: 1263450
+        ksync-engine: tendermint
+        name: v0.15
+        recommended-version: v0.15.0
+      - commit: 19102d31f10bf10fe76dd7d14978ec71167e8043
+        go-version: go1.17
+        height: 1336350
+        ksync-engine: tendermint
+        name: v0.16
+        recommended-version: v0.16.1
+      - commit: 10d666ba342534d90d4ef3a6fdc59cbe2e1a5250
+        go-version: go1.18
+        height: 1889000
+        ksync-engine: tendermint
+        name: v0.17
+        recommended-version: v0.17.3
+      - commit: 6be3b60403facd827613a3c90990042f43ddb9ca
+        go-version: go1.18
+        height: 2471750
+        ksync-engine: tendermint
+        name: v0.18
+        recommended-version: v0.18.3
+      - commit: 6b75266b4568f2416a323d7a4f14d4a453bc5945
+        go-version: go1.18
+        height: 2472290
+        ksync-engine: tendermint
+        name: v0.19
+        recommended-version: v0.19.4
+      - commit: ac086878edc9c239d8134fce8994e29482e144f3
+        go-version: go1.18
+        height: 3331350
+        ksync-engine: tendermint
+        name: v0.20
+        recommended-version: v0.20.0
+      - commit: 246984b0f5c234d4922fedf3e5078b8e58b78a3c
+        go-version: go1.18
+        height: 3643500
+        ksync-engine: tendermint
+        name: v0.21
+        recommended-version: v0.21.1
+      - commit: 981196d61fea1b9ad66eab69b27ae2ff3c2524b2
+        go-version: go1.18
+        height: 3644000
+        ksync-engine: tendermint
+        name: v0.24
+        recommended-version: v0.24.0
+      - commit: 981196d61fea1b9ad66eab69b27ae2ff3c2524b2
+        go-version: go1.18
+        height: 3852250
+        ksync-engine: tendermint
+        name: v0.26
+        recommended-version: v0.26.5
+      - commit: b60bd0e33a54bdc5f5e4a762007a68063ca78865
+        go-version: go1.18
+        height: 4984950
+        ksync-engine: tendermint
+        name: v0.28
+        recommended-version: v0.28.0
+      - commit: 0137a28b91dad368f4709eadde3361202e198688
+        go-version: go1.18
+        height: 5030000
+        ksync-engine: tendermint
+        name: v0.29
+        recommended-version: v0.29.1
+      - commit: 12bda1b59e5c9f12d2b14119cd8c69e2af355585
+        go-version: go1.18
+        height: 5853000
+        ksync-engine: tendermint
+        name: v0.31
+        recommended-version: v0.31.2
+      - commit: 4f16d6fe89f4c11db7597558eea65e4909dc9019
+        go-version: go1.19
+        height: 6895400
+        ksync-engine: tendermint
+        name: v0.33
+        recommended-version: v0.33.2
+      - commit: 048a66e66026d42fbefe048212cd18f8ac7a2207
+        go-version: go1.19
+        height: 9151750
+        ksync-engine: tendermint
+        name: v0.34
+        recommended-version: v0.34.1
+      - commit: a4736492d3d5ac705ec1a154c5167323abdc66a7
+        go-version: go1.21
+        height: 11795700
+        ksync-engine: tendermint
+        name: v0.35
+        recommended-version: v0.35.5
   config-version: 1
   networks:
     kaon-1:
@@ -60,11 +210,10 @@ axelar-dojo-1:
           block-sync-pool: 3
           docs-url: https://docs.axelar.dev/
       pools:
-        - id: 3
-          runtime: kyvejs/tendermint
+      - id: 3
+        runtime: kyvejs/tendermint
       properties:
-        description:
-          "Axelar is the programmable Web3 interoperability platform, connecting\
+        description: "Axelar is the programmable Web3 interoperability platform, connecting\
           \ over 50 blockchains via a secure, scalable network \u2013 internet infrastructure\
           \ for the world\u2019s next super app. For partners ranging from Uniswap\
           \ to Circle, Axelar enables scalable cross-chain solutions. Users interact\
@@ -73,9 +222,11 @@ axelar-dojo-1:
           \ of tools and service providers. Backers include Binance, Coinbase, Dragonfly,\
           \ Galaxy and Polychain. See what full-stack interoperability can do for\
           \ your dApp. Learn more at https://axelar.network."
-        hex: "#5cc1fa"
+        docs: https://docs.axelar.dev/
+        hex: '#5cc1fa'
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
+        website: https://axelar.network/
     kyve-1:
       integrations:
         ksync:
@@ -83,11 +234,10 @@ axelar-dojo-1:
           block-sync-pool: 3
           docs-url: https://docs.axelar.dev/
       pools:
-        - id: 3
-          runtime: kyvejs/tendermint
+      - id: 3
+        runtime: kyvejs/tendermint
       properties:
-        description:
-          "Axelar is the programmable Web3 interoperability platform, connecting\
+        description: "Axelar is the programmable Web3 interoperability platform, connecting\
           \ over 50 blockchains via a secure, scalable network \u2013 internet infrastructure\
           \ for the world\u2019s next super app. For partners ranging from Uniswap\
           \ to Circle, Axelar enables scalable cross-chain solutions. Users interact\
@@ -96,11 +246,27 @@ axelar-dojo-1:
           \ of tools and service providers. Backers include Binance, Coinbase, Dragonfly,\
           \ Galaxy and Polychain. See what full-stack interoperability can do for\
           \ your dApp. Learn more at https://axelar.network."
-        hex: "#5cc1fa"
+        docs: https://docs.axelar.dev/
+        hex: '#5cc1fa'
         logo: ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU
         title: Axelar
+        website: https://axelar.network/
   source-id: axelar-dojo-1
 celestia:
+  codebase:
+    git-url: https://github.com/celestiaorg/celestia-app
+    settings:
+      cosmos-properties:
+        genesis-name: v1.7.0
+        genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
+      upgrades:
+      - commit: 915847191e80d836f862eea2664949d9a240abea
+        go-version: go1.22
+        height: 1
+        ksync-engine: tendermint-celestiacore
+        name: v1.7.0
+        recommended-version: v1.7.0
   config-version: 1
   networks:
     kaon-1:
@@ -111,16 +277,95 @@ celestia:
           docs-url: https://docs.celestia.org/
           state-sync-pool: 15
       pools:
-        - id: 14
-          runtime: kyvejs/tendermint
-        - id: 15
-          runtime: kyvejs/tendermint-ssync
+      - id: 14
+        runtime: kyvejs/tendermint
+      - id: 15
+        runtime: kyvejs/tendermint-ssync
       properties:
-        hex: "#af6fd8"
+        description: Celestia is a modular data availability network that securely
+          scales with the number of users, making it easy for anyone to launch their
+          own blockchain.
+        docs: https://docs.celestia.org/
+        hex: '#af6fd8'
         logo: ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU
         title: Celestia
+        website: https://celestia.org/
   source-id: celestia
 cosmoshub-4:
+  codebase:
+    git-url: https://github.com/cosmos/gaia
+    settings:
+      cosmos-properties:
+        genesis-name: v4
+        genesis-url: https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json
+      upgrades:
+      - commit: dbd8a6fb522c571debf958837f9113c56d418f6b
+        go-version: go1.15
+        height: 5200791
+        ksync-engine: tendermint
+        name: v4
+        recommended-version: v4.2.1
+      - commit: b72cc994f7156c8a8991e6beed2dde84ad274588
+        go-version: go1.16
+        height: 6910000
+        ksync-engine: tendermint
+        name: Gravity-DEX
+        recommended-version: v5.0.8
+      - commit: 305668ab9d962431c79d718bb0ffdeec77a46439
+        go-version: go1.17
+        height: 8695000
+        ksync-engine: tendermint
+        name: Vega
+        recommended-version: v6.0.4
+      - commit: b2504c1e28eae936477c7b06ae4c0f058613a4e8
+        go-version: go1.18
+        height: 10085397
+        ksync-engine: tendermint
+        name: v7-Theta
+        recommended-version: v7.1.1
+      - commit: 890ab3aa2e5788537b0d2ebc9bafdc968340e0e5
+        go-version: go1.18
+        height: 14099412
+        ksync-engine: tendermint
+        name: v8-Rho
+        recommended-version: v8.0.1
+      - commit: 66494d1ec72cfa0f8800aa8f1545e19d2af47e47
+        go-version: go1.18
+        height: 14470501
+        ksync-engine: tendermint
+        name: v9-Lambda
+        recommended-version: v9.1.1
+      - commit: a2b14cdd568273e12b80579b4e22681df95b4cb9
+        go-version: go1.20
+        height: 15816200
+        ksync-engine: tendermint
+        name: v10
+        recommended-version: v10.0.2
+      - commit: 541a8d86af28231c767d6db52eb88ba9496ad0c4
+        go-version: go1.20
+        height: 16596000
+        ksync-engine: tendermint
+        name: v11
+        recommended-version: v11.0.0
+      - commit: 6f8067d76ce30996f83645862153ccfaf5f13dd1
+        go-version: go1.20
+        height: 16985500
+        ksync-engine: tendermint
+        name: v12
+        recommended-version: v12.0.0
+      - commit: 2406abb61856b61904ff06c7be2a355babcc3dfc
+        go-version: go1.20
+        height: 17380000
+        ksync-engine: tendermint
+        name: v13
+        recommended-version: v13.0.2
+      - commit: 0d9408e9169488707f1ad423e87d0df84a30431f
+        go-version: go1.20
+        height: 18262000
+        ksync-engine: tendermint
+        name: v14
+        recommended-version: v14.1.0
   config-version: 1
   networks:
     kaon-1:
@@ -130,15 +375,14 @@ cosmoshub-4:
           block-sync-pool: 0
           docs-url: https://docs.cosmos.network/
       pools:
-        - id: 0
-          runtime: kyvejs/tendermint-bsync
+      - id: 0
+        runtime: kyvejs/tendermint-bsync
       properties:
-        description:
-          Serving as the economic center of the Interchain, the Cosmos
+        description: Serving as the economic center of the Interchain, the Cosmos
           Hub is a blockchain that provides vital ecosystem services. The primary
           token of the Cosmos Hub is the ATOM, but the Hub will support many tokens
           in the future.
-        hex: "#1c2049"
+        hex: '#1c2049'
         logo: ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM
         title: Cosmos Hub
     kyve-1:
@@ -148,19 +392,50 @@ cosmoshub-4:
           block-sync-pool: 0
           docs-url: https://docs.cosmos.network/
       pools:
-        - id: 0
-          runtime: kyvejs/tendermint-bsync
+      - id: 0
+        runtime: kyvejs/tendermint-bsync
       properties:
-        description:
-          Serving as the economic center of the Interchain, the Cosmos
+        description: Serving as the economic center of the Interchain, the Cosmos
           Hub is a blockchain that provides vital ecosystem services. The primary
           token of the Cosmos Hub is the ATOM, but the Hub will support many tokens
           in the future.
-        hex: "#1c2049"
+        hex: '#1c2049'
         logo: ar://GSK9zAQx1jOnQIhbM20qCoOFYT3EJXIJfwfvT_QhLVM
         title: Cosmos Hub
   source-id: cosmoshub-4
 cronosmainnet_25-1:
+  codebase:
+    git-url: https://github.com/crypto-org-chain/cronos
+    settings:
+      cosmos-properties:
+        genesis-name: v0.6.0
+        genesis-url: https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/cronos/chain.json
+      upgrades:
+      - commit: e6753a2ec30cef2f51f354cbd4be68483e396c46
+        go-version: go1.17
+        height: 1
+        ksync-engine: tendermint
+        name: v0.6.0
+        recommended-version: v0.6.11
+      - commit: 8035ebdcc3ce1ed5ee3d4887eb4ea1032c4d283c
+        go-version: go1.17
+        height: 2693800
+        ksync-engine: tendermint
+        name: v0.7.0
+        recommended-version: v0.7.1
+      - commit: 5943e960d61bbfcda324223aff7c34e46131f6cf
+        go-version: go1.18
+        height: 3982500
+        ksync-engine: tendermint
+        name: v0.7.0-hotfix
+        recommended-version: v0.8.3
+      - commit: 1f5e2618362303d91f621b47cbc1115cf4fa0195
+        go-version: go1.20
+        height: 6542800
+        ksync-engine: tendermint
+        name: v1.0.0
+        recommended-version: v1.0.15
   config-version: 1
   networks:
     kaon-1:
@@ -171,22 +446,23 @@ cronosmainnet_25-1:
           docs: https://docs.cronos.org/
           state-sync-pool: 7
       pools:
-        - id: 6
-          runtime: kyvejs/tendermint
-        - id: 7
-          runtime: kyvejs/tendermint-ssync
+      - id: 6
+        runtime: kyvejs/tendermint
+      - id: 7
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          "Cronos (cronos.org) is the leading Ethereum-compatible layer
+        description: 'Cronos (cronos.org) is the leading Ethereum-compatible layer
           1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org,
           and more than 500 app developers and partners. Today, the #CROfam ecosystem
           represents an addressable user base of more than 80 million people worldwide.
           Our mission is to make it easy and safe for the next billion crypto users
           to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs
-          and GameFi verticals."
-        hex: "#191b34"
+          and GameFi verticals.'
+        docs: https://docs.cronos.org/
+        hex: '#191b34'
         logo: ar://BbNmwRFv11y68Jiele3wxZNYQTqRVn_ZK6BwJ5S2MCE
         title: Cronos
+        website: https://cronos.org/
     kyve-1:
       integrations:
         ksync:
@@ -195,24 +471,45 @@ cronosmainnet_25-1:
           docs: https://docs.cronos.org/
           state-sync-pool: 6
       pools:
-        - id: 5
-          runtime: kyvejs/tendermint
-        - id: 6
-          runtime: kyvejs/tendermint-ssync
+      - id: 5
+        runtime: kyvejs/tendermint
+      - id: 6
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          "Cronos (cronos.org) is the leading Ethereum-compatible layer
+        description: 'Cronos (cronos.org) is the leading Ethereum-compatible layer
           1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org,
           and more than 500 app developers and partners. Today, the #CROfam ecosystem
           represents an addressable user base of more than 80 million people worldwide.
           Our mission is to make it easy and safe for the next billion crypto users
           to adopt Web3, with a focus on decentralized applications in the DeFi, NFTs
-          and GameFi verticals."
-        hex: "#191b34"
+          and GameFi verticals.'
+        docs: https://docs.cronos.org/
+        hex: '#191b34'
         logo: ar://BbNmwRFv11y68Jiele3wxZNYQTqRVn_ZK6BwJ5S2MCE
         title: Cronos
+        website: https://cronos.org/
   source-id: cronosmainnet_25-1
 dydx-mainnet-1:
+  codebase:
+    git-url: https://github.com/dydxprotocol/v4-chain
+    settings:
+      cosmos-properties:
+        genesis-name: v2
+        genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
+      upgrades:
+      - commit: 9681762fda9ed8c4c8fe82c338365c6ef0acef9a
+        go-version: go1.21
+        height: 1
+        ksync-engine: cometbft
+        name: v2
+        recommended-version: protocol/v2.0.0
+      - commit: 85fb10adaab3da4f3c3e0de8b313db57514f8a48
+        go-version: go1.21
+        height: 7147832
+        ksync-engine: cometbft
+        name: v3
+        recommended-version: protocol/v3.0.0
   config-version: 1
   networks:
     kaon-1:
@@ -223,16 +520,62 @@ dydx-mainnet-1:
           docs-url: https://docs.dydx.exchange/
           state-sync-pool: 9
       pools:
-        - id: 8
-          runtime: kyvejs/tendermint
-        - id: 9
-          runtime: kyvejs/tendermint-ssync
+      - id: 8
+        runtime: kyvejs/tendermint
+      - id: 9
+        runtime: kyvejs/tendermint-ssync
       properties:
-        hex: "#12121d"
+        description: "dYdX chain is an open-source application specific blockchain\
+          \ software that can power a decentralized perpetuals exchange. This standalone\
+          \ blockchain software is open-sourced by dYdX Trading Inc. (\u201CdYdX\u201D\
+          ) and is based on the Cosmos SDK and CometBFT proof-of-stake consensus protocol.\
+          \ dYdX Chain is fully decentralized end-to-end, including its consensus\
+          \ mechanism, order-book, matching engine and front end."
+        docs: https://docs.dydx.exchange/
+        hex: '#12121d'
         logo: ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc
         title: dYdX
+        website: https://dydx.exchange/
   source-id: dydx-mainnet-1
 kyve-1:
+  codebase:
+    git-url: https://github.com/KYVENetwork/chain
+    settings:
+      cosmos-properties:
+        genesis-name: v1.0.0
+        genesis-url: https://raw.githubusercontent.com/KYVENetwork/networks/main/kyve-1/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/kyve/chain.json
+      upgrades:
+      - commit: 82007dd0225a3a0b7c1dfdbb12b1f8bc9a6f9273
+        go-version: go1.19
+        height: 1
+        ksync-engine: tendermint
+        name: v1.0.0
+        recommended-version: v1.0.0
+      - commit: 9bed226602dcd1fa624aabee3124a2bbd0467d02
+        go-version: go1.20
+        height: 826000
+        ksync-engine: tendermint
+        name: v1.1.0
+        recommended-version: v1.1.3
+      - commit: 489960cc1c3991d26d8d7546ccfa318a98121aa8
+        go-version: go1.20
+        height: 1135000
+        ksync-engine: tendermint
+        name: v1.2.0
+        recommended-version: v1.2.2
+      - commit: 7a59450c6cee62323132ace323afdbee94be0dfe
+        go-version: go1.20
+        height: 2061100
+        ksync-engine: tendermint
+        name: v1.3.0
+        recommended-version: v1.3.2
+      - commit: 68e5ff7a8d97f21e2aede9341ba22df9d81bb264
+        go-version: go1.20
+        height: 3908000
+        ksync-engine: cometbft
+        name: v1.4.0
+        recommended-version: v1.4.0
   config-version: 1
   networks:
     kaon-1:
@@ -243,13 +586,12 @@ kyve-1:
           docs-url: https://docs.kyve.network
           state-sync-pool: 17
       pools:
-        - id: 16
-          runtime: kyvejs/tendermint
-        - id: 17
-          runtime: kyvejs/tendermint-ssync
+      - id: 16
+        runtime: kyvejs/tendermint
+      - id: 17
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          KYVE is a revolutionary platform within the Web3 space, designed
+        description: KYVE is a revolutionary platform within the Web3 space, designed
           to address the challenges of accessing decentralized and completely accurate
           data. As the Web3 ecosystem expands, the difficulty in accessing such data
           leads to scalability issues and the risk of data inconsistencies due to
@@ -259,11 +601,51 @@ kyve-1:
           data validation, ensuring data immutability, and facilitating easy data
           retrieval. This enables developers, data engineers, and others to access
           the trustless data they need to continue building the future of Web3.
-        hex: "#58c6b2"
+        docs: https://docs.kyve.network/
+        hex: '#58c6b2'
         logo: ar://WOiYR7qF7G_dp6eO0bFC7AorS7601qgek3X_IeAZook
         title: KYVE
+        website: https://kyve.network/
   source-id: kyve-1
 noble-1:
+  codebase:
+    git-url: https://github.com/noble-assets/noble
+    settings:
+      cosmos-properties:
+        genesis-name: v1.0.0
+        genesis-url: https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/noble/chain.json
+      upgrades:
+      - commit: c252a78d36944be21a1e847c6781e10aa43f1066
+        go-version: go1.19
+        height: 1
+        ksync-engine: tendermint
+        name: v1.0.0
+        recommended-version: v1.0.0
+      - commit: 2779439c1e66192d778f20ed4183303fb7616ad4
+        go-version: go1.19
+        height: 119000
+        ksync-engine: tendermint
+        name: neon
+        recommended-version: v2.0.1
+      - commit: 1e5ed6be44fde9b4ec25df067e9aaac76e844be6
+        go-version: go1.19
+        height: 1296000
+        ksync-engine: tendermint
+        name: radon
+        recommended-version: v3.0.0
+      - commit: d145036dff4677e214de89412738bade5fdbe245
+        go-version: go1.19
+        height: 2672000
+        ksync-engine: tendermint
+        name: v3.1.0
+        recommended-version: v3.1.0
+      - commit: 2da993039fa78a6818928b8924ee956a72983861
+        go-version: go1.21
+        height: 3408600
+        ksync-engine: tendermint
+        name: argon
+        recommended-version: v4.0.2
   config-version: 1
   networks:
     kaon-1:
@@ -274,13 +656,12 @@ noble-1:
           docs-url: https://docs.nobleassets.xyz/
           state-sync-pool: 13
       pools:
-        - id: 12
-          runtime: kyvejs/tendermint
-        - id: 13
-          runtime: kyvejs/tendermint-ssync
+      - id: 12
+        runtime: kyvejs/tendermint
+      - id: 13
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          "Noble is a Cosmos application-specific blockchain purpose-built\
+        description: "Noble is a Cosmos application-specific blockchain purpose-built\
           \ for native asset issuance. Noble brings the efficiency and interoperability\
           \ of native assets to the wider Cosmos ecosystem, starting with USDC. Noble\u2019\
           s vision is to be the world\u2019s premier issuance hub for digital assets\
@@ -288,9 +669,11 @@ noble-1:
           \ \u2013 a flexible toolkit that allows developers to incorporate existing\
           \ modules and to seamlessly integrate custom modules that add virtually\
           \ unlimited functionality for asset issuers on the Noble blockchain."
-        hex: "#0e1225"
+        docs: https://docs.nobleassets.xyz/
+        hex: '#0e1225'
         logo: ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU
         title: Noble
+        website: https://nobleassets.xyz/
     kyve-1:
       integrations:
         ksync:
@@ -299,13 +682,12 @@ noble-1:
           docs-url: https://docs.nobleassets.xyz
           state-sync-pool: 8
       pools:
-        - id: 7
-          runtime: kyvejs/tendermint
-        - id: 8
-          runtime: kyvejs/tendermint-ssync
+      - id: 7
+        runtime: kyvejs/tendermint
+      - id: 8
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          "Noble is a Cosmos application-specific blockchain purpose-built\
+        description: "Noble is a Cosmos application-specific blockchain purpose-built\
           \ for native asset issuance. Noble brings the efficiency and interoperability\
           \ of native assets to the wider Cosmos ecosystem, starting with USDC. Noble\u2019\
           s vision is to be the world\u2019s premier issuance hub for digital assets\
@@ -313,11 +695,135 @@ noble-1:
           \ \u2013 a flexible toolkit that allows developers to incorporate existing\
           \ modules and to seamlessly integrate custom modules that add virtually\
           \ unlimited functionality for asset issuers on the Noble blockchain."
-        hex: "#0e1225"
+        docs: https://docs.nobleassets.xyz/
+        hex: '#0e1225'
         logo: ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU
         title: Noble
+        website: https://nobleassets.xyz/
   source-id: noble-1
 osmosis-1:
+  codebase:
+    git-url: https://github.com/osmosis-labs/osmosis/
+    settings:
+      cosmos-properties:
+        genesis-name: v3
+        genesis-url: https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/osmosis/chain.json
+      upgrades:
+      - commit: 13916d1e10bca718b6ea7f4b84715710bc319e6d
+        go-version: go1.15
+        height: 1
+        ksync-engine: tendermint
+        name: v3
+        recommended-version: v3.1.0
+      - commit: e79fc9f47f2bd4518d9e16567a369c25a0820fa6
+        go-version: go1.17
+        height: 1314500
+        ksync-engine: tendermint
+        name: v4
+        recommended-version: v4.2.0
+      - commit: e79fc9f47f2bd4518d9e16567a369c25a0820fa6
+        go-version: go1.17
+        height: 2383300
+        ksync-engine: tendermint
+        name: v5
+        recommended-version: v6.4.0
+      - commit: 16e3b51f19a58f815a4eabcbcee11886eb33e026
+        go-version: go1.18
+        height: 3401000
+        ksync-engine: tendermint
+        name: v7
+        recommended-version: v8.0.0
+      - commit: 7ca72c5fc4547f62b9984e62cd83639727691b62
+        go-version: go1.18
+        height: 4707300
+        ksync-engine: tendermint
+        name: v9
+        recommended-version: v10.0.0
+      - commit: 50d49dd7cea50f09c7347f447bcb1e1872343220
+        go-version: go1.18
+        height: 5432450
+        ksync-engine: tendermint
+        name: v11
+        recommended-version: v11.0.1
+      - commit: 7e41ec9e69bce66f519ae715d2a8adf74e377263
+        go-version: go1.18
+        height: 6246000
+        ksync-engine: tendermint
+        name: v12
+        recommended-version: v12.3.0
+      - commit: 28234a55c3cfc98f19b8b7c81902cb9e43f8e261
+        go-version: go1.18
+        height: 7241500
+        ksync-engine: tendermint
+        name: v13
+        recommended-version: v13.1.2
+      - commit: 0a4b5bed878af2ea2167749f937e7cdde21f9031
+        go-version: go1.19
+        height: 7937500
+        ksync-engine: tendermint
+        name: v14
+        recommended-version: v14.0.1
+      - commit: 4a4a94585872e3196b9c83286979cda11d4889e3
+        go-version: go1.19
+        height: 8732500
+        ksync-engine: tendermint
+        name: v15
+        recommended-version: v15.2.0
+      - commit: 0dcae3392f23e44b8de436ff372c1373dc831b04
+        go-version: go1.20
+        height: 10517000
+        ksync-engine: tendermint
+        name: v16
+        recommended-version: v16.1.1
+      - commit: ea8b7410e66f4aa7f360e1ce09e7b0cfd5e6e4bf
+        go-version: go1.20
+        height: 11126100
+        ksync-engine: tendermint
+        name: v17
+        recommended-version: v17.0.0
+      - commit: 1c5f25d04f19d6302e0bdd585ba1d7a2cc96e397
+        go-version: go1.20
+        height: 11155350
+        ksync-engine: tendermint
+        name: v18
+        recommended-version: v18.0.0
+      - commit: 1c5f25d04f19d6302e0bdd585ba1d7a2cc96e397
+        go-version: go1.20
+        height: 11155350
+        ksync-engine: tendermint
+        name: v18
+        recommended-version: v18.0.0
+      - commit: 38d1d2b748d161fd23f966d88b23b66a63c9a284
+        go-version: go1.20
+        height: 11317300
+        ksync-engine: tendermint
+        name: v19
+        recommended-version: v19.2.0
+      - commit: 7f2097863f7a0a02f4a0758fc0a600aecf63e1f4
+        go-version: go1.20
+        height: 12028900
+        ksync-engine: tendermint
+        name: v20
+        recommended-version: v20.5.0
+      - commit: 50c1d0b619c64817ba5d1da2d71dbeb6b7b60425
+        go-version: go1.20
+        height: 12834100
+        ksync-engine: cometbft
+        name: v21
+        recommended-version: v21.1.4
+      - commit: 350901e523815fc34a1de1ca54e9ccd3c4d1f756
+        go-version: go1.21
+        height: 13325950
+        ksync-engine: cometbft
+        name: v22
+        recommended-version: v22.0.5
+      - commit: 271a467dcaa3e4ee9e9a63ba0d4a5bf317650a43
+        go-version: go1.21
+        height: 13899375
+        ksync-engine: cometbft
+        name: v23
+        recommended-version: v23.0.3
   config-version: 1
   networks:
     kaon-1:
@@ -328,18 +834,19 @@ osmosis-1:
           docs-url: https://docs.osmosis.zone/
           state-sync-pool: 5
       pools:
-        - id: 1
-          runtime: kyvejs/tendermint
-        - id: 5
-          runtime: kyvejs/tendermint-ssync
+      - id: 1
+        runtime: kyvejs/tendermint
+      - id: 5
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
+        description: Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
           exchange (DEX) for Cosmos, an ecosystem of sovereign, interoperable blockchains
           all connected trustlessly over IBC, the Inter-Blockchain Communication Protocol.
-        hex: "#8d07c7"
+        docs: https://docs.osmosis.zone/
+        hex: '#8d07c7'
         logo: ar://u8kGlBx37seQCO1X5vQsc3Q8iO2CE-BHqsm0937poak
         title: Osmosis
+        website: https://osmosis.zone/
     kyve-1:
       integrations:
         ksync:
@@ -347,18 +854,63 @@ osmosis-1:
           block-sync-pool: 1
           docs-url: https://docs.osmosis.zone/
       pools:
-        - id: 1
-          runtime: kyvejs/tendermint
+      - id: 1
+        runtime: kyvejs/tendermint
       properties:
-        description:
-          Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
+        description: Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
           exchange (DEX) for Cosmos, an ecosystem of sovereign, interoperable blockchains
           all connected trustlessly over IBC, the Inter-Blockchain Communication Protocol.
-        hex: "#8d07c7"
+        docs: https://docs.osmosis.zone/
+        hex: '#8d07c7'
         logo: ar://u8kGlBx37seQCO1X5vQsc3Q8iO2CE-BHqsm0937poak
         title: Osmosis
+        website: https://osmosis.zone/
   source-id: osmosis-1
 zeta_7000-1:
+  codebase:
+    git-url: https://github.com/zeta-chain/node
+    settings:
+      cosmos-properties:
+        genesis-name: v10.1.0
+        genesis-url: https://zetachain.blockpi.network/rpc/v1/public/genesis
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/zetachain/chain.json
+      upgrades:
+      - commit: b1c5881e4488ddfb5e73ccd3b0d417c3c11a3ae7
+        go-version: go1.20
+        height: 1
+        ksync-engine: tendermint
+        name: v10.1.0
+        recommended-version: v10.1.5
+      - commit: 825d9f87bb13e28ec916b8abaafe8b5534eace60
+        go-version: go1.20
+        height: 1257000
+        ksync-engine: tendermint
+        name: v11.0.0
+        recommended-version: v11.0.5
+      - commit: 67cad54a5c1a1b46b599e74f56c664e3cee214aa
+        go-version: go1.20
+        height: 1424500
+        ksync-engine: tendermint
+        name: v12.0.0
+        recommended-version: v12.0.2
+      - commit: 440b61dae573c6bde8347e564cea3afd9b8f8d2d
+        go-version: go1.20
+        height: 1529050
+        ksync-engine: tendermint
+        name: v12.1.0
+        recommended-version: v12.1.1
+      - commit: 54d7613a90312cc97c6020e4cdba6a63ae1e5734
+        go-version: go1.20
+        height: 1549750
+        ksync-engine: tendermint
+        name: v12.2.0
+        recommended-version: v12.2.5
+      - commit: 1f8f76ff15fb7c339790ef5ab558bd512ab8eab0
+        go-version: go1.20
+        height: 2074730
+        ksync-engine: tendermint
+        name: v14
+        recommended-version: v14.0.0
   config-version: 1
   networks:
     kaon-1:
@@ -369,13 +921,12 @@ zeta_7000-1:
           docs-url: https://www.zetachain.com/docs/
           state-sync-pool: 11
       pools:
-        - id: 10
-          runtime: kyvejs/tendermint
-        - id: 11
-          runtime: kyvejs/tendermint-ssync
+      - id: 10
+        runtime: kyvejs/tendermint
+      - id: 11
+        runtime: kyvejs/tendermint-ssync
       properties:
-        description:
-          "ZetaChain is the foundational, public blockchain that enables\
+        description: "ZetaChain is the foundational, public blockchain that enables\
           \ omnichain, generic smart contracts and messaging between any blockchain.\
           \ It solves the problems of \u201Ccross-chain\u201D and \u201Cmulti-chain\u201D\
           \ and aims to open the crypto and global financial ecosystem to anyone.\
@@ -383,7 +934,9 @@ zeta_7000-1:
           \ where users and developers can move between and appreciate the benefits\
           \ of any blockchain: payments, DeFi, liquidity, games, art, social graphs,\
           \ performance, security, privacy, and so on."
-        hex: "#235643"
+        docs: https://www.zetachain.com/docs/
+        hex: '#235643'
         logo: ar://FsZbG0a3aVwfRrxgFRYklEknIsGHnGTX6YiQJwhtnH8
         title: ZetaChain
+        website: https://www.zetachain.com/
   source-id: zeta_7000-1
