@@ -10,14 +10,13 @@ properties:
   docs: https://docs.celestia.org/
 
 codebase:
-  git-repo: https://github.com/celestiaorg/celestia-app
+  git-url: https://github.com/celestiaorg/celestia-app
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
-    cosmos-genesis:
-      name: "v1.7.0"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
+      genesis-name: "v1.7.0"
       genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
-    cosmos-upgrades:
+    upgrades:
       - name: "v1.7.0"
         height: 1
         recommended-version: "v1.7.0"

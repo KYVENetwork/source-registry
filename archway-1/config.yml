@@ -10,14 +10,13 @@ properties:
   docs: https://docs.archway.io/
 
 codebase:
-  git-repo: https://github.com/archway-network/archway
+  git-url: https://github.com/archway-network/archway
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/archway/chain.json
-    cosmos-genesis:
-      name: "v1.0.0"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/archway/chain.json
+      genesis-name: "v1.0.0"
       genesis-url: https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz
-    cosmos-upgrades:
+    upgrades:
       - name: "v1.0.0"
         height: 1
         recommended-version: "v1.0.1"

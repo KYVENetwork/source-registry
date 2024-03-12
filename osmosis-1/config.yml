@@ -10,14 +10,13 @@ properties:
   docs: https://docs.osmosis.zone/
 
 codebase:
-  git-repo: https://github.com/osmosis-labs/osmosis/
+  git-url: https://github.com/osmosis-labs/osmosis/
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/osmosis/chain.json
-    cosmos-genesis:
-      name: "v3"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/osmosis/chain.json
+      genesis-name: "v3"
       genesis-url: https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json
-    cosmos-upgrades:
+    upgrades:
       - name: "v3"
         height: 1
         recommended-version: "v3.1.0"

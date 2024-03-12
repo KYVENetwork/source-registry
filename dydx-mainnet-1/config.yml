@@ -10,14 +10,13 @@ properties:
   docs: https://docs.dydx.exchange/
 
 codebase:
-  git-repo: https://github.com/dydxprotocol/v4-chain
+  git-url: https://github.com/dydxprotocol/v4-chain
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
-    cosmos-genesis:
-      name: "v2"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
+      genesis-name: "v2"
       genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
-    cosmos-upgrades:
+    upgrades:
       - name: "v2"
         height: 1
         recommended-version: "protocol/v2.0.0"

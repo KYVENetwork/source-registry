@@ -10,14 +10,13 @@ properties:
   docs: https://docs.cronos.org/
 
 codebase:
-  git-repo: https://github.com/crypto-org-chain/cronos
+  git-url: https://github.com/crypto-org-chain/cronos
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/cronos/chain.json
-    cosmos-genesis:
-      name: "v0.6.0"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/cronos/chain.json
+      genesis-name: "v0.6.0"
       genesis-url: https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json
-    cosmos-upgrades:
+    upgrades:
       - name: "v0.6.0"
         height: 1
         recommended-version: "v0.6.11"

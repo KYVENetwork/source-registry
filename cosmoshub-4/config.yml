@@ -8,14 +8,13 @@ properties:
   description: "Serving as the economic center of the Interchain, the Cosmos Hub is a blockchain that provides vital ecosystem services. The primary token of the Cosmos Hub is the ATOM, but the Hub will support many tokens in the future."
 
 codebase:
-  git-repo: https://github.com/cosmos/gaia
+  git-url: https://github.com/cosmos/gaia
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json
-    cosmos-genesis:
-      name: "v4"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json
+      genesis-name: "v4"
       genesis-url: https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz
-    cosmos-upgrades:
+    upgrades:
       - name: "v4"
         height: 5200791
         recommended-version: "v4.2.1"

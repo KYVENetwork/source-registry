@@ -10,14 +10,13 @@ properties:
   docs: https://docs.axelar.dev/
 
 codebase:
-  git-repo: https://github.com/axelarnetwork/axelar-core
+  git-url: https://github.com/axelarnetwork/axelar-core
   settings:
-    # Cosmos specific settings for block and snapshot pools
-    cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
-    cosmos-genesis:
-      name: "v0.10"
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
+      genesis-name: "v0.10"
       genesis-url: https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json
-    cosmos-upgrades:
+    upgrades:
       - name: "v0.10"
         height: 1
         recommended-version: "v0.10.7"
