@@ -6,6 +6,47 @@ properties:
   hex: "#0e1225"
   logo: "ar://DZP1WPGja9LAa7Vf1P2N-dfDVUlG9lmCkD_psZj47tU"
   description: "Noble is a Cosmos application-specific blockchain purpose-built for native asset issuance. Noble brings the efficiency and interoperability of native assets to the wider Cosmos ecosystem, starting with USDC. Noble’s vision is to be the world’s premier issuance hub for digital assets that connect to other blockchains seamlessly. Noble leverages the Cosmos-SDK – a flexible toolkit that allows developers to incorporate existing modules and to seamlessly integrate custom modules that add virtually unlimited functionality for asset issuers on the Noble blockchain."
+  website: https://nobleassets.xyz/
+  docs: https://docs.nobleassets.xyz/
+
+codebase:
+  git-url: https://github.com/noble-assets/noble
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/noble/chain.json
+      genesis-name: "v1.0.0"
+      genesis-url: https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json
+    upgrades:
+      - name: "v1.0.0"
+        height: 1
+        recommended-version: "v1.0.0"
+        commit: "c252a78d36944be21a1e847c6781e10aa43f1066"
+        go-version: "go1.19"
+        ksync-engine: "tendermint"
+      - name: "neon"
+        height: 119000
+        recommended-version: "v2.0.1"
+        commit: "2779439c1e66192d778f20ed4183303fb7616ad4"
+        go-version: "go1.19"
+        ksync-engine: "tendermint"
+      - name: "radon"
+        height: 1296000
+        recommended-version: "v3.0.0"
+        commit: "1e5ed6be44fde9b4ec25df067e9aaac76e844be6"
+        go-version: "go1.19"
+        ksync-engine: "tendermint"
+      - name: "v3.1.0"
+        height: 2672000
+        recommended-version: "v3.1.0"
+        commit: "d145036dff4677e214de89412738bade5fdbe245"
+        go-version: "go1.19"
+        ksync-engine: "tendermint"
+      - name: "argon"
+        height: 3408600
+        recommended-version: "v4.0.2"
+        commit: "2da993039fa78a6818928b8924ee956a72983861"
+        go-version: "go1.21"
+        ksync-engine: "tendermint"
 
 networks:
   # Mainnet pools

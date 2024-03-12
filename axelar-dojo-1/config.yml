@@ -6,6 +6,125 @@ properties:
   hex: "#5cc1fa"
   logo: "ar://iW1jN99yH_gdQtRhf5J_lVwOIu8p_i7FyxEgoQAkWxU"
   description: "Axelar is the programmable Web3 interoperability platform, connecting over 50 blockchains via a secure, scalable network – internet infrastructure for the world’s next super app. For partners ranging from Uniswap to Circle, Axelar enables scalable cross-chain solutions. Users interact with any asset in one click. Developers span multiple blockchains as though building on one, supported by a simple API and a permissionless ecosystem of tools and service providers. Backers include Binance, Coinbase, Dragonfly, Galaxy and Polychain. See what full-stack interoperability can do for your dApp. Learn more at https://axelar.network."
+  website: https://axelar.network/
+  docs: https://docs.axelar.dev/
+
+codebase:
+  git-url: https://github.com/axelarnetwork/axelar-core
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
+      genesis-name: "v0.10"
+      genesis-url: https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json
+    upgrades:
+      - name: "v0.10"
+        height: 1
+        recommended-version: "v0.10.7"
+        commit: "44fc624a6b710b421dd9dff82d0251b94d28296f"
+        go-version: "go1.16"
+        ksync-engine: "tendermint"
+      - name: "v0.13"
+        height: 384000
+        recommended-version: "v0.13.6"
+        commit: "1b1207f96dc62fcbfb64dac6f3dde633de727db1"
+        go-version: "go1.17"
+        ksync-engine: "tendermint"
+      - name: "v0.14"
+        height: 1060850
+        recommended-version: "v0.14.1"
+        commit: "8bc296dede83faefcafa0990704422f6d69e2398"
+        go-version: "go1.17"
+        ksync-engine: "tendermint"
+      - name: "v0.15"
+        height: 1263450
+        recommended-version: "v0.15.0"
+        commit: "172a2d817a2adbb3d5afff257d1a3a0d1e0096a1"
+        go-version: "go1.17"
+        ksync-engine: "tendermint"
+      - name: "v0.16"
+        height: 1336350
+        recommended-version: "v0.16.1"
+        commit: "19102d31f10bf10fe76dd7d14978ec71167e8043"
+        go-version: "go1.17"
+        ksync-engine: "tendermint"
+      - name: "v0.17"
+        height: 1889000
+        recommended-version: "v0.17.3"
+        commit: "10d666ba342534d90d4ef3a6fdc59cbe2e1a5250"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.18"
+        height: 2471750
+        recommended-version: "v0.18.3"
+        commit: "6be3b60403facd827613a3c90990042f43ddb9ca"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.19"
+        height: 2472290
+        recommended-version: "v0.19.4"
+        commit: "6b75266b4568f2416a323d7a4f14d4a453bc5945"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.20"
+        height: 3331350
+        recommended-version: "v0.20.0"
+        commit: "ac086878edc9c239d8134fce8994e29482e144f3"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.21"
+        height: 3643500
+        recommended-version: "v0.21.1"
+        commit: "246984b0f5c234d4922fedf3e5078b8e58b78a3c"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.24"
+        height: 3644000
+        recommended-version: "v0.24.0"
+        commit: "981196d61fea1b9ad66eab69b27ae2ff3c2524b2"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.26"
+        height: 3852250
+        recommended-version: "v0.26.5"
+        commit: "981196d61fea1b9ad66eab69b27ae2ff3c2524b2"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.28"
+        height: 4984950
+        recommended-version: "v0.28.0"
+        commit: "b60bd0e33a54bdc5f5e4a762007a68063ca78865"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.29"
+        height: 5030000
+        recommended-version: "v0.29.1"
+        commit: "0137a28b91dad368f4709eadde3361202e198688"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.31"
+        height: 5853000
+        recommended-version: "v0.31.2"
+        commit: "12bda1b59e5c9f12d2b14119cd8c69e2af355585"
+        go-version: "go1.18"
+        ksync-engine: "tendermint"
+      - name: "v0.33"
+        height: 6895400
+        recommended-version: "v0.33.2"
+        commit: "4f16d6fe89f4c11db7597558eea65e4909dc9019"
+        go-version: "go1.19"
+        ksync-engine: "tendermint"
+      - name: "v0.34"
+        height: 9151750
+        recommended-version: "v0.34.1"
+        commit: "048a66e66026d42fbefe048212cd18f8ac7a2207"
+        go-version: "go1.19"
+        ksync-engine: "tendermint"
+      - name: "v0.35"
+        height: 11795700
+        recommended-version: "v0.35.5"
+        commit: "a4736492d3d5ac705ec1a154c5167323abdc66a7"
+        go-version: "go1.21"
+        ksync-engine: "tendermint"
 
 networks:
   # Mainnet pools

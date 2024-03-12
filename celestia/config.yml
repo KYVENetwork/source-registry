@@ -5,6 +5,24 @@ properties:
   title: "Celestia"
   hex: "#af6fd8"
   logo: "ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU"
+  description: Celestia is a modular data availability network that securely scales with the number of users, making it easy for anyone to launch their own blockchain.
+  website: https://celestia.org/
+  docs: https://docs.celestia.org/
+
+codebase:
+  git-url: https://github.com/celestiaorg/celestia-app
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
+      genesis-name: "v1.7.0"
+      genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
+    upgrades:
+      - name: "v1.7.0"
+        height: 1
+        recommended-version: "v1.7.0"
+        commit: "915847191e80d836f862eea2664949d9a240abea"
+        go-version: "go1.22"
+        ksync-engine: "tendermint-celestiacore"
 
 networks:
   # Testnet pools

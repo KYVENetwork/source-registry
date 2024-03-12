@@ -8,6 +8,58 @@
     "config-version": {
       "type": "integer"
     },
+    "codebase": {
+      "type": "object",
+      "properties": {
+        "git-url": {
+          "type": "string"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "cosmos-properties": {
+              "type": "object",
+              "properties": {
+                "registry-url": {
+                  "type": "string"
+                },
+                "genesis-name": {
+                  "type": "string"
+                },
+                "genesis-url": {
+                  "type": "string"
+                }
+              }
+            },
+            "upgrades": {
+              "type": "array",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "recommended-version": {
+                  "type": "string"
+                },
+                "commit": {
+                  "type": "string"
+                },
+                "go-version": {
+                  "type": "string"
+                },
+                "ksync-engine": {
+                  "type": "string"
+                }
+              },
+              "required": ["name", "height", "recommended-version"]
+            }
+          }
+        }
+      },
+      "required": ["git-url"]
+    },
     "networks": {
       "type": "object",
       "properties": {
@@ -21,11 +73,7 @@
       "additionalProperties": false
     }
   },
-  "required": [
-    "source-id",
-    "config-version",
-    "networks"
-  ],
+  "required": ["source-id", "config-version", "networks"],
   "additionalProperties": false,
   "definitions": {
     "properties": {
@@ -43,12 +91,16 @@
         },
         "logo": {
           "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "docs": {
+          "type": "string"
         }
       },
       "additionalProperties": false,
-      "required": [
-        "title"
-      ]
+      "required": ["title"]
     },
     "network": {
       "type": "object",
@@ -81,9 +133,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "id"
-      ]
+      "required": ["id"]
     },
     "integration": {
       "type": "object",
@@ -104,11 +154,7 @@
               "type": "integer"
             }
           },
-          "required": [
-            "binary-name",
-            "block-sync-pool",
-            "docs-url"
-          ]
+          "required": ["binary-name", "block-sync-pool", "docs-url"]
         },
         "elt": {
           "type": "object"

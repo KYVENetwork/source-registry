@@ -6,6 +6,53 @@ properties:
   hex: "#235643"
   logo: "ar://FsZbG0a3aVwfRrxgFRYklEknIsGHnGTX6YiQJwhtnH8"
   description: "ZetaChain is the foundational, public blockchain that enables omnichain, generic smart contracts and messaging between any blockchain. It solves the problems of “cross-chain” and “multi-chain” and aims to open the crypto and global financial ecosystem to anyone. ZetaChain envisions and supports a truly fluid, multi-chain crypto ecosystem, where users and developers can move between and appreciate the benefits of any blockchain: payments, DeFi, liquidity, games, art, social graphs, performance, security, privacy, and so on."
+  website: https://www.zetachain.com/
+  docs: https://www.zetachain.com/docs/
+
+codebase:
+  git-url: https://github.com/zeta-chain/node
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/zetachain/chain.json
+      genesis-name: "v10.1.0"
+      genesis-url: https://zetachain.blockpi.network/rpc/v1/public/genesis
+    upgrades:
+      - name: "v10.1.0"
+        height: 1
+        recommended-version: "v10.1.5"
+        commit: "b1c5881e4488ddfb5e73ccd3b0d417c3c11a3ae7"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v11.0.0"
+        height: 1257000
+        recommended-version: "v11.0.5"
+        commit: "825d9f87bb13e28ec916b8abaafe8b5534eace60"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v12.0.0"
+        height: 1424500
+        recommended-version: "v12.0.2"
+        commit: "67cad54a5c1a1b46b599e74f56c664e3cee214aa"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v12.1.0"
+        height: 1529050
+        recommended-version: "v12.1.1"
+        commit: "440b61dae573c6bde8347e564cea3afd9b8f8d2d"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v12.2.0"
+        height: 1549750
+        recommended-version: "v12.2.5"
+        commit: "54d7613a90312cc97c6020e4cdba6a63ae1e5734"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
+      - name: "v14"
+        height: 2074730
+        recommended-version: "v14.0.0"
+        commit: "1f8f76ff15fb7c339790ef5ab558bd512ab8eab0"
+        go-version: "go1.20"
+        ksync-engine: "tendermint"
 
 networks:
   # Testnet pools
