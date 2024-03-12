@@ -15,14 +15,14 @@ codebase:
     # Cosmos specific settings for block and snapshot pools
     cosmos-registry: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
     cosmos-genesis:
-      name: "v1.6.0"
+      name: "v1.7.0"
       genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
     cosmos-upgrades:
-      - name: "v1.6.0"
+      - name: "v1.7.0"
         height: 1
-        recommended-version: "v1.6.0"
-        commit: "6f19fd83c4d0061c717a40e23a368a2f60aff715"
-        go-version: "go1.21.1"
+        recommended-version: "v1.7.0"
+        commit: "915847191e80d836f862eea2664949d9a240abea"
+        go-version: "go1.22"
         ksync-engine: "tendermint-celestiacore"
 
 networks:
