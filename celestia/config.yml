@@ -25,6 +25,20 @@ codebase:
         ksync-engine: "tendermint-celestiacore"
 
 networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 9
+        runtime: "kyvejs/tendermint"
+      - id: 10
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "celestia-appd"
+        block-sync-pool: 9
+        docs: "https://docs.cronos.org/"
+        state-sync-pool: 10
+
   # Testnet pools
   kaon-1:
     pools:
