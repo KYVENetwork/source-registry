@@ -19,7 +19,7 @@ codebase:
     upgrades:
       - name: "v10.1.0"
         height: 1
-        recommended-version: "v10.1.5"
+        recommended-version: "v10.1.5" #used v10.1.7 as genesis
         commit: "b1c5881e4488ddfb5e73ccd3b0d417c3c11a3ae7"
         go-version: "go1.20"
         ksync-engine: "tendermint"
@@ -49,7 +49,7 @@ codebase:
         ksync-engine: "tendermint"
       - name: "v14"
         height: 2074730
-        recommended-version: "v14.0.0"
+        recommended-version: "v14.0.0" #Use v14.0.1 instead of this release. See release notes for v14.0.1.
         commit: "1f8f76ff15fb7c339790ef5ab558bd512ab8eab0"
         go-version: "go1.20"
         ksync-engine: "tendermint"
