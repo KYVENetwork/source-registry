@@ -372,11 +372,16 @@ cosmoshub-4:
       integrations:
         ksync:
           binary-name: gaiad
-          block-sync-pool: 0
+          block-sync-pool: 18
           docs-url: https://docs.cosmos.network/
+          state-sync-pool: 19
       pools:
       - id: 0
         runtime: kyvejs/tendermint-bsync
+      - id: 18
+        runtime: kyvejs/tendermint
+      - id: 19
+        runtime: kyvejs/tendermint-ssync
       properties:
         description: Serving as the economic center of the Interchain, the Cosmos
           Hub is a blockchain that provides vital ecosystem services. The primary
