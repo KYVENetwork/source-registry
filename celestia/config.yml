@@ -36,7 +36,7 @@ networks:
       ksync:
         binary-name: "celestia-appd"
         block-sync-pool: 9
-        docs: "https://docs.cronos.org/"
+        docs: "https://docs.celestia.org/"
         state-sync-pool: 10
 
   # Testnet pools
