@@ -43,7 +43,7 @@ codebase:
         ksync-engine: "tendermint"
       - name: "argon"
         height: 3408600
-        recommended-version: "v4.0.2" #Emmergency upgrade https://github.com/noble-assets/noble/releases/tag/v4.0.3
+        recommended-version: "v4.0.2" #Emmergency upgrade from 5262000 block, not gov: https://github.com/noble-assets/noble/releases/tag/v4.0.3
         commit: "2da993039fa78a6818928b8924ee956a72983861"
         go-version: "go1.21"
         ksync-engine: "tendermint"
