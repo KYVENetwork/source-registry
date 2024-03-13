@@ -290,6 +290,27 @@ celestia:
         logo: ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU
         title: Celestia
         website: https://celestia.org/
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: celestia-appd
+          block-sync-pool: 9
+          docs: https://docs.celestia.org/
+          state-sync-pool: 10
+      pools:
+      - id: 9
+        runtime: kyvejs/tendermint
+      - id: 10
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: Celestia is a modular data availability network that securely
+          scales with the number of users, making it easy for anyone to launch their
+          own blockchain.
+        docs: https://docs.celestia.org/
+        hex: '#af6fd8'
+        logo: ar://TJ83Nah_FaECM0zcKajX-7-JW79iSgi2msbUFYwVMWU
+        title: Celestia
+        website: https://celestia.org/
   source-id: celestia
 cosmoshub-4:
   codebase:
