@@ -25,8 +25,8 @@ codebase:
         ksync-engine: "tendermint"
       - name: "neon"
         height: 119000
-        recommended-version: "v2.0.1"
-        commit: "2779439c1e66192d778f20ed4183303fb7616ad4"
+        recommended-version: "v2.0.0"
+        commit: "2b98e0bb282a723aae64941cc54f52b1f4324330"
         go-version: "go1.19"
         ksync-engine: "tendermint"
       - name: "radon"
