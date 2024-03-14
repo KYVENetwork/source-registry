@@ -19,7 +19,7 @@ codebase:
     upgrades:
       - name: "v10.1.0"
         height: 1
-        recommended-version: "v10.1.5" #used v10.1.7 as genesis
+        recommended-version: "v10.1.5"
         commit: "b1c5881e4488ddfb5e73ccd3b0d417c3c11a3ae7"
         go-version: "go1.20"
         ksync-engine: "tendermint"
