@@ -387,6 +387,12 @@ cosmoshub-4:
         ksync-engine: tendermint
         name: v14
         recommended-version: v14.1.0
+      - commit: 1e7b5171ff1d6c8626aa4a0f049a10fefd69823e
+        go-version: go1.21
+        height: 19639600
+        ksync-engine: cometbft
+        name: v15
+        recommended-version: v15.1.0
   config-version: 1
   networks:
     kaon-1:
@@ -524,12 +530,12 @@ dydx-mainnet-1:
         genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
       upgrades:
-      - commit: 9681762fda9ed8c4c8fe82c338365c6ef0acef9a
+      - commit: 31c2a937fc87bb9b7617443e4e5db2b1a2e9bda9
         go-version: go1.21
         height: 1
         ksync-engine: cometbft
         name: v2
-        recommended-version: protocol/v2.0.0
+        recommended-version: protocol/v2.0.1
       - commit: 85fb10adaab3da4f3c3e0de8b313db57514f8a48
         go-version: go1.21
         height: 7147832
@@ -648,12 +654,12 @@ noble-1:
         ksync-engine: tendermint
         name: v1.0.0
         recommended-version: v1.0.0
-      - commit: 2779439c1e66192d778f20ed4183303fb7616ad4
+      - commit: 2b98e0bb282a723aae64941cc54f52b1f4324330
         go-version: go1.19
         height: 119000
         ksync-engine: tendermint
         name: neon
-        recommended-version: v2.0.1
+        recommended-version: v2.0.0
       - commit: 1e5ed6be44fde9b4ec25df067e9aaac76e844be6
         go-version: go1.19
         height: 1296000
@@ -672,6 +678,12 @@ noble-1:
         ksync-engine: tendermint
         name: argon
         recommended-version: v4.0.2
+      - commit: 11f64b6cc54e8d3551aeef1ddef423872e2f4c7a
+        go-version: go1.21
+        height: 5262000
+        ksync-engine: tendermint
+        name: v4.0.3
+        recommended-version: v4.0.3
   config-version: 1
   networks:
     kaon-1:
@@ -931,12 +943,12 @@ zeta_7000-1:
         ksync-engine: tendermint
         name: v12.2.0
         recommended-version: v12.2.5
-      - commit: 1f8f76ff15fb7c339790ef5ab558bd512ab8eab0
+      - commit: 4654c9065f5b0a8e01878377f17d2027be95f25d
         go-version: go1.20
         height: 2074730
         ksync-engine: tendermint
         name: v14
-        recommended-version: v14.0.0
+        recommended-version: v14.0.1
   config-version: 1
   networks:
     kaon-1:
