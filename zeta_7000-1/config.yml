@@ -49,8 +49,8 @@ codebase:
         ksync-engine: "tendermint"
       - name: "v14"
         height: 2074730
-        recommended-version: "v14.0.0"
-        commit: "1f8f76ff15fb7c339790ef5ab558bd512ab8eab0"
+        recommended-version: "v14.0.1"
+        commit: "4654c9065f5b0a8e01878377f17d2027be95f25d"
         go-version: "go1.20"
         ksync-engine: "tendermint"
 

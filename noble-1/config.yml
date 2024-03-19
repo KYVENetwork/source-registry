@@ -47,6 +47,12 @@ codebase:
         commit: "2da993039fa78a6818928b8924ee956a72983861"
         go-version: "go1.21"
         ksync-engine: "tendermint"
+      - name: "v4.0.3"
+        height: 5262000
+        recommended-version: "v4.0.3"
+        commit: "11f64b6cc54e8d3551aeef1ddef423872e2f4c7a"
+        go-version: "go1.21"
+        ksync-engine: "tendermint"
 
 networks:
   # Mainnet pools
