@@ -468,6 +468,12 @@ cronosmainnet_25-1:
         ksync-engine: tendermint
         name: v1.0.0
         recommended-version: v1.0.15
+      - commit: 526bc803c2f43fd4aadc05a4e16936c3c8e81f29
+        go-version: go1.22
+        height: 13184000
+        ksync-engine: cometbft
+        name: v1.1.0
+        recommended-version: v1.1.0
   config-version: 1
   networks:
     kaon-1:
