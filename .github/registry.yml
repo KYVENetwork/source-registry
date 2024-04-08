@@ -575,6 +575,24 @@ dydx-mainnet-1:
         title: dYdX
         website: https://dydx.exchange/
   source-id: dydx-mainnet-1
+ethereum:
+  config-version: 1
+  networks:
+    kaon-1:
+      pools:
+      - id: 21
+        runtime: kyvejs/ethereum-blobs
+      properties:
+        description: Ethereum is a decentralized platform for building and deploying
+          smart contracts and decentralized applications (DApps). It offers scalability,
+          security, and transparency, enabling innovation across various industries
+          such as finance, gaming, and more.
+        docs: https://ethereum.org/en/developers/docs/
+        hex: '#b6bbe8'
+        logo: ar://Ui5fULe72VfEKo5reeGKvGXF_5HOuAIfdaOM7fXjVyA
+        title: Ethereum
+        website: https://ethereum.org/
+  source-id: ethereum
 kyve-1:
   codebase:
     git-url: https://github.com/KYVENetwork/chain
