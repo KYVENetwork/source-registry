@@ -1,0 +1,17 @@
+# Global information
+source-id: "ethereum"
+config-version: 1
+properties:
+  title: "Ethereum"
+  hex: "#b6bbe8"
+  logo: "ar://Ui5fULe72VfEKo5reeGKvGXF_5HOuAIfdaOM7fXjVyA"
+  description: Ethereum is a decentralized platform for building and deploying smart contracts and decentralized applications (DApps). It offers scalability, security, and transparency, enabling innovation across various industries such as finance, gaming, and more.
+  website: https://ethereum.org/
+  docs: https://ethereum.org/en/developers/docs/
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 21
+        runtime: "kyvejs/ethereum-blobs"
