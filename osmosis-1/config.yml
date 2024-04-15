@@ -147,9 +147,9 @@ networks:
   # Testnet pools
   kaon-1:
     pools:
-      - id: 1
+      - id: 22
         runtime: "kyvejs/tendermint"
-      - id: 5
+      - id: 23
         runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
