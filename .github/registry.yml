@@ -393,6 +393,12 @@ cosmoshub-4:
         ksync-engine: cometbft
         name: v15
         recommended-version: v15.1.0
+      - commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
+        go-version: go1.21
+        height: 19939000
+        ksync-engine: cometbft
+        name: v15
+        recommended-version: v15.2.0
   config-version: 1
   networks:
     kaon-1:
@@ -468,12 +474,12 @@ cronosmainnet_25-1:
         ksync-engine: tendermint
         name: v1.0.0
         recommended-version: v1.0.15
-      - commit: 526bc803c2f43fd4aadc05a4e16936c3c8e81f29
+      - commit: 10b8eeb9052e3c52aa59dec15f5d3aca781d1271
         go-version: go1.22
         height: 13184000
         ksync-engine: cometbft
         name: v1.1.0
-        recommended-version: v1.1.0
+        recommended-version: v1.1.1
   config-version: 1
   networks:
     kaon-1:
@@ -896,9 +902,9 @@ osmosis-1:
           docs-url: https://docs.osmosis.zone/
           state-sync-pool: 5
       pools:
-      - id: 1
+      - id: 22
         runtime: kyvejs/tendermint
-      - id: 5
+      - id: 23
         runtime: kyvejs/tendermint-ssync
       properties:
         description: Osmosis, dubbed the Interchain Liquidity Lab, is a decentralized
