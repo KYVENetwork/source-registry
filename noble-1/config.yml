@@ -55,7 +55,7 @@ codebase:
         ksync-engine: "tendermint"
       - name: "fusion"
         height: 5797500
-        recommended-version: "v4.0.3"
+        recommended-version: "v4.1.1"
         commit: "4a2fc1db808e34a12af1e45b253fba661e405378"
         go-version: "go1.21"
         ksync-engine: "tendermint"
