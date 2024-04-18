@@ -50,4 +50,4 @@ jobs:
             exit 0
           fi
           git commit -m "🎉 Update registry.yml"
-          git push origin HEAD:{{ github.event.pull_request.head.ref }}
+          git push origin HEAD:{ github.event.pull_request.head.ref }
