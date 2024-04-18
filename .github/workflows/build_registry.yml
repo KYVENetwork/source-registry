@@ -29,6 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    needs: validate_registry
     steps:
       - name: Check out the code
         uses: actions/checkout@v4
