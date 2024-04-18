@@ -34,7 +34,7 @@ jobs:
           python .github/build_registry.py .github/registry.yml
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add ../coverage.svg
+          git add .
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit"
             exit 0
