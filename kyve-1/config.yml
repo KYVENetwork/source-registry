@@ -49,7 +49,7 @@ codebase:
         ksync-engine: "cometbft"
       - name: "v1.5.0"
         height: 4908000
-        recommended-version: "v1.5.3"
+        recommended-version: "v1.5.4"
         commit: "68e5ff7a8d97f21e2aede9341ba22df9d81bb264"
         go-version: "go1.22"
         ksync-engine: "cometbft"
