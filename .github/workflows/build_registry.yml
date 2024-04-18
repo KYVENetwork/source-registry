@@ -5,10 +5,7 @@ on:
     branches:
       - main
     types:
-      - opened
-      - synchronize
-      - reopened
-      - edited
+      - closed
     paths:
       - '**.yml'
 
@@ -50,4 +47,5 @@ jobs:
             exit 0
           fi
           git commit -m "🎉 Update registry.yml"
-          git push origin HEAD:test-pr
+          branch=$(echo $GITHUB_REF | awk -F'/' '{print $3}')
+          git push origin HEAD:$branch
