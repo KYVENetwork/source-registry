@@ -16,8 +16,6 @@ jobs:
     steps:
       - name: Check out the code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
