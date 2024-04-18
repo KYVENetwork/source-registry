@@ -27,11 +27,13 @@ jobs:
         run: python .github/build_registry.py .github/registry.yml
         working-directory: ${{ github.workspace }}
 
-      - name: Commit and push built registry
-        run: |
-          git config --local user.email "security@kyve.network"
-          git config --local user.name "kyve-network"
-          git add .github/registry.yml
-          git commit -m "🎉 Update registry.yml"
-          git push -f
-        working-directory: ${{ github.workspace }}
+      - uses: google-github-actions/release-please-action@v4
+
+#      - name: Commit and push built registry
+#        run: |
+#          git config --local user.email "security@kyve.network"
+#          git config --local user.name "kyve-network"
+#          git add .github/registry.yml
+#          git commit -m "🎉 Update registry.yml"
+#          git push -f
+#        working-directory: ${{ github.workspace }}
