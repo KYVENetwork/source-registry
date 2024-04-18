@@ -28,7 +28,20 @@ jobs:
         run: python .github/build_registry.py .github/registry.yml
         working-directory: ${{ github.workspace }}
 
-      - uses: google-github-actions/release-please-action@v4
+      - name: Generate coverage badge
+        working-directory: ${{ github.workspace }}
+        run: |
+          python .github/build_registry.py .github/registry.yml
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add ../coverage.svg
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "<commit message>"
+          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin main
 
 #      - name: Commit and push built registry
 #        run: |
