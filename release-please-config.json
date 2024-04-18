@@ -2,10 +2,5 @@
   "bootsrap-sha": "eed850b8d45f72d3048bc57efbd2f9b84c866dfa",
   "include-component-in-tag": true,
   "include-v-in-tag": false,
-  "skip-github-release": true,
-  "packages": {
-    "kyve-1": {
-      "package-name": "kyve-1"
-    }
-  }
+  "skip-github-release": true
 }
