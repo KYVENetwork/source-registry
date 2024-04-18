@@ -6,3 +6,4 @@
 # For local build the registry.yml will be built here
 registry.yml
 !.github/registry.yml
+.github/__pycache__

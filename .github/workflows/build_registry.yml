@@ -1,35 +1,55 @@
-name: Merge Source configs and write Source-Registry
+name: Merge Source configs and write update Source-Registry
 
 on:
   pull_request:
     branches:
       - main
     types:
-      - closed
+      - opened
+      - synchronize
+      - reopened
+      - edited
     paths:
-      - '**.yml'
+      - '**/*.yml'
 
 jobs:
-  build_registry:
+  validate_registry:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out the code
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
-        working-directory: ${{ github.workspace }}
 
       - name: Merge Source configs and write Source-Registry
-        run: python .github/build_registry.py .github/registry.yml
-        working-directory: ${{ github.workspace }}
+        run: python .github/validate_registry.py
 
-      - name: Commit and push built registry
+  build_registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: validate_registry
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Install required Python packages
+        run: pip install -r .github/requirements.txt
+
+      - name: Merge Source configs and write Source-Registry
         run: |
-          git config --local user.email "security@kyve.network"
+          python .github/build_registry.py .github/registry.yml
           git config --local user.name "kyve-network"
-          git add .github/registry.yml
+          git config --local user.email "security@kyve.network"
+          git add .
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
           git commit -m "🎉 Update registry.yml"
-          git push -f
-        working-directory: ${{ github.workspace }}
+          git push origin HEAD:${{ github.head_ref }}
