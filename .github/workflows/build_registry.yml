@@ -37,10 +37,6 @@ jobs:
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
 
-#      - name: Merge Source configs and write Source-Registry
-#        run: python .github/build_registry.py .github/registry.yml
-#        working-directory: ${{ github.workspace }}
-
       - name: Merge Source configs and write Source-Registry
         run: |
           python .github/build_registry.py .github/registry.yml
@@ -51,10 +47,10 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "🎉 Update registry.ym"
+          git commit -m "🎉 Update registry.yml"
           
           # TODO: this does not work yet
-          git checkout test-pr
+          git checkout origin/test-pr
           git push
 #          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 #          git push origin main
