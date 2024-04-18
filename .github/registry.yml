@@ -638,6 +638,12 @@ kyve-1:
         ksync-engine: cometbft
         name: v1.4.0
         recommended-version: v1.4.0
+      - commit: 68e5ff7a8d97f21e2aede9341ba22df9d81bb264
+        go-version: go1.22
+        height: 4908000
+        ksync-engine: cometbft
+        name: v1.5.0
+        recommended-version: v1.5.5
   config-version: 1
   networks:
     kaon-1:
@@ -892,6 +898,12 @@ osmosis-1:
         ksync-engine: cometbft
         name: v23
         recommended-version: v23.0.3
+      - commit: 0021d3812a8c8d2798ab17e58991a677b82e8955
+        go-version: go1.21
+        height: 14830300
+        ksync-engine: cometbft
+        name: v24
+        recommended-version: v24.0.1
   config-version: 1
   networks:
     kaon-1:
@@ -934,7 +946,7 @@ osmosis-1:
         title: Osmosis
         website: https://osmosis.zone/
   source-id: osmosis-1
-zeta_7000-1:
+zetachain_7000-1:
   codebase:
     git-url: https://github.com/zeta-chain/node
     settings:
@@ -1007,4 +1019,4 @@ zeta_7000-1:
         logo: ar://FsZbG0a3aVwfRrxgFRYklEknIsGHnGTX6YiQJwhtnH8
         title: ZetaChain
         website: https://www.zetachain.com/
-  source-id: zeta_7000-1
+  source-id: zetachain_7000-1

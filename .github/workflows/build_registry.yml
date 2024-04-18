@@ -13,28 +13,41 @@ on:
       - '**.yml'
 
 jobs:
-  build_registry:
+  validate_registry:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
-        working-directory: ${{ github.workspace }}
 
       - name: Merge Source configs and write Source-Registry
-        run: python .github/build_registry.py .github/registry.yml
-        working-directory: ${{ github.workspace }}
+        run: python .github/validate_registry.py
 
-      - uses: google-github-actions/release-please-action@v4
+  build_registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: validate_registry
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
-#      - name: Commit and push built registry
-#        run: |
-#          git config --local user.email "security@kyve.network"
-#          git config --local user.name "kyve-network"
-#          git add .github/registry.yml
-#          git commit -m "🎉 Update registry.yml"
-#          git push -f
-#        working-directory: ${{ github.workspace }}
+      - name: Install required Python packages
+        run: pip install -r .github/requirements.txt
+
+      - name: Merge Source configs and write Source-Registry
+        run: |
+          python .github/build_registry.py .github/registry.yml
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "🎉 Update registry.yml"
+          git push origin HEAD:test-pr
