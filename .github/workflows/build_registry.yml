@@ -33,6 +33,8 @@ jobs:
     steps:
       - name: Check out the code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Install required Python packages
         run: pip install -r .github/requirements.txt
@@ -50,7 +52,6 @@ jobs:
           git commit -m "🎉 Update registry.yml"
           
           # TODO: this does not work yet
-          git checkout origin/test-pr
           git push
 #          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 #          git push origin main
