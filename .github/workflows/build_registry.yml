@@ -54,8 +54,8 @@ jobs:
           git commit -m "🎉 Update registry.ym"
           
           # TODO: this does not work yet
-          git pull
-          git push origin HEAD:test-pr
+          git checkout test-pr
+          git push
 #          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 #          git push origin main
 
