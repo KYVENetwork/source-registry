@@ -40,7 +40,7 @@ jobs:
             exit 0
           fi
           git commit -m "<commit message>"
-          git push
+          git push origin HEAD:test-pr
 #          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 #          git push origin main
 
