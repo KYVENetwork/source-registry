@@ -40,8 +40,9 @@ jobs:
             exit 0
           fi
           git commit -m "<commit message>"
-          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push origin main
+          git push
+#          git remote set-url origin https://<username>:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+#          git push origin main
 
 #      - name: Commit and push built registry
 #        run: |
