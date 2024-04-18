@@ -714,6 +714,12 @@ noble-1:
         ksync-engine: tendermint
         name: v4.0.3
         recommended-version: v4.0.3
+      - commit: 4a2fc1db808e34a12af1e45b253fba661e405378
+        go-version: go1.21
+        height: 5797500
+        ksync-engine: tendermint
+        name: fusion
+        recommended-version: v4.1.1
   config-version: 1
   networks:
     kaon-1:
