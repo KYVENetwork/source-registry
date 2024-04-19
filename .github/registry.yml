@@ -946,6 +946,46 @@ osmosis-1:
         title: Osmosis
         website: https://osmosis.zone/
   source-id: osmosis-1
+source-1:
+  codebase:
+    git-url: https://github.com/Source-Protocol-Cosmos/source
+    settings:
+      cosmos-properties:
+        genesis-name: v3.0.1
+        genesis-url: https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/source/chain.json
+      upgrades:
+      - commit: 2aae45f6e2d23f6c81c02075b74ee9f5b7598e3e
+        go-version: go1.19
+        height: 1
+        ksync-engine: tendermint
+        name: v3.0.1
+        recommended-version: v3.0.1
+  config-version: 1
+  networks:
+    kaon-1:
+      integrations:
+        ksync:
+          binary-name: sourced
+          block-sync-pool: 24
+          docs-url: https://docs.sourceprotocol.io/
+          state-sync-pool: 25
+      pools:
+      - id: 24
+        runtime: kyvejs/tendermint
+      - id: 25
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: $SOURCE is a comprehensive blockchain technology suite for individuals,
+          enterprises and developers to easily use, integrate and build web3.0 applications.
+          It is a broad-spectrum technology ecosystem that transforms centralized
+          web tools and financial instruments into decentralized ones.
+        docs: https://docs.sourceprotocol.io/
+        hex: '#d81efd'
+        logo: ar://ch5vZrkVpu8EVQCvgm3nzFkmVLlXVq5mYQvWE5VWpv8
+        title: Source
+        website: https://www.sourceprotocol.io/
+  source-id: source-1
 zetachain_7000-1:
   codebase:
     git-url: https://github.com/zeta-chain/node
