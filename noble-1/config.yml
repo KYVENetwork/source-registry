@@ -22,43 +22,43 @@ codebase:
         recommended-version: "v1.0.0"
         commit: "c252a78d36944be21a1e847c6781e10aa43f1066"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "neon"
         height: 119000
         recommended-version: "v2.0.0"
         commit: "2b98e0bb282a723aae64941cc54f52b1f4324330"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "radon"
         height: 1296000
         recommended-version: "v3.0.0"
         commit: "1e5ed6be44fde9b4ec25df067e9aaac76e844be6"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "v3.1.0"
         height: 2672000
         recommended-version: "v3.1.0"
         commit: "d145036dff4677e214de89412738bade5fdbe245"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "argon"
         height: 3408600
         recommended-version: "v4.0.2"
         commit: "2da993039fa78a6818928b8924ee956a72983861"
         go-version: "go1.21"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "v4.0.3"
         height: 5262000
         recommended-version: "v4.0.3"
         commit: "11f64b6cc54e8d3551aeef1ddef423872e2f4c7a"
         go-version: "go1.21"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "fusion"
         height: 5797500
         recommended-version: "v4.1.1"
         commit: "4a2fc1db808e34a12af1e45b253fba661e405378"
         go-version: "go1.21"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
 
 networks:
   # Mainnet pools

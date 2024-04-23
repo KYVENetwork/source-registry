@@ -22,13 +22,13 @@ codebase:
         recommended-version: "protocol/v2.0.1"
         commit: "31c2a937fc87bb9b7617443e4e5db2b1a2e9bda9"
         go-version: "go1.21"
-        ksync-engine: "cometbft"
+        ksync-engine: "cometbft-v0.37"
       - name: "v3"
         height: 7147832
         recommended-version: "protocol/v3.0.0"
         commit: "85fb10adaab3da4f3c3e0de8b313db57514f8a48"
         go-version: "go1.21"
-        ksync-engine: "cometbft"
+        ksync-engine: "cometbft-v0.37"
 
 networks:
   # Testnet pools

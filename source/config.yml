@@ -22,7 +22,7 @@ codebase:
         recommended-version: "v3.0.1"
         commit: "2aae45f6e2d23f6c81c02075b74ee9f5b7598e3e"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
 
 networks:
   # Testnet pools
