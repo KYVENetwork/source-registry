@@ -264,7 +264,7 @@ celestia:
       - commit: 915847191e80d836f862eea2664949d9a240abea
         go-version: go1.22
         height: 1
-        ksync-engine: tendermint-celestiacore
+        ksync-engine: celestia-core-v0.34
         name: v1.7.0
         recommended-version: v1.7.0
   config-version: 1
