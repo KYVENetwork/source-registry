@@ -22,25 +22,25 @@ codebase:
         recommended-version: "v1.0.1"
         commit: "86409142585b7157c628ca52b8357002fe60a165"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "v2.0.0"
         height: 525000
         recommended-version: "v2.0.0"
         commit: "d6c5cf4509e1c848f26d539c3519685f1d323dfd"
         go-version: "go1.19"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "v4.0.2"
         height: 1215711
         recommended-version: "v4.0.3"
         commit: "3cc9228982f651d3a54b395d6ff026e61e91f4b6"
         go-version: "go1.20"
-        ksync-engine: "tendermint"
+        ksync-engine: "tendermint-v0.34"
       - name: "v6.0.0"
         height: 3554500
         recommended-version: "v6.0.2"
         commit: "a72ebfe851fc980586b253958196f7b449ac9fe8"
         go-version: "go1.20"
-        ksync-engine: "cometbft"
+        ksync-engine: "cometbft-v0.37"
 
 networks:
   # Mainnet pools
