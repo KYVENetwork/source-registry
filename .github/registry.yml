@@ -720,7 +720,7 @@ noble-1:
         ksync-engine: tendermint-v0.34
         name: fusion
         recommended-version: v4.1.1
-      - commit: 4a2fc1db808e34a12af1e45b253fba661e405378
+      - commit: ede45e577c30510ebde678d567956f307b35371b
         go-version: go1.21
         height: 6022000
         ksync-engine: tendermint-v0.34
