@@ -25,8 +25,8 @@ codebase:
         ksync-engine: "cometbft-v0.37"
       - name: "v3"
         height: 7147832
-        recommended-version: "protocol/v3.0.0"
-        commit: "85fb10adaab3da4f3c3e0de8b313db57514f8a48"
+        recommended-version: "protocol/v3.0.2"
+        commit: "40a28e49c4300e6a17a5b0a84b134e4a4397758f"
         go-version: "go1.21"
         ksync-engine: "cometbft-v0.37"
 
