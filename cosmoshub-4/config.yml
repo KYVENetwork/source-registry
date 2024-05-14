@@ -47,6 +47,12 @@ codebase:
         ksync-engine: "tendermint-v0.34"
       - name: "v9-Lambda"
         height: 14470501
+        recommended-version: "v9.0.3"
+        commit: "05b6b87d3c9121e933eab437772ea56f33ae268f"
+        go-version: "go1.18"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v9.1.0"
+        height: 15213800
         recommended-version: "v9.1.1"
         commit: "66494d1ec72cfa0f8800aa8f1545e19d2af47e47"
         go-version: "go1.18"
