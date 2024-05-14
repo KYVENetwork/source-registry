@@ -143,8 +143,11 @@ networks:
     pools:
       - id: 3
         runtime: "kyvejs/tendermint"
+      - id: 26
+        runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
         binary-name: "axelard"
         block-sync-pool: 3
         docs-url: "https://docs.axelar.dev/"
+        state-sync-pool: 26
