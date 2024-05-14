@@ -357,11 +357,17 @@ cosmoshub-4:
         ksync-engine: tendermint-v0.34
         name: v8-Rho
         recommended-version: v8.0.1
-      - commit: 66494d1ec72cfa0f8800aa8f1545e19d2af47e47
+      - commit: 05b6b87d3c9121e933eab437772ea56f33ae268f
         go-version: go1.18
         height: 14470501
         ksync-engine: tendermint-v0.34
         name: v9-Lambda
+        recommended-version: v9.0.3
+      - commit: 66494d1ec72cfa0f8800aa8f1545e19d2af47e47
+        go-version: go1.18
+        height: 15213800
+        ksync-engine: tendermint-v0.34
+        name: v9.1.0
         recommended-version: v9.1.1
       - commit: a2b14cdd568273e12b80579b4e22681df95b4cb9
         go-version: go1.20
