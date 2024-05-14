@@ -215,9 +215,12 @@ axelar-dojo-1:
           binary-name: axelard
           block-sync-pool: 3
           docs-url: https://docs.axelar.dev/
+          state-sync-pool: 26
       pools:
       - id: 3
         runtime: kyvejs/tendermint
+      - id: 26
+        runtime: kyvejs/tendermint-ssync
       properties:
         description: "Axelar is the programmable Web3 interoperability platform, connecting\
           \ over 50 blockchains via a secure, scalable network \u2013 internet infrastructure\
