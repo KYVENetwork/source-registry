@@ -23,12 +23,24 @@ codebase:
         commit: "31c2a937fc87bb9b7617443e4e5db2b1a2e9bda9"
         go-version: "go1.21"
         ksync-engine: "cometbft-v0.37"
-      - name: "v3"
+      - name: "v3.0.0"
         height: 7147832
         recommended-version: "protocol/v3.0.2"
         commit: "40a28e49c4300e6a17a5b0a84b134e4a4397758f"
         go-version: "go1.21"
         ksync-engine: "cometbft-v0.37"
+      - name: "v4.0.0"
+        height: 12791712
+        recommended-version: "protocol/v4.0.5"
+        commit: "2cd68a9b5491a466be9b40201fc6132cea5a9aaa"
+        go-version: "go1.21"
+        ksync-engine: "cometbft-v0.38"
+      - name: "v4.1.0"
+        height: 14404200
+        recommended-version: "protocol/v4.1.4"
+        commit: "f15e98f09e35adf1f48084de3ac18aae8a3a9337"
+        go-version: "go1.21"
+        ksync-engine: "cometbft-v0.38"
 
 networks:
   # Testnet pools
