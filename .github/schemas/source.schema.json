@@ -51,6 +51,9 @@
                 },
                 "ksync-engine": {
                   "type": "string"
+                },
+                "cosmos-sdk-version": {
+                  "type": "string"
                 }
               },
               "required": ["name", "height", "recommended-version"]
