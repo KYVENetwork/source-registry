@@ -270,12 +270,12 @@ celestia:
         genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
       upgrades:
-      - commit: 915847191e80d836f862eea2664949d9a240abea
+      - commit: ad18465a88000a5b45ceb63efc7d46efaaa56f2c
         go-version: go1.22
         height: 1
         ksync-engine: celestia-core-v0.34
-        name: v1.7.0
-        recommended-version: v1.7.0
+        name: v1.9.0
+        recommended-version: v1.9.0
   config-version: 1
   networks:
     kaon-1:
