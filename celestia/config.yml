@@ -17,10 +17,10 @@ codebase:
       genesis-name: "v1.7.0"
       genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
     upgrades:
-      - name: "v1.7.0"
+      - name: "v1.9.0"
         height: 1
-        recommended-version: "v1.7.0"
-        commit: "915847191e80d836f862eea2664949d9a240abea"
+        recommended-version: "v1.9.0"
+        commit: "ad18465a88000a5b45ceb63efc7d46efaaa56f2c"
         go-version: "go1.22"
         ksync-engine: "celestia-core-v0.34"
 
