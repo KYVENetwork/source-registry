@@ -595,6 +595,12 @@ dydx-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v4.1.0
         recommended-version: protocol/v4.1.4
+      - commit: c092bf0166d1a111dcd9c2e4153334865c8fe553
+        go-version: go1.22
+        height: 17560000
+        ksync-engine: cometbft-v0.38
+        name: v5.0.0
+        recommended-version: protocol/v5.0.5
   config-version: 1
   networks:
     kaon-1:
