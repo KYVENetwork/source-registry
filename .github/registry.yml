@@ -969,9 +969,9 @@ osmosis-1:
       integrations:
         ksync:
           binary-name: osmosisd
-          block-sync-pool: 1
+          block-sync-pool: 22
           docs-url: https://docs.osmosis.zone/
-          state-sync-pool: 5
+          state-sync-pool: 23
       pools:
       - id: 22
         runtime: kyvejs/tendermint
