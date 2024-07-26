@@ -47,6 +47,18 @@ codebase:
         commit: "10b8eeb9052e3c52aa59dec15f5d3aca781d1271"
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.37"
+      - name: "v1.2.0"
+        height: 13520000
+        recommended-version: "v1.2.2"
+        commit: "90e7c5832de7243a62ccb196d962de215972e37c"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v1.3.0"
+        height: 14920000
+        recommended-version: "v1.3.0"
+        commit: "e1d819c862b30f0ce978baf2addb12516568639e"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.37"
 
 networks:
   # Mainnet pools
