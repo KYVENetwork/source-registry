@@ -1044,6 +1044,28 @@ source-1:
         logo: ar://ch5vZrkVpu8EVQCvgm3nzFkmVLlXVq5mYQvWE5VWpv8
         title: Source
         website: https://www.sourceprotocol.io/
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: sourced
+          block-sync-pool: 11
+          docs-url: https://docs.sourceprotocol.io/
+          state-sync-pool: 12
+      pools:
+      - id: 11
+        runtime: kyvejs/tendermint
+      - id: 12
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: $SOURCE is a comprehensive blockchain technology suite for individuals,
+          enterprises and developers to easily use, integrate and build web3.0 applications.
+          It is a broad-spectrum technology ecosystem that transforms centralized
+          web tools and financial instruments into decentralized ones.
+        docs: https://docs.sourceprotocol.io/
+        hex: '#d81efd'
+        logo: ar://ch5vZrkVpu8EVQCvgm3nzFkmVLlXVq5mYQvWE5VWpv8
+        title: Source
+        website: https://www.sourceprotocol.io/
   source-id: source-1
 zetachain_7000-1:
   codebase:
