@@ -509,6 +509,18 @@ cronosmainnet_25-1:
         ksync-engine: cometbft-v0.37
         name: v1.1.0
         recommended-version: v1.1.1
+      - commit: 90e7c5832de7243a62ccb196d962de215972e37c
+        go-version: go1.22
+        height: 13520000
+        ksync-engine: cometbft-v0.37
+        name: v1.2.0
+        recommended-version: v1.2.2
+      - commit: e1d819c862b30f0ce978baf2addb12516568639e
+        go-version: go1.22
+        height: 14920000
+        ksync-engine: cometbft-v0.37
+        name: v1.3.0
+        recommended-version: v1.3.0
   config-version: 1
   networks:
     kaon-1:
