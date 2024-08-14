@@ -59,6 +59,12 @@ codebase:
         commit: "8a34fbe7d602865451fb41eb0eaa9564bba8a849"
         go-version: "go1.20"
         ksync-engine: "tendermint-v0.34"
+      - name: "v18"
+        height: 3388200
+        recommended-version: "v18.0.0"
+        commit: "0fa54ed4980084ffd0f3b5cd53902e49fc064e9c"
+        go-version: "go1.20"
+        ksync-engine: "tendermint-v0.34"
 
 networks:
   # Testnet pools
