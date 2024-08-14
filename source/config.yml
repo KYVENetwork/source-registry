@@ -25,6 +25,20 @@ codebase:
         ksync-engine: "tendermint-v0.34"
 
 networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 11
+        runtime: "kyvejs/tendermint"
+      - id: 12
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "sourced"
+        block-sync-pool: 11
+        docs-url: "https://docs.sourceprotocol.io/"
+        state-sync-pool: 12
+
   # Testnet pools
   kaon-1:
     pools:

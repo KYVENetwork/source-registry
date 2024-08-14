@@ -31,12 +31,12 @@ archway-1:
         ksync-engine: cometbft-v0.37
         name: v6.0.0
         recommended-version: v6.0.2
-      - commit: 6b7bbb5c9b28a6c6925e7574499a94b45c37842c
+      - commit: 4dee653fafcb51f5d7519c38024c8f2145323be9
         go-version: go1.21
         height: 4473000
         ksync-engine: cometbft-v0.37
         name: v7.0.0
-        recommended-version: v7.0.0
+        recommended-version: v7.0.1
   config-version: 1
   networks:
     kaon-1:
@@ -215,9 +215,12 @@ axelar-dojo-1:
           binary-name: axelard
           block-sync-pool: 3
           docs-url: https://docs.axelar.dev/
+          state-sync-pool: 26
       pools:
       - id: 3
         runtime: kyvejs/tendermint
+      - id: 26
+        runtime: kyvejs/tendermint-ssync
       properties:
         description: "Axelar is the programmable Web3 interoperability platform, connecting\
           \ over 50 blockchains via a secure, scalable network \u2013 internet infrastructure\
@@ -267,12 +270,12 @@ celestia:
         genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
       upgrades:
-      - commit: 915847191e80d836f862eea2664949d9a240abea
+      - commit: ad18465a88000a5b45ceb63efc7d46efaaa56f2c
         go-version: go1.22
         height: 1
         ksync-engine: celestia-core-v0.34
-        name: v1.7.0
-        recommended-version: v1.7.0
+        name: v1.9.0
+        recommended-version: v1.9.0
   config-version: 1
   networks:
     kaon-1:
@@ -328,78 +331,98 @@ cosmoshub-4:
         registry-url: https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json
       upgrades:
       - commit: dbd8a6fb522c571debf958837f9113c56d418f6b
+        cosmos-sdk-version: v0.42.4
         go-version: go1.15
         height: 5200791
         ksync-engine: tendermint-v0.34
         name: v4
         recommended-version: v4.2.1
       - commit: b72cc994f7156c8a8991e6beed2dde84ad274588
+        cosmos-sdk-version: v0.42.10
         go-version: go1.16
         height: 6910000
         ksync-engine: tendermint-v0.34
         name: Gravity-DEX
         recommended-version: v5.0.8
       - commit: 305668ab9d962431c79d718bb0ffdeec77a46439
+        cosmos-sdk-version: v0.44.6
         go-version: go1.17
         height: 8695000
         ksync-engine: tendermint-v0.34
         name: Vega
         recommended-version: v6.0.4
       - commit: b2504c1e28eae936477c7b06ae4c0f058613a4e8
+        cosmos-sdk-version: v0.45.9
         go-version: go1.18
         height: 10085397
         ksync-engine: tendermint-v0.34
         name: v7-Theta
         recommended-version: v7.1.1
       - commit: 890ab3aa2e5788537b0d2ebc9bafdc968340e0e5
+        cosmos-sdk-version: v0.45.14
         go-version: go1.18
         height: 14099412
         ksync-engine: tendermint-v0.34
         name: v8-Rho
         recommended-version: v8.0.1
-      - commit: 66494d1ec72cfa0f8800aa8f1545e19d2af47e47
+      - commit: 05b6b87d3c9121e933eab437772ea56f33ae268f
+        cosmos-sdk-version: v0.45.15-ics
         go-version: go1.18
         height: 14470501
         ksync-engine: tendermint-v0.34
         name: v9-Lambda
+        recommended-version: v9.0.3
+      - commit: 66494d1ec72cfa0f8800aa8f1545e19d2af47e47
+        cosmos-sdk-version: v0.45.15-ics
+        go-version: go1.18
+        height: 15213800
+        ksync-engine: tendermint-v0.34
+        name: v9.1.0
         recommended-version: v9.1.1
       - commit: a2b14cdd568273e12b80579b4e22681df95b4cb9
+        cosmos-sdk-version: v0.45.16-ics
         go-version: go1.20
         height: 15816200
         ksync-engine: tendermint-v0.34
         name: v10
         recommended-version: v10.0.2
       - commit: 541a8d86af28231c767d6db52eb88ba9496ad0c4
+        cosmos-sdk-version: v0.45.16-ics
         go-version: go1.20
         height: 16596000
         ksync-engine: tendermint-v0.34
         name: v11
         recommended-version: v11.0.0
       - commit: 6f8067d76ce30996f83645862153ccfaf5f13dd1
+        cosmos-sdk-version: v0.45.16-ics
         go-version: go1.20
         height: 16985500
         ksync-engine: tendermint-v0.34
         name: v12
         recommended-version: v12.0.0
       - commit: 2406abb61856b61904ff06c7be2a355babcc3dfc
+        cosmos-sdk-version: v0.45.16
         go-version: go1.20
         height: 17380000
         ksync-engine: tendermint-v0.34
         name: v13
         recommended-version: v13.0.2
       - commit: 0d9408e9169488707f1ad423e87d0df84a30431f
+        cosmos-sdk-version: v0.45.16
         go-version: go1.20
         height: 18262000
         ksync-engine: tendermint-v0.34
         name: v14
         recommended-version: v14.1.0
       - commit: 1e7b5171ff1d6c8626aa4a0f049a10fefd69823e
+        cosmos-sdk-version: v0.47.10-ics-lsm
         go-version: go1.21
         height: 19639600
         ksync-engine: cometbft-v0.37
         name: v15
         recommended-version: v15.1.0
       - commit: 7281c9b9dc4e3087ee87f5b24e416802b52e8661
+        cosmos-sdk-version: v0.47.10-ics-lsm
         go-version: go1.21
         height: 19939000
         ksync-engine: cometbft-v0.37
@@ -486,6 +509,18 @@ cronosmainnet_25-1:
         ksync-engine: cometbft-v0.37
         name: v1.1.0
         recommended-version: v1.1.1
+      - commit: 90e7c5832de7243a62ccb196d962de215972e37c
+        go-version: go1.22
+        height: 13520000
+        ksync-engine: cometbft-v0.37
+        name: v1.2.0
+        recommended-version: v1.2.2
+      - commit: e1d819c862b30f0ce978baf2addb12516568639e
+        go-version: go1.22
+        height: 14920000
+        ksync-engine: cometbft-v0.37
+        name: v1.3.0
+        recommended-version: v1.3.0
   config-version: 1
   networks:
     kaon-1:
@@ -558,8 +593,26 @@ dydx-mainnet-1:
         go-version: go1.21
         height: 7147832
         ksync-engine: cometbft-v0.37
-        name: v3
+        name: v3.0.0
         recommended-version: protocol/v3.0.2
+      - commit: 2cd68a9b5491a466be9b40201fc6132cea5a9aaa
+        go-version: go1.21
+        height: 12791712
+        ksync-engine: cometbft-v0.38
+        name: v4.0.0
+        recommended-version: protocol/v4.0.5
+      - commit: f15e98f09e35adf1f48084de3ac18aae8a3a9337
+        go-version: go1.21
+        height: 14404200
+        ksync-engine: cometbft-v0.38
+        name: v4.1.0
+        recommended-version: protocol/v4.1.4
+      - commit: a3ea114579299fd1386a980062bdc6d11f9faffe
+        go-version: go1.22
+        height: 17560000
+        ksync-engine: cometbft-v0.38
+        name: v5.0.0
+        recommended-version: protocol/v5.0.5
   config-version: 1
   networks:
     kaon-1:
@@ -928,9 +981,9 @@ osmosis-1:
       integrations:
         ksync:
           binary-name: osmosisd
-          block-sync-pool: 1
+          block-sync-pool: 22
           docs-url: https://docs.osmosis.zone/
-          state-sync-pool: 5
+          state-sync-pool: 23
       pools:
       - id: 22
         runtime: kyvejs/tendermint
@@ -1003,6 +1056,28 @@ source-1:
         logo: ar://ch5vZrkVpu8EVQCvgm3nzFkmVLlXVq5mYQvWE5VWpv8
         title: Source
         website: https://www.sourceprotocol.io/
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: sourced
+          block-sync-pool: 11
+          docs-url: https://docs.sourceprotocol.io/
+          state-sync-pool: 12
+      pools:
+      - id: 11
+        runtime: kyvejs/tendermint
+      - id: 12
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: $SOURCE is a comprehensive blockchain technology suite for individuals,
+          enterprises and developers to easily use, integrate and build web3.0 applications.
+          It is a broad-spectrum technology ecosystem that transforms centralized
+          web tools and financial instruments into decentralized ones.
+        docs: https://docs.sourceprotocol.io/
+        hex: '#d81efd'
+        logo: ar://ch5vZrkVpu8EVQCvgm3nzFkmVLlXVq5mYQvWE5VWpv8
+        title: Source
+        website: https://www.sourceprotocol.io/
   source-id: source-1
 zetachain_7000-1:
   codebase:
@@ -1049,6 +1124,12 @@ zetachain_7000-1:
         ksync-engine: tendermint-v0.34
         name: v14
         recommended-version: v14.0.1
+      - commit: 8a34fbe7d602865451fb41eb0eaa9564bba8a849
+        go-version: go1.20
+        height: 3388200
+        ksync-engine: tendermint-v0.34
+        name: v17
+        recommended-version: v17.0.1
   config-version: 1
   networks:
     kaon-1:
