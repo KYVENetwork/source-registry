@@ -1163,12 +1163,12 @@ zetachain_7000-1:
         ksync-engine: tendermint-v0.34
         name: v17
         recommended-version: v17.0.1
-      - commit: 0fa54ed4980084ffd0f3b5cd53902e49fc064e9c
+      - commit: 855e0ed3811bdf47f96b5f3a42ba2d80e4030349
         go-version: go1.20
         height: 3388200
         ksync-engine: tendermint-v0.34
         name: v18
-        recommended-version: v18.0.0
+        recommended-version: v18.0.1
   config-version: 1
   networks:
     kaon-1:
