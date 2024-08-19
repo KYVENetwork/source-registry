@@ -428,6 +428,27 @@ cosmoshub-4:
         ksync-engine: cometbft-v0.37
         name: v15
         recommended-version: v15.2.0
+      - commit: ebebaac5bf9f19ca68eaa70f6e61287c0e57fb8c
+        cosmos-sdk-version: v0.47.13-ics-lsm
+        go-version: go1.21
+        height: 20440500
+        ksync-engine: cometbft-v0.37
+        name: v16
+        recommended-version: v16.0.0
+      - commit: 24f6d24f029328ee40b3d821cfd12dbcf40bbbe5
+        cosmos-sdk-version: v0.47.15-ics-lsm
+        go-version: go1.21
+        height: 20739800
+        ksync-engine: cometbft-v0.37
+        name: v17
+        recommended-version: v17.3.0
+      - commit: 58b4e54a95c7fc6a64272ccd0f09f46213c005ad
+        cosmos-sdk-version: v0.47.16-ics-lsm
+        go-version: go1.22
+        height: 21330500
+        ksync-engine: cometbft-v0.37
+        name: v18
+        recommended-version: v18.1.0
   config-version: 1
   networks:
     kaon-1:
@@ -613,6 +634,18 @@ dydx-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v5.0.0
         recommended-version: protocol/v5.0.5
+      - commit: c522048088ff4190064374e79a03cada4a4e02e7
+        go-version: go1.22
+        height: 21142000
+        ksync-engine: cometbft-v0.38
+        name: v5.1.0
+        recommended-version: protocol/v5.1.1
+      - commit: 488e4101fbb64489734696c8759cf1051a7934e1
+        go-version: go1.22
+        height: 22170000
+        ksync-engine: cometbft-v0.38
+        name: v5.2.0
+        recommended-version: protocol/v5.2.2
   config-version: 1
   networks:
     kaon-1:
@@ -1130,6 +1163,12 @@ zetachain_7000-1:
         ksync-engine: tendermint-v0.34
         name: v17
         recommended-version: v17.0.1
+      - commit: 855e0ed3811bdf47f96b5f3a42ba2d80e4030349
+        go-version: go1.20
+        height: 3388200
+        ksync-engine: tendermint-v0.34
+        name: v18
+        recommended-version: v18.0.1
   config-version: 1
   networks:
     kaon-1:
