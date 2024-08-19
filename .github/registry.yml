@@ -442,6 +442,13 @@ cosmoshub-4:
         ksync-engine: cometbft-v0.37
         name: v17
         recommended-version: v17.3.0
+      - commit: 58b4e54a95c7fc6a64272ccd0f09f46213c005ad
+        cosmos-sdk-version: v0.47.16-ics-lsm
+        go-version: go1.22
+        height: 21330500
+        ksync-engine: cometbft-v0.37
+        name: v18
+        recommended-version: v18.1.0
   config-version: 1
   networks:
     kaon-1:
@@ -633,6 +640,12 @@ dydx-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v5.1.0
         recommended-version: protocol/v5.1.1
+      - commit: 488e4101fbb64489734696c8759cf1051a7934e1
+        go-version: go1.22
+        height: 22170000
+        ksync-engine: cometbft-v0.38
+        name: v5.2.0
+        recommended-version: protocol/v5.2.2
   config-version: 1
   networks:
     kaon-1:
