@@ -1,0 +1,70 @@
+# Global information
+source-id: "lava-mainnet-1"
+config-version: 1
+properties:
+  title: "Lava"
+  hex: "#ff3900"
+  logo: "ar://02iihdx0mXWtKu3SQiPesbcTtJT-Mm_8tNoPiD-t6mE"
+  description: "Lava is the underlying protocol that powers major ecosystems such as NEAR, Starknet, Cosmos Hub and Filecoin, enabling users and developers to interact with their favourite dapps."
+  website: https://www.lavanet.xyz/
+  docs: https://docs.lavanet.xyz/
+
+codebase:
+  git-url: https://github.com/lavanet/lava
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/lava/chain.json
+      genesis-name: "v0.33.0"
+      genesis-url: https://raw.githubusercontent.com/lavanet/lava-config/main/mainnet-1/genesis_json/genesis.json
+    upgrades:
+      - name: "v0.33.0"
+        height: 1
+        recommended-version: "v0.33.1"
+        commit: "103b2252a6dbcb85da5adcba2f936c5b4a165322"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v0.34.0"
+        height: 375000
+        recommended-version: "v0.34.0"
+        commit: "5f2d89e5ca338b52024760e6edf7a6a18ddfe52f"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v0.35.0"
+        height: 413000
+        recommended-version: "v0.35.0"
+        commit: "fcc0ae8829f6306ed59c98eff3b9eee0156a15bc"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v1.0.1"
+        height: 451000
+        recommended-version: "v1.0.1"
+        commit: "c1f982961f8df57887b4a4a687c32909727827bb"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v2.2.0"
+        height: 888500
+        recommended-version: "v2.2.0"
+        commit: "617333fdff16d8d07f9fa541ff10acbc13ec08f0"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v3.1.0"
+        height: 1308000
+        recommended-version: "v3.1.0"
+        commit: "200972c00b75a819a10385e47e64e199633480f0"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 29
+        runtime: "kyvejs/tendermint"
+      - id: 30
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "lavad"
+        block-sync-pool: 29
+        docs-url: "https://docs.lavanet.xyz/"
+        state-sync-pool: 30
