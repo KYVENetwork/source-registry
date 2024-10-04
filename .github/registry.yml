@@ -266,7 +266,7 @@ celestia:
     git-url: https://github.com/celestiaorg/celestia-app
     settings:
       cosmos-properties:
-        genesis-name: v1.7.0
+        genesis-name: v1
         genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
       upgrades:
@@ -274,8 +274,14 @@ celestia:
         go-version: go1.22
         height: 1
         ksync-engine: celestia-core-v0.34
-        name: v1.9.0
+        name: v1
         recommended-version: v1.9.0
+      - commit: b717c8dd0d639268f38ade64d7a5f4f5ab6f52b5
+        go-version: go1.22
+        height: 2371495
+        ksync-engine: celestia-core-v0.34
+        name: v2
+        recommended-version: v2.2.0
   config-version: 1
   networks:
     kaon-1:
@@ -449,6 +455,20 @@ cosmoshub-4:
         ksync-engine: cometbft-v0.37
         name: v18
         recommended-version: v18.1.0
+      - commit: 1d52b3d434d5d78561c3628ef351b88890ec7f7f
+        cosmos-sdk-version: v0.50.9-lsm
+        go-version: go1.22
+        height: 21835200
+        ksync-engine: cometbft-v0.38
+        name: v19
+        recommended-version: v19.2.0
+      - commit: 2dba9d471ef73b0a99e844bf55a44ddae700ea06
+        cosmos-sdk-version: v0.50.9-lsm
+        go-version: go1.22
+        height: 22443500
+        ksync-engine: cometbft-v0.37
+        name: v20
+        recommended-version: v20.0.0
   config-version: 1
   networks:
     kaon-1:
@@ -646,6 +666,12 @@ dydx-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v5.2.0
         recommended-version: protocol/v5.2.2
+      - commit: bb43ac2fc18b897dbedf66234beccf1aa6eb428c
+        go-version: go1.22
+        height: 26785000
+        ksync-engine: cometbft-v0.38
+        name: v6.0.0
+        recommended-version: protocol/v6.0.4
   config-version: 1
   networks:
     kaon-1:
@@ -730,6 +756,12 @@ kyve-1:
         ksync-engine: cometbft-v0.37
         name: v1.4.0
         recommended-version: v1.4.0
+      - commit: 3910277da474d51f4147fd388ac2c6cd4ca67c84
+        go-version: go1.22
+        height: 7254527
+        ksync-engine: cometbft-v0.38
+        name: v1.5.0
+        recommended-version: v1.5.0
   config-version: 1
   networks:
     kaon-1:
@@ -917,6 +949,12 @@ noble-1:
         ksync-engine: tendermint-v0.34
         name: xenon
         recommended-version: v6.0.0
+      - commit: 56f08ad2d6c8baec66617202f0463f66c9b0fdfe
+        go-version: go1.21
+        height: 12240000
+        ksync-engine: tendermint-v0.34
+        name: numus
+        recommended-version: v7.0.0
   config-version: 1
   networks:
     kaon-1:
@@ -1101,6 +1139,12 @@ osmosis-1:
         ksync-engine: cometbft-v0.37
         name: v24
         recommended-version: v24.0.1
+      - commit: 15566f1f2945a16af9243dd376ee58a0d691b66a
+        go-version: go1.21
+        height: 15753500
+        ksync-engine: cometbft-v0.37
+        name: v25
+        recommended-version: v25.0.0
   config-version: 1
   networks:
     kaon-1:

@@ -59,6 +59,12 @@ codebase:
         commit: "488e4101fbb64489734696c8759cf1051a7934e1"
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.38"
+      - name: "v6.0.0"
+        height: 26785000
+        recommended-version: "protocol/v6.0.4"
+        commit: "bb43ac2fc18b897dbedf66234beccf1aa6eb428c"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
 
 networks:
   # Testnet pools

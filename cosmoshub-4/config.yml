@@ -134,6 +134,20 @@ codebase:
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.37"
         cosmos-sdk-version: "v0.47.16-ics-lsm"
+      - name: "v19"
+        height: 21835200
+        recommended-version: "v19.2.0"
+        commit: "1d52b3d434d5d78561c3628ef351b88890ec7f7f"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
+        cosmos-sdk-version: "v0.50.9-lsm"
+      - name: "v20"
+        height: 22443500
+        recommended-version: "v20.0.0"
+        commit: "2dba9d471ef73b0a99e844bf55a44ddae700ea06"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.37"
+        cosmos-sdk-version: "v0.50.9-lsm"
 
 networks:
   # Mainnet pools
