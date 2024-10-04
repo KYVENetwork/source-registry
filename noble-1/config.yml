@@ -95,6 +95,12 @@ codebase:
         commit: "4ffb44b6c047aa31bb92e0c6e4d29c063b222653"
         go-version: "go1.21"
         ksync-engine: "tendermint-v0.34"
+      - name: "numus"
+        height: 12240000
+        recommended-version: "v7.0.0"
+        commit: "56f08ad2d6c8baec66617202f0463f66c9b0fdfe"
+        go-version: "go1.21"
+        ksync-engine: "tendermint-v0.34"
 
 networks:
   # Mainnet pools

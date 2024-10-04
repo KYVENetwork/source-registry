@@ -14,13 +14,19 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
-      genesis-name: "v1.7.0"
+      genesis-name: "v1"
       genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
     upgrades:
-      - name: "v1.9.0"
+      - name: "v1"
         height: 1
         recommended-version: "v1.9.0"
         commit: "ad18465a88000a5b45ceb63efc7d46efaaa56f2c"
+        go-version: "go1.22"
+        ksync-engine: "celestia-core-v0.34"
+      - name: "v2"
+        height: 2371495
+        recommended-version: "v2.2.0"
+        commit: "b717c8dd0d639268f38ade64d7a5f4f5ab6f52b5"
         go-version: "go1.22"
         ksync-engine: "celestia-core-v0.34"
 
