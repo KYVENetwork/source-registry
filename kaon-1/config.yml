@@ -1,0 +1,76 @@
+# Global information
+source-id: "kaon-1"
+config-version: 1
+properties:
+  title: "KYVE Testnet"
+  hex: "#2e5196"
+  logo: "ar://tgQmRFikTiA9BpoI19Nk22SskkSwn5y1fOvd-G1m39U"
+  description: "Kaon, KYVE's testnet is the network for testing new upgrades, pools and other concepts before being published on mainnet. KYVE is a revolutionary platform within the Web3 space, designed to address the challenges of accessing decentralized and completely accurate data. As the Web3 ecosystem expands, the difficulty in accessing such data leads to scalability issues and the risk of data inconsistencies due to the lack of proper validation before use. KYVE aims to provide a trustless and secure future for Web3's data infrastructure by offering customized access to on- and off-chain data. It achieves this through decentralized data validation, ensuring data immutability, and facilitating easy data retrieval. This enables developers, data engineers, and others to access the trustless data they need to continue building the future of Web3."
+  website: https://kyve.network/
+  docs: https://docs.kyve.network/
+
+codebase:
+  git-url: https://github.com/KYVENetwork/chain
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/testnets/kyvetestnet/chain.json
+      genesis-name: "v1.0.0-rc0"
+      genesis-url: https://raw.githubusercontent.com/KYVENetwork/networks/refs/heads/main/kaon-1/genesis.json
+    upgrades:
+      - name: "v1.0.0-rc0"
+        height: 1
+        recommended-version: "v1.0.0-rc0"
+        commit: "f8574c9b80c81193aa16b411cac676fe417f8881"
+        go-version: "go1.19"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v1.0.0-rc1"
+        height: 443300
+        recommended-version: "v1.0.0-rc1"
+        commit: "cedc217027c2b7e3d2b7077abe7a4fa4442a19c4"
+        go-version: "go1.19"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v1.1.0"
+        height: 1115111
+        recommended-version: "v1.1.3"
+        commit: "9bed226602dcd1fa624aabee3124a2bbd0467d02"
+        go-version: "go1.20"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v1.2.0"
+        height: 1502502
+        recommended-version: "v1.2.2"
+        commit: "489960cc1c3991d26d8d7546ccfa318a98121aa8"
+        go-version: "go1.20"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v1.3.0"
+        height: 2341100
+        recommended-version: "v1.3.2"
+        commit: "7a59450c6cee62323132ace323afdbee94be0dfe"
+        go-version: "go1.20"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v1.4.0"
+        height: 4185500
+        recommended-version: "v1.4.0"
+        commit: "68e5ff7a8d97f21e2aede9341ba22df9d81bb264"
+        go-version: "go1.20"
+        ksync-engine: "cometbft-v0.37"
+      - name: "v1.5.0"
+        height: 7571371
+        recommended-version: "v1.5.0"
+        commit: "3910277da474d51f4147fd388ac2c6cd4ca67c84"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 31
+        runtime: "kyvejs/tendermint"
+      - id: 32
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "kyved"
+        block-sync-pool: 31
+        docs-url: "https://docs.kyve.network/"
+        state-sync-pool: 32
