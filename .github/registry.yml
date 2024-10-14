@@ -37,6 +37,12 @@ archway-1:
         ksync-engine: cometbft-v0.37
         name: v7.0.0
         recommended-version: v7.0.1
+      - commit: 5eb8a3062e1b457b6732d681f742e54facbf8b18
+        go-version: go1.22
+        height: 6836450
+        ksync-engine: cometbft-v0.38
+        name: v9.0.0
+        recommended-version: v9.0.0
   config-version: 1
   networks:
     kaon-1:
