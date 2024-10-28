@@ -146,7 +146,7 @@ codebase:
         recommended-version: "v20.0.0"
         commit: "2dba9d471ef73b0a99e844bf55a44ddae700ea06"
         go-version: "go1.22"
-        ksync-engine: "cometbft-v0.37"
+        ksync-engine: "cometbft-v0.38"
         cosmos-sdk-version: "v0.50.9-lsm"
 
 networks:
