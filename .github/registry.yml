@@ -472,7 +472,7 @@ cosmoshub-4:
         cosmos-sdk-version: v0.50.9-lsm
         go-version: go1.22
         height: 22443500
-        ksync-engine: cometbft-v0.37
+        ksync-engine: cometbft-v0.38
         name: v20
         recommended-version: v20.0.0
   config-version: 1
