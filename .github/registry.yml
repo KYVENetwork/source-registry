@@ -749,6 +749,27 @@ dydx-mainnet-1:
         logo: ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc
         title: dYdX
         website: https://dydx.exchange/
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: nobled
+          block-sync-pool: 13
+          docs-url: https://docs.dydx.exchange/
+      pools:
+      - id: 13
+        runtime: kyvejs/tendermint
+      properties:
+        description: "dYdX chain is an open-source application specific blockchain\
+          \ software that can power a decentralized perpetuals exchange. This standalone\
+          \ blockchain software is open-sourced by dYdX Trading Inc. (\u201CdYdX\u201D\
+          ) and is based on the Cosmos SDK and CometBFT proof-of-stake consensus protocol.\
+          \ dYdX Chain is fully decentralized end-to-end, including its consensus\
+          \ mechanism, order-book, matching engine and front end."
+        docs: https://docs.dydx.exchange/
+        hex: '#12121d'
+        logo: ar://34RVRPI9Ume67ZdNhqwQ42GkZa0NoulBXNiJFJQZ6uc
+        title: dYdX
+        website: https://dydx.exchange/
   source-id: dydx-mainnet-1
 ethereum:
   config-version: 1
