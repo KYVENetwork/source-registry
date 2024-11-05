@@ -1,3 +1,48 @@
+andromeda-1:
+  codebase:
+    git-url: https://github.com/andromedaprotocol/andromedad
+    settings:
+      cosmos-properties:
+        genesis-name: v1
+        genesis-url: https://files.kyve.network/infrastructure/andromeda/genesis.json
+        registry-url: https://github.com/cosmos/chain-registry/blob/master/andromeda/chain.json
+      upgrades:
+      - commit: e93e48e0101b3408803d6b1e1cdd14bd1920160c
+        go-version: go1.21
+        height: 2410000
+        ksync-engine: cometbft-v0.37
+        name: v1
+        recommended-version: v0.1.1-beta-patch
+      - commit: d4a545873e26f920f26e5ce54798f580e9846c9d
+        go-version: go1.21
+        height: 4854150
+        ksync-engine: cometbft-v0.37
+        name: v2
+        recommended-version: v2.0.0
+  config-version: 1
+  networks:
+    kaon-1:
+      integrations:
+        ksync:
+          binary-name: andromedad
+          block-sync-pool: 33
+          docs-url: https://docs.andromedaprotocol.io/andromeda
+          state-sync-pool: 35
+      pools:
+      - id: 33
+        runtime: kyvejs/tendermint
+      - id: 35
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: Andromeda is an all on-chain and multi-chain suite of products,
+          tools, and utilities enabled by a decentralized Operating System we call
+          aOS, or Andromeda Operating System. aOS is where Web3 starts.
+        docs: https://docs.andromedaprotocol.io/andromeda
+        hex: '#ac5086'
+        logo: ar://r0pmO4nwx_OvpPhCF2JRTXAnKu0Ub8azY2fcw9o4Klg
+        title: Andromeda
+        website: https://www.andromedaprotocol.io/
+  source-id: andromeda-1
 archway-1:
   codebase:
     git-url: https://github.com/archway-network/archway
