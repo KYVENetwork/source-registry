@@ -752,7 +752,7 @@ dydx-mainnet-1:
     kyve-1:
       integrations:
         ksync:
-          binary-name: nobled
+          binary-name: dydxprotocold
           block-sync-pool: 13
           docs-url: https://docs.dydx.exchange/
       pools:
