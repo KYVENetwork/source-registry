@@ -74,7 +74,7 @@ networks:
         runtime: "kyvejs/tendermint"
     integrations:
       ksync:
-        binary-name: "nobled"
+        binary-name: "dydxprotocold"
         block-sync-pool: 13
         docs-url: "https://docs.dydx.exchange/"
   # Testnet pools
