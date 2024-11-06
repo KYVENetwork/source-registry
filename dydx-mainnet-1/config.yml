@@ -67,6 +67,16 @@ codebase:
         ksync-engine: "cometbft-v0.38"
 
 networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 13
+        runtime: "kyvejs/tendermint"
+    integrations:
+      ksync:
+        binary-name: "dydxprotocold"
+        block-sync-pool: 13
+        docs-url: "https://docs.dydx.exchange/"
   # Testnet pools
   kaon-1:
     pools:
