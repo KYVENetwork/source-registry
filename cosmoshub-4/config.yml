@@ -151,7 +151,7 @@ codebase:
       - name: "v21"
         height: 22953640
         recommended-version: "v21.0.0"
-        commit: "2dba9d471ef73b0a99e844bf55a44ddae700ea06"
+        commit: "db2cc90315161d6730551d795558aaa7664aea6f"
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.38"
         cosmos-sdk-version: "v0.50.9-lsm"
