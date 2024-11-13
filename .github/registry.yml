@@ -1130,12 +1130,12 @@ noble-1:
         ksync-engine: tendermint-v0.34
         name: numus
         recommended-version: v7.0.0
-      - commit: d1cb63ec9c13d60567dce08d78180b4756f0e90f
+      - commit: 2fe3ec309214cac4c231e58cd42870550b1bbd64
         go-version: go1.22
         height: 15375000
         ksync-engine: cometbft-v0.38
         name: helium
-        recommended-version: v8.0.0
+        recommended-version: v8.0.1
   config-version: 1
   networks:
     kaon-1:
