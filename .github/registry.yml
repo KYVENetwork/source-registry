@@ -42,6 +42,24 @@ andromeda-1:
         logo: ar://r0pmO4nwx_OvpPhCF2JRTXAnKu0Ub8azY2fcw9o4Klg
         title: Andromeda
         website: https://www.andromedaprotocol.io/
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: andromedad
+          block-sync-pool: 14
+          docs-url: https://docs.andromedaprotocol.io/andromeda
+      pools:
+      - id: 14
+        runtime: kyvejs/tendermint
+      properties:
+        description: Andromeda is an all on-chain and multi-chain suite of products,
+          tools, and utilities enabled by a decentralized Operating System we call
+          aOS, or Andromeda Operating System. aOS is where Web3 starts.
+        docs: https://docs.andromedaprotocol.io/andromeda
+        hex: '#ac5086'
+        logo: ar://r0pmO4nwx_OvpPhCF2JRTXAnKu0Ub8azY2fcw9o4Klg
+        title: Andromeda
+        website: https://www.andromedaprotocol.io/
   source-id: andromeda-1
 archway-1:
   codebase:
