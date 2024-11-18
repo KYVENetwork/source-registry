@@ -31,6 +31,16 @@ codebase:
         ksync-engine: "cometbft-v0.37"
 
 networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 14
+        runtime: "kyvejs/tendermint"
+    integrations:
+      ksync:
+        binary-name: "andromedad"
+        block-sync-pool: 14
+        docs-url: "https://docs.andromedaprotocol.io/andromeda"
   # Testnet pools
   kaon-1:
     pools:
