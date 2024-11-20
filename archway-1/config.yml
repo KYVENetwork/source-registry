@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/archway/chain.json
-      genesis-name: "v1.0.0"
       genesis-url: https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz
     upgrades:
-      - name: "v1.0.0"
+      - name: "genesis"
         height: 1
         recommended-version: "v1.0.1"
         commit: "86409142585b7157c628ca52b8357002fe60a165"

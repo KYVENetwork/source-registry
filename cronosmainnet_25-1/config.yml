@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/cronos/chain.json
-      genesis-name: "v0.6.0"
       genesis-url: https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json
     upgrades:
-      - name: "v0.6.0"
+      - name: "genesis"
         height: 1
         recommended-version: "v0.6.11"
         commit: "e6753a2ec30cef2f51f354cbd4be68483e396c46"

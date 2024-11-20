@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
-      genesis-name: "v0.10"
       genesis-url: https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json
     upgrades:
-      - name: "v0.10"
+      - name: "genesis"
         height: 1
         recommended-version: "v0.10.7"
         commit: "44fc624a6b710b421dd9dff82d0251b94d28296f"
