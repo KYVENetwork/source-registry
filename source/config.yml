@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/source/chain.json
-      genesis-name: "v3.0.1"
       genesis-url: https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json
     upgrades:
-      - name: "v3.0.1"
+      - name: "genesis"
         height: 1
         recommended-version: "v3.0.1"
         commit: "2aae45f6e2d23f6c81c02075b74ee9f5b7598e3e"

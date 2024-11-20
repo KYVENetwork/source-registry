@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/andromeda/chain.json
-      genesis-name: "v1"
       genesis-url: https://files.kyve.network/infrastructure/andromeda/genesis.json
     upgrades:
-      - name: "v1"
+      - name: "genesis"
         height: 2410000
         recommended-version: "v0.1.1-beta-patch"
         commit: "e93e48e0101b3408803d6b1e1cdd14bd1920160c"

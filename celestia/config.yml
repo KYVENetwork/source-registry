@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
-      genesis-name: "v1"
       genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
     upgrades:
-      - name: "v1"
+      - name: "genesis"
         height: 1
         recommended-version: "v1.9.0"
         commit: "ad18465a88000a5b45ceb63efc7d46efaaa56f2c"

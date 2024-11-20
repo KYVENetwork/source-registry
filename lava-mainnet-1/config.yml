@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/lava/chain.json
-      genesis-name: "v0.33.0"
       genesis-url: https://raw.githubusercontent.com/lavanet/lava-config/main/mainnet-1/genesis_json/genesis.json
     upgrades:
-      - name: "v0.33.0"
+      - name: "genesis"
         height: 1
         recommended-version: "v0.33.1"
         commit: "103b2252a6dbcb85da5adcba2f936c5b4a165322"

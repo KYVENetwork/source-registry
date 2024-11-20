@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
-      genesis-name: "v2"
       genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
     upgrades:
-      - name: "v2"
+      - name: "genesis"
         height: 1
         recommended-version: "protocol/v2.0.1"
         commit: "31c2a937fc87bb9b7617443e4e5db2b1a2e9bda9"

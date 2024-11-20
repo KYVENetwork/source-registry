@@ -23,9 +23,6 @@
                 "registry-url": {
                   "type": "string"
                 },
-                "genesis-name": {
-                  "type": "string"
-                },
                 "genesis-url": {
                   "type": "string"
                 }

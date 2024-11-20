@@ -14,10 +14,9 @@ codebase:
   settings:
     cosmos-properties:
       registry-url: https://github.com/cosmos/chain-registry/blob/master/kyve/chain.json
-      genesis-name: "v1.0.0"
       genesis-url: https://raw.githubusercontent.com/KYVENetwork/networks/main/kyve-1/genesis.json
     upgrades:
-      - name: "v1.0.0"
+      - name: "genesis"
         height: 1
         recommended-version: "v1.0.0"
         commit: "82007dd0225a3a0b7c1dfdbb12b1f8bc9a6f9273"
