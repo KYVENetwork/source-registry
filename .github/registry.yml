@@ -3,7 +3,6 @@ andromeda-1:
     git-url: https://github.com/andromedaprotocol/andromedad
     settings:
       cosmos-properties:
-        genesis-name: v1
         genesis-url: https://files.kyve.network/infrastructure/andromeda/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/andromeda/chain.json
       upgrades:
@@ -11,7 +10,7 @@ andromeda-1:
         go-version: go1.21
         height: 2410000
         ksync-engine: cometbft-v0.37
-        name: v1
+        name: genesis
         recommended-version: v0.1.1-beta-patch
       - commit: d4a545873e26f920f26e5ce54798f580e9846c9d
         go-version: go1.21
@@ -48,7 +47,6 @@ archway-1:
     git-url: https://github.com/archway-network/archway
     settings:
       cosmos-properties:
-        genesis-name: v1.0.0
         genesis-url: https://github.com/archway-network/networks/raw/main/archway/genesis/genesis.json.gz
         registry-url: https://github.com/cosmos/chain-registry/blob/master/archway/chain.json
       upgrades:
@@ -56,7 +54,7 @@ archway-1:
         go-version: go1.19
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v1.0.0
+        name: genesis
         recommended-version: v1.0.1
       - commit: d6c5cf4509e1c848f26d539c3519685f1d323dfd
         go-version: go1.19
@@ -146,7 +144,6 @@ axelar-dojo-1:
     git-url: https://github.com/axelarnetwork/axelar-core
     settings:
       cosmos-properties:
-        genesis-name: v0.10
         genesis-url: https://raw.githubusercontent.com/axelarnetwork/axelarate-community/main/resources/mainnet/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/axelar/chain.json
       upgrades:
@@ -154,7 +151,7 @@ axelar-dojo-1:
         go-version: go1.16
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v0.10
+        name: genesis
         recommended-version: v0.10.7
       - commit: 1b1207f96dc62fcbfb64dac6f3dde633de727db1
         go-version: go1.17
@@ -317,7 +314,6 @@ celestia:
     git-url: https://github.com/celestiaorg/celestia-app
     settings:
       cosmos-properties:
-        genesis-name: v1
         genesis-url: https://raw.githubusercontent.com/celestiaorg/networks/master/celestia/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/celestia/chain.json
       upgrades:
@@ -325,7 +321,7 @@ celestia:
         go-version: go1.22
         height: 1
         ksync-engine: celestia-core-v0.34
-        name: v1
+        name: genesis
         recommended-version: v1.9.0
       - commit: b717c8dd0d639268f38ade64d7a5f4f5ab6f52b5
         go-version: go1.22
@@ -383,7 +379,6 @@ cosmoshub-4:
     git-url: https://github.com/cosmos/gaia
     settings:
       cosmos-properties:
-        genesis-name: v4
         genesis-url: https://github.com/cosmos/mainnet/raw/master/genesis/genesis.cosmoshub-4.json.gz
         registry-url: https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json
       upgrades:
@@ -392,7 +387,7 @@ cosmoshub-4:
         go-version: go1.15
         height: 5200791
         ksync-engine: tendermint-v0.34
-        name: v4
+        name: genesis
         recommended-version: v4.2.1
       - commit: b72cc994f7156c8a8991e6beed2dde84ad274588
         cosmos-sdk-version: v0.42.10
@@ -574,7 +569,6 @@ cronosmainnet_25-1:
     git-url: https://github.com/crypto-org-chain/cronos
     settings:
       cosmos-properties:
-        genesis-name: v0.6.0
         genesis-url: https://raw.githubusercontent.com/crypto-org-chain/cronos-mainnet/master/cronosmainnet_25-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/cronos/chain.json
       upgrades:
@@ -582,7 +576,7 @@ cronosmainnet_25-1:
         go-version: go1.17
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v0.6.0
+        name: genesis
         recommended-version: v0.6.11
       - commit: 8035ebdcc3ce1ed5ee3d4887eb4ea1032c4d283c
         go-version: go1.17
@@ -678,7 +672,6 @@ dydx-mainnet-1:
     git-url: https://github.com/dydxprotocol/v4-chain
     settings:
       cosmos-properties:
-        genesis-name: v2
         genesis-url: https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/dydx/chain.json
       upgrades:
@@ -686,7 +679,7 @@ dydx-mainnet-1:
         go-version: go1.21
         height: 1
         ksync-engine: cometbft-v0.37
-        name: v2
+        name: genesis
         recommended-version: protocol/v2.0.1
       - commit: 40a28e49c4300e6a17a5b0a84b134e4a4397758f
         go-version: go1.21
@@ -807,7 +800,6 @@ kaon-1:
     git-url: https://github.com/KYVENetwork/chain
     settings:
       cosmos-properties:
-        genesis-name: v1.0.0-rc0
         genesis-url: https://raw.githubusercontent.com/KYVENetwork/networks/refs/heads/main/kaon-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/testnets/kyvetestnet/chain.json
       upgrades:
@@ -815,7 +807,7 @@ kaon-1:
         go-version: go1.19
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v1.0.0-rc0
+        name: genesis
         recommended-version: v1.0.0-rc0
       - commit: cedc217027c2b7e3d2b7077abe7a4fa4442a19c4
         go-version: go1.19
@@ -891,7 +883,6 @@ kyve-1:
     git-url: https://github.com/KYVENetwork/chain
     settings:
       cosmos-properties:
-        genesis-name: v1.0.0
         genesis-url: https://raw.githubusercontent.com/KYVENetwork/networks/main/kyve-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/kyve/chain.json
       upgrades:
@@ -899,7 +890,7 @@ kyve-1:
         go-version: go1.19
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v1.0.0
+        name: genesis
         recommended-version: v1.0.0
       - commit: 9bed226602dcd1fa624aabee3124a2bbd0467d02
         go-version: go1.20
@@ -967,7 +958,6 @@ lava-mainnet-1:
     git-url: https://github.com/lavanet/lava
     settings:
       cosmos-properties:
-        genesis-name: v0.33.0
         genesis-url: https://raw.githubusercontent.com/lavanet/lava-config/main/mainnet-1/genesis_json/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/lava/chain.json
       upgrades:
@@ -975,7 +965,7 @@ lava-mainnet-1:
         go-version: go1.20
         height: 1
         ksync-engine: cometbft-v0.37
-        name: v0.33.0
+        name: genesis
         recommended-version: v0.33.1
       - commit: 5f2d89e5ca338b52024760e6edf7a6a18ddfe52f
         go-version: go1.20
@@ -1042,7 +1032,6 @@ noble-1:
     git-url: https://github.com/noble-assets/noble
     settings:
       cosmos-properties:
-        genesis-name: v1.0.0
         genesis-url: https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/noble/chain.json
       upgrades:
@@ -1050,7 +1039,7 @@ noble-1:
         go-version: go1.19
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v1.0.0
+        name: genesis
         recommended-version: v1.0.0
       - commit: 2b98e0bb282a723aae64941cc54f52b1f4324330
         go-version: go1.19
@@ -1190,7 +1179,6 @@ osmosis-1:
     git-url: https://github.com/osmosis-labs/osmosis/
     settings:
       cosmos-properties:
-        genesis-name: v3
         genesis-url: https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/osmosis/chain.json
       upgrades:
@@ -1198,7 +1186,7 @@ osmosis-1:
         go-version: go1.15
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v3
+        name: genesis
         recommended-version: v3.1.0
       - commit: e79fc9f47f2bd4518d9e16567a369c25a0820fa6
         go-version: go1.17
@@ -1373,7 +1361,6 @@ source-1:
     git-url: https://github.com/Source-Protocol-Cosmos/source
     settings:
       cosmos-properties:
-        genesis-name: v3.0.1
         genesis-url: https://raw.githubusercontent.com/Source-Protocol-Cosmos/mainnet/master/source-1/genesis.json
         registry-url: https://github.com/cosmos/chain-registry/blob/master/source/chain.json
       upgrades:
@@ -1381,7 +1368,7 @@ source-1:
         go-version: go1.19
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v3.0.1
+        name: genesis
         recommended-version: v3.0.1
   config-version: 1
   networks:
@@ -1435,7 +1422,6 @@ zetachain_7000-1:
     git-url: https://github.com/zeta-chain/node
     settings:
       cosmos-properties:
-        genesis-name: v10.1.0
         genesis-url: https://zetachain.blockpi.network/rpc/v1/public/genesis
         registry-url: https://github.com/cosmos/chain-registry/blob/master/zetachain/chain.json
       upgrades:
@@ -1443,7 +1429,7 @@ zetachain_7000-1:
         go-version: go1.20
         height: 1
         ksync-engine: tendermint-v0.34
-        name: v10.1.0
+        name: genesis
         recommended-version: v10.1.5
       - commit: 825d9f87bb13e28ec916b8abaafe8b5534eace60
         go-version: go1.20
