@@ -231,7 +231,7 @@ axelar-dojo-1:
         ksync-engine: tendermint-v0.34
         name: v0.24
         recommended-version: v0.24.0
-      - commit: 981196d61fea1b9ad66eab69b27ae2ff3c2524b2
+      - commit: 08d51ffee840403e0d2602a9f1d7ff4d99ccb155
         go-version: go1.18
         height: 3852250
         ksync-engine: tendermint-v0.34
@@ -273,6 +273,12 @@ axelar-dojo-1:
         ksync-engine: tendermint-v0.34
         name: v0.35
         recommended-version: v0.35.5
+      - commit: "4e9bf5f0bbe3e4ae6347b067d8dfa5f8758757b2"
+        go-version: "go1.23"
+        height: 14231100
+        ksync-engine: "tendermint-v0.34"
+        name: "v1.0"
+        recommended-version: "v1.0.5"
   config-version: 1
   networks:
     kaon-1:
