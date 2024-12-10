@@ -231,7 +231,7 @@ axelar-dojo-1:
         ksync-engine: tendermint-v0.34
         name: v0.24
         recommended-version: v0.24.0
-      - commit: 981196d61fea1b9ad66eab69b27ae2ff3c2524b2
+      - commit: 08d51ffee840403e0d2602a9f1d7ff4d99ccb155
         go-version: go1.18
         height: 3852250
         ksync-engine: tendermint-v0.34
@@ -273,6 +273,12 @@ axelar-dojo-1:
         ksync-engine: tendermint-v0.34
         name: v0.35
         recommended-version: v0.35.5
+      - commit: "4e9bf5f0bbe3e4ae6347b067d8dfa5f8758757b2"
+        go-version: "go1.23"
+        height: 14231100
+        ksync-engine: "tendermint-v0.34"
+        name: "v1.0"
+        recommended-version: "v1.0.5"
   config-version: 1
   networks:
     kaon-1:
@@ -624,14 +630,20 @@ cronosmainnet_25-1:
         go-version: go1.22
         height: 13520000
         ksync-engine: cometbft-v0.37
-        name: v1.2.0
+        name: v1.2
         recommended-version: v1.2.2
       - commit: e1d819c862b30f0ce978baf2addb12516568639e
         go-version: go1.22
         height: 14920000
         ksync-engine: cometbft-v0.37
-        name: v1.3.0
+        name: v1.3
         recommended-version: v1.3.0
+      - commit: 3c6ce9008bbc896bdac8573aab8dc7db3f32ac72
+        go-version: go1.23
+        height: 17155000
+        ksync-engine: cometbft-v0.38
+        name: v1.4
+        recommended-version: v1.4.1
   config-version: 1
   networks:
     kaon-1:

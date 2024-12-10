@@ -85,7 +85,7 @@ codebase:
       - name: "v0.26"
         height: 3852250
         recommended-version: "v0.26.5"
-        commit: "981196d61fea1b9ad66eab69b27ae2ff3c2524b2"
+        commit: "08d51ffee840403e0d2602a9f1d7ff4d99ccb155"
         go-version: "go1.18"
         ksync-engine: "tendermint-v0.34"
       - name: "v0.28"
@@ -123,6 +123,12 @@ codebase:
         recommended-version: "v0.35.5"
         commit: "a4736492d3d5ac705ec1a154c5167323abdc66a7"
         go-version: "go1.21"
+        ksync-engine: "tendermint-v0.34"
+      - name: "v1.0"
+        height: 14231100
+        recommended-version: "v1.0.5"
+        commit: "4e9bf5f0bbe3e4ae6347b067d8dfa5f8758757b2"
+        go-version: "go1.23"
         ksync-engine: "tendermint-v0.34"
 
 networks:
