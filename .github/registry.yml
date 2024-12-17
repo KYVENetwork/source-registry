@@ -231,7 +231,7 @@ axelar-dojo-1:
         ksync-engine: tendermint-v0.34
         name: v0.24
         recommended-version: v0.24.0
-      - commit: 981196d61fea1b9ad66eab69b27ae2ff3c2524b2
+      - commit: 08d51ffee840403e0d2602a9f1d7ff4d99ccb155
         go-version: go1.18
         height: 3852250
         ksync-engine: tendermint-v0.34
@@ -273,6 +273,12 @@ axelar-dojo-1:
         ksync-engine: tendermint-v0.34
         name: v0.35
         recommended-version: v0.35.5
+      - commit: 4e9bf5f0bbe3e4ae6347b067d8dfa5f8758757b2
+        go-version: go1.23
+        height: 14231100
+        ksync-engine: tendermint-v0.34
+        name: v1.0
+        recommended-version: v1.0.5
   config-version: 1
   networks:
     kaon-1:
@@ -632,6 +638,12 @@ cronosmainnet_25-1:
         ksync-engine: cometbft-v0.37
         name: v1.3.0
         recommended-version: v1.3.0
+      - commit: 3c6ce9008bbc896bdac8573aab8dc7db3f32ac72
+        go-version: go1.23
+        height: 17155000
+        ksync-engine: cometbft-v0.38
+        name: v1.4
+        recommended-version: v1.4.1
   config-version: 1
   networks:
     kaon-1:
@@ -698,55 +710,55 @@ dydx-mainnet-1:
         height: 1
         ksync-engine: cometbft-v0.37
         name: genesis
-        recommended-version: protocol/v2.0.1
+        recommended-version: v2.0.1
       - commit: 40a28e49c4300e6a17a5b0a84b134e4a4397758f
         go-version: go1.21
         height: 7147832
         ksync-engine: cometbft-v0.37
         name: v3.0.0
-        recommended-version: protocol/v3.0.2
+        recommended-version: v3.0.2
       - commit: 2cd68a9b5491a466be9b40201fc6132cea5a9aaa
         go-version: go1.21
         height: 12791712
         ksync-engine: cometbft-v0.38
         name: v4.0.0
-        recommended-version: protocol/v4.0.5
+        recommended-version: v4.0.5
       - commit: f15e98f09e35adf1f48084de3ac18aae8a3a9337
         go-version: go1.21
         height: 14404200
         ksync-engine: cometbft-v0.38
         name: v4.1.0
-        recommended-version: protocol/v4.1.4
+        recommended-version: v4.1.4
       - commit: a3ea114579299fd1386a980062bdc6d11f9faffe
         go-version: go1.22
         height: 17560000
         ksync-engine: cometbft-v0.38
         name: v5.0.0
-        recommended-version: protocol/v5.0.5
+        recommended-version: v5.0.5
       - commit: c522048088ff4190064374e79a03cada4a4e02e7
         go-version: go1.22
         height: 21142000
         ksync-engine: cometbft-v0.38
         name: v5.1.0
-        recommended-version: protocol/v5.1.1
+        recommended-version: v5.1.1
       - commit: 488e4101fbb64489734696c8759cf1051a7934e1
         go-version: go1.22
         height: 22170000
         ksync-engine: cometbft-v0.38
         name: v5.2.0
-        recommended-version: protocol/v5.2.2
+        recommended-version: v5.2.2
       - commit: bb43ac2fc18b897dbedf66234beccf1aa6eb428c
         go-version: go1.22
         height: 26785000
         ksync-engine: cometbft-v0.38
         name: v6.0.0
-        recommended-version: protocol/v6.0.4
+        recommended-version: v6.0.4
       - commit: b3b12f3f00cf2e350e862d095740c60ebf7b107b
         go-version: go1.22
         height: 29950000
         ksync-engine: cometbft-v0.38
         name: v7.0
-        recommended-version: protocol/v7.0.1
+        recommended-version: v7.0.1
   config-version: 1
   networks:
     kaon-1:
@@ -1131,12 +1143,12 @@ noble-1:
         ksync-engine: cometbft-v0.38
         name: helium
         recommended-version: v8.0.1
-      - commit: 2592437d3813860037a6b885a88321421bf67198
+      - commit: ff1e52183712ae388f0ff5e68ba610849a3a7ae2
         go-version: go1.22
         height: 15375010
         ksync-engine: cometbft-v0.38
         name: helium
-        recommended-version: v8.0.2
+        recommended-version: v8.0.4
   config-version: 1
   networks:
     kaon-1:
