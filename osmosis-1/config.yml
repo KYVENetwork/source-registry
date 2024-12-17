@@ -148,7 +148,18 @@ codebase:
         commit: "3a19be9eea525dc4e899b1c345e9f08795ad8f6a"
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.38"
-
+      - name: "v27"
+        height: 24250100
+        recommended-version: "v27.0.1"
+        commit: "100ba81036f01a348271ed59917881e2b83d0fbc"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
+      - name: "v28"
+        height: 25861100
+        recommended-version: "v28.0.0"
+        commit: "39ec8f9e54742aa52ed531210b02218171dfadd9"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
 networks:
   # Mainnet pools
   kyve-1:
