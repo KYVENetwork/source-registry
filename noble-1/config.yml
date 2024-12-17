@@ -96,8 +96,8 @@ codebase:
         ksync-engine: "cometbft-v0.38"
       - name: "helium"
         height: 15375010
-        recommended-version: "v8.0.2"
-        commit: "2592437d3813860037a6b885a88321421bf67198"
+        recommended-version: "v8.0.4"
+        commit: "ff1e52183712ae388f0ff5e68ba610849a3a7ae2"
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.38"
 
