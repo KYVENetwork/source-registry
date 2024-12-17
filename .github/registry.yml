@@ -1033,6 +1033,12 @@ lava-mainnet-1:
         ksync-engine: cometbft-v0.37
         name: v4.1.0
         recommended-version: v4.1.0
+      - commit: 18c395ba01dbd650eac3d276991782faa28270ae
+        go-version: go1.20
+        height: 1853800
+        ksync-engine: cometbft-v0.37
+        name: v4.2.0
+        recommended-version: v4.2.0
   config-version: 1
   networks:
     kaon-1:
