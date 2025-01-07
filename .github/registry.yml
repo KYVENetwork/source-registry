@@ -683,6 +683,8 @@ cronosmainnet_25-1:
         runtime: kyvejs/tendermint
       - id: 6
         runtime: kyvejs/tendermint-ssync
+      - id: 15
+        runtime: kyvejs/tendermint
       properties:
         description: 'Cronos (cronos.org) is the leading Ethereum-compatible layer
           1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org,
@@ -1489,7 +1491,7 @@ xion-mainnet-1:
         go-version: go1.21
         height: 1637000
         ksync-engine: cometbft-v0.37
-        name: v7
+        name: v7.0.0
         recommended-version: v7.0.0
       - commit: 0dd06f1d814603ae7193417fedda192fc05c9280
         go-version: go1.22
