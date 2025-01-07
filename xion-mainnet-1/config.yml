@@ -28,7 +28,7 @@ codebase:
         commit: "96670570350b6dc885dbdeb0bd03e37830b512b1"
         go-version: "go1.21"
         ksync-engine: "cometbft-v0.37"
-      - name: "v7"
+      - name: "v7.0.0"
         height: 1637000
         recommended-version: "v7.0.0"
         commit: "01c5275070ef8d73aa92180deaa70d4d201d6c45"
