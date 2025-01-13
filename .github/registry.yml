@@ -684,7 +684,7 @@ cronosmainnet_25-1:
       - id: 6
         runtime: kyvejs/tendermint-ssync
       - id: 15
-        runtime: kyvejs/tendermint
+        runtime: kyvejs/tendermint-ssync
       properties:
         description: 'Cronos (cronos.org) is the leading Ethereum-compatible layer
           1 blockchain network built on the Cosmos SDK, supported by Crypto.com, Crypto.org,
