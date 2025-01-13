@@ -54,6 +54,20 @@ codebase:
         ksync-engine: "cometbft-v0.38"
 
 networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 16
+        runtime: "kyvejs/tendermint"
+      - id: 17
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "xiond"
+        block-sync-pool: 16
+        docs-url: "https://docs.burnt.com/xion"
+        state-sync-pool: 17
+
   # Testnet pools
   kaon-1:
     pools:
