@@ -1534,6 +1534,27 @@ xion-mainnet-1:
         logo: ar://YTPWZRQ5-ORhqSXH03uCXMSQe4vqNxeuIQrirAmke9U
         title: XION
         website: https://xion.burnt.com/
+    kyve-1:
+      integrations:
+        ksync:
+          binary-name: xiond
+          block-sync-pool: 16
+          docs-url: https://docs.burnt.com/xion
+          state-sync-pool: 17
+      pools:
+      - id: 16
+        runtime: kyvejs/tendermint
+      - id: 17
+        runtime: kyvejs/tendermint-ssync
+      properties:
+        description: XION empowers developers to build, launch and scale consumer-ready
+          products from the ground up, removing technical barriers for all users through
+          its Chain Abstraction.
+        docs: https://docs.burnt.com/xion
+        hex: '#000000'
+        logo: ar://YTPWZRQ5-ORhqSXH03uCXMSQe4vqNxeuIQrirAmke9U
+        title: XION
+        website: https://xion.burnt.com/
   source-id: xion-mainnet-1
 zetachain_7000-1:
   codebase:
