@@ -41,7 +41,7 @@ codebase:
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.37"
       - name: "v11"
-        height: 3131464
+        height: 3150000
         recommended-version: "v11.0.1"
         commit: "0fa1ea9d9130b0955ef2fd9c25a0eab0099327aa"
         go-version: "go1.22"

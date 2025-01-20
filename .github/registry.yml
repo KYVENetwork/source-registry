@@ -1501,7 +1501,7 @@ xion-mainnet-1:
         recommended-version: v9.0.1
       - commit: 0fa1ea9d9130b0955ef2fd9c25a0eab0099327aa
         go-version: go1.22
-        height: 3131464
+        height: 3150000
         ksync-engine: cometbft-v0.38
         name: v11
         recommended-version: v11.0.1
