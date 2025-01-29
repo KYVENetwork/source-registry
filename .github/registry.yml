@@ -759,7 +759,7 @@ dydx-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v7.0
         recommended-version: protocol/v7.0.1
-      - commit: "d15314406f70c09be52c8f5f76ed5b3ec753618a"
+      - commit: d15314406f70c09be52c8f5f76ed5b3ec753618a
         go-version: "go1.23"
         height: 35602000
         ksync-engine: "cometbft-v0.38"
