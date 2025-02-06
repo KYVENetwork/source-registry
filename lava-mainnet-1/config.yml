@@ -66,6 +66,17 @@ codebase:
         ksync-engine: "cometbft-v0.37"
 
 networks:
+  # Mainnet pools
+  kyve-1:
+    pools:
+      - id: 18
+        runtime: "kyvejs/tendermint"
+    integrations:
+      ksync:
+        binary-name: "lavad"
+        block-sync-pool: 18
+        docs-url: "https://docs.lavanet.xyz/"
+
   # Testnet pools
   kaon-1:
     pools:
