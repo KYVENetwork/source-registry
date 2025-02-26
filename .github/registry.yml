@@ -560,6 +560,13 @@ cosmoshub-4:
         ksync-engine: cometbft-v0.38
         name: v22
         recommended-version: v22.1.0
+      - commit: 0cac467f7673929c909aaf99e207d90280ab61a5
+        cosmos-sdk-version: v0.50.11-lsm
+        go-version: go1.22
+        height: 24592000
+        ksync-engine: cometbft-v0.38
+        name: v22.2.0
+        recommended-version: v22.2.0
   config-version: 1
   networks:
     kaon-1:
