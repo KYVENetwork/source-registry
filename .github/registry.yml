@@ -1542,6 +1542,12 @@ xion-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v14
         recommended-version: v14.1.0
+      - commit: "133282bfba15139e8b9c39de547b6a937a483c37"
+        go-version: "go1.23"
+        height: 5825000
+        ksync-engine: "cometbft-v0.38"
+        name: "v16"
+        recommended-version: "v16.0.0"
   config-version: 1
   networks:
     kaon-1:
