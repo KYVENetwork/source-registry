@@ -83,11 +83,14 @@ networks:
     pools:
       - id: 13
         runtime: "kyvejs/tendermint"
+      - id: 19
+        runtime: "kyvejs/tendermint-ssync"
     integrations:
       ksync:
         binary-name: "dydxprotocold"
         block-sync-pool: 13
         docs-url: "https://docs.dydx.exchange/"
+        state-sync-pool: 19
   # Testnet pools
   kaon-1:
     pools:
