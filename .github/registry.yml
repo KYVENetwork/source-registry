@@ -104,6 +104,12 @@ archway-1:
         ksync-engine: cometbft-v0.38
         name: v9.0.0
         recommended-version: v9.0.0
+      - commit: 1de4e5c39a07893c8ce2949978e9c0714e5d6097
+        go-version: go1.23
+        height: 8919000
+        ksync-engine: cometbft-v0.38
+        name: v10.0.0
+        recommended-version: v10.0.0
   config-version: 1
   networks:
     kaon-1:
@@ -806,9 +812,12 @@ dydx-mainnet-1:
           binary-name: dydxprotocold
           block-sync-pool: 13
           docs-url: https://docs.dydx.exchange/
+          state-sync-pool: 19
       pools:
       - id: 13
         runtime: kyvejs/tendermint
+      - id: 19
+        runtime: kyvejs/tendermint-ssync
       properties:
         description: "dYdX chain is an open-source application specific blockchain\
           \ software that can power a decentralized perpetuals exchange. This standalone\
