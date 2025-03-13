@@ -573,6 +573,13 @@ cosmoshub-4:
         ksync-engine: cometbft-v0.38
         name: v22.2.0
         recommended-version: v22.2.0
+      - commit: 1663de72571989ac98a89c544f65128e166e05f9
+        cosmos-sdk-version: v0.50.11-lsm
+        go-version: go1.22
+        height: 24666000
+        ksync-engine: cometbft-v0.38
+        name: v22.3.0
+        recommended-version: v22.3.0
   config-version: 1
   networks:
     kaon-1:
@@ -1211,12 +1218,18 @@ noble-1:
         ksync-engine: cometbft-v0.38
         name: helium
         recommended-version: v8.0.1
-      - commit: ff1e52183712ae388f0ff5e68ba610849a3a7ae2
+      - commit: 52c199727affbf4739cfe40075e820314c67b9bd
         go-version: go1.22
         height: 15375010
         ksync-engine: cometbft-v0.38
         name: helium
-        recommended-version: v8.0.4
+        recommended-version: v8.0.5
+      - commit: d69cc7f5277d646b190d97e3193514d9fb49471a
+        go-version: go1.22
+        height: 22414000
+        ksync-engine: cometbft-v0.38
+        name: argentum
+        recommended-version: v9.0.1
   config-version: 1
   networks:
     kaon-1:
@@ -1577,6 +1590,12 @@ xion-mainnet-1:
         ksync-engine: cometbft-v0.38
         name: v16
         recommended-version: v16.0.0
+      - commit: 42ea2dcadc0e73271cf33dd462de460bc7c239b2
+        go-version: go1.23
+        height: 5942000
+        ksync-engine: cometbft-v0.38
+        name: v17
+        recommended-version: v17.0.0
   config-version: 1
   networks:
     kaon-1:
