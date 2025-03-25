@@ -1223,6 +1223,12 @@ noble-1:
         ksync-engine: "cometbft-v0.38"
         name: "argentum"
         recommended-version: "v9.0.1"
+      - commit: "b8d19942328d93abd7e5ac7da4367f758d078d26"
+        go-version: "go1.22"
+        height: 23660000
+        ksync-engine: "cometbft-v0.38"
+        name: "argentum"
+        recommended-version: "v9.0.3"
   config-version: 1
   networks:
     kaon-1:

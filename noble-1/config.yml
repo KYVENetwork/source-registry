@@ -106,6 +106,12 @@ codebase:
         commit: "d69cc7f5277d646b190d97e3193514d9fb49471a"
         go-version: "go1.22"
         ksync-engine: "cometbft-v0.38"
+      - name: "argentum"
+        height: 23660000
+        recommended-version: "v9.0.3"
+        commit: "b8d19942328d93abd7e5ac7da4367f758d078d26"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
 
 networks:
   # Mainnet pools
