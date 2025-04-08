@@ -1424,6 +1424,12 @@ osmosis-1:
         ksync-engine: cometbft-v0.38
         name: v28
         recommended-version: v28.0.0
+      - commit: "b652463bb3e848f8320536d8df0f28383a915ebd"
+        go-version: "go1.22"
+        height: 33187000
+        ksync-engine: "cometbft-v0.38"
+        name: "v28"
+        recommended-version: "v29.0.0"
   config-version: 1
   networks:
     kaon-1:
