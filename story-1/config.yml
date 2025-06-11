@@ -1,0 +1,39 @@
+# Global information
+source-id: "story-1"
+config-version: 1
+properties:
+  title: "Story"
+  hex: "#000000"
+  logo: "ar://va_D53y67A4TUzhO7WemFSgQ77BgQUSsBx0dq2swDVY"
+  description: "Story is a purpose-built layer 1 blockchain designed specifically for intellectual property."
+  website: https://www.story.foundation/
+  docs: https://docs.story.foundation/
+
+codebase:
+  git-url: https://github.com/piplabs/story
+  settings:
+    cosmos-properties:
+      registry-url: https://github.com/cosmos/chain-registry/blob/master/story/chain.json
+      genesis-url: https://raw.githubusercontent.com/piplabs/story/refs/heads/main/lib/netconf/story/genesis.json
+    upgrades:
+      - name: "genesis"
+        height: 1
+        recommended-version: "v1.2.0"
+        commit: "aeb1c48958b45cc126307d89ab4bd497d15a2f16"
+        go-version: "go1.22"
+        ksync-engine: "cometbft-v0.38"
+
+networks:
+  # Testnet pools
+  kaon-1:
+    pools:
+      - id: 38
+        runtime: "kyvejs/tendermint"
+      - id: 39
+        runtime: "kyvejs/tendermint-ssync"
+    integrations:
+      ksync:
+        binary-name: "storyd"
+        block-sync-pool: 38
+        docs-url: "https://docs.story.foundation/"
+        state-sync-pool: 39
