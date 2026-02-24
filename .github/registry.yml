@@ -990,6 +990,24 @@ kyve-1:
         ksync-engine: cometbft-v0.38
         name: v1.5.0
         recommended-version: v1.5.0
+      - commit: f862d5432b29c67f3607707fe7122fb33e974a2f
+        go-version: go1.22
+        height: 11026800
+        ksync-engine: cometbft-v0.38
+        name: v2.0.0
+        recommended-version: v2.0.0
+      - commit: 81d60e07776ee0776fe793fe0706fd02a6eb2573
+        go-version: go1.23
+        height: 11502800
+        ksync-engine: cometbft-v0.38
+        name: v2.1.0
+        recommended-version: v2.1.0
+      - commit: 611fe2d48f537f7ecfb3faab34e5f47b3f65fc83
+        go-version: go1.23
+        height: 13929447
+        ksync-engine: cometbft-v0.38
+        name: v2.2.0
+        recommended-version: v2.2.0
   config-version: 1
   networks:
     kaon-1:
